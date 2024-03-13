@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,76 +42,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\Customer.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
-              "RelativeToolTip": "Library\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:05:45.212Z",
+              "DocumentIndex": 1,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "Library\\Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T06:30:08.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Borrow.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Borrow.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\Borrow.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Borrow.cs",
-              "RelativeToolTip": "Library\\Models\\Borrow.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:05:25.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Book.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\Book.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Book.cs",
-              "RelativeToolTip": "Library\\Models\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:05:20.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppuserPermission.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\AppuserPermission.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\AppuserPermission.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\AppuserPermission.cs",
-              "RelativeToolTip": "Library\\Models\\AppuserPermission.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T17:05:07.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\AppUser.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\AppUser.cs",
-              "RelativeToolTip": "Library\\Models\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T11:45:38.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowDetail.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\BorrowDetail.cs",
-              "RelativeDocumentMoniker": "Library\\Models\\BorrowDetail.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\BorrowDetail.cs",
-              "RelativeToolTip": "Library\\Models\\BorrowDetail.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T11:15:26.742Z"
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Library\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AQIAAIMBAAAAAAAAAIAwwJIBAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-10T16:00:49.593Z",
+              "EditorCaption": ""
             }
           ]
         }

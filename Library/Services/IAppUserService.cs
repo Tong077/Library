@@ -1,6 +1,7 @@
 ﻿namespace Library.Services
 {
-    public interface IAppUser
+    public interface IAppUserService
     {
+
     }
 }

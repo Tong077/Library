@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Asp_net\Library\Library
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Asp_net/Library/Library/Views/AppUser/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Asp_net/Library/Library/Views/AppUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Shared/_Script.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
