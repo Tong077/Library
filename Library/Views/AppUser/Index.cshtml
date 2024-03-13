@@ -1,1 +1,45 @@
-﻿
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<Library.Models.AppUser>
+
+@{
+    ViewData["Title"] = "UserList";
+    Layout = "_Script";
+}
+<table class="table">
+    <thead >
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.AppUserId)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsHiDden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var appuser in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(ModelAppUser => appuser.AppUserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(ModelAppuser => appuser.IsHiDden)
+                </td>
+                <td>
+                    @Html.DisplayFor(ModelAppUser => appuser.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(ModelAppUser => appuser.Password)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

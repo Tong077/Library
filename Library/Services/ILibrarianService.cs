@@ -1,6 +1,6 @@
 ﻿namespace Library.Services
 {
-    public interface ILibrarian
+    public interface ILibrarianService
     {
     }
 }
