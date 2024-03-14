@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\AppUserpermission\" />
+    <Folder Include="Views\Book\" />
+    <Folder Include="Views\Borrow\" />
+    <Folder Include="Views\BorrowDetail\" />
+    <Folder Include="Views\Catalog\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\CustomerType\" />
+    <Folder Include="Views\Libraian\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

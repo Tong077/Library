@@ -3,76 +3,32 @@
   "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\ibirarianserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\ibirarianserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\ilibrarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\ilibrarianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\appuserserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\appuserserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\borrowdetailserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\borrowdetailserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\iborrowdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\iborrowdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\iappuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\iappuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\catalogserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\catalogserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\iborrowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\icustomertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\icustomertypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\appuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\appuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\appuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\appuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\appuserpermissionserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\appuserpermissionserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,229 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IbirarianServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IbirarianServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IbirarianServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IbirarianServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\IbirarianServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:18:15.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ILibrarianService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\ILibrarianService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\ILibrarianService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\ILibrarianService.cs",
-              "RelativeToolTip": "Library\\Services\\ILibrarianService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:17:34.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BorrowDetailServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BorrowDetailServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\BorrowDetailServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BorrowDetailServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\BorrowDetailServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:17:10.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IBorrowDetailService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IBorrowDetailService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IBorrowDetailService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IBorrowDetailService.cs",
-              "RelativeToolTip": "Library\\Services\\IBorrowDetailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:16:55.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CatalogServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CatalogServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\CatalogServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CatalogServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\CatalogServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:16:17.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICatalogService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\ICatalogService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\ICatalogService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\ICatalogService.cs",
-              "RelativeToolTip": "Library\\Services\\ICatalogService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:16:00.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BorrowServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\BorrowServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\BorrowServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:15:43.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IBorrowService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IBorrowService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IBorrowService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IBorrowService.cs",
-              "RelativeToolTip": "Library\\Services\\IBorrowService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:15:31.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\BookServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\BookServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:15:16.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IBookService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IBookService.cs",
-              "RelativeToolTip": "Library\\Services\\IBookService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:14:59.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomerTypeServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\CustomerTypeServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\CustomerTypeServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:14:43.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICustomerTypeService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\ICustomerTypeService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\ICustomerTypeService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\ICustomerTypeService.cs",
-              "RelativeToolTip": "Library\\Services\\ICustomerTypeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:14:22.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CustomerServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\CustomerServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\CustomerServiceImp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:14:05.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\ICustomerService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\ICustomerService.cs",
-              "RelativeToolTip": "Library\\Services\\ICustomerService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:13:50.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Create.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\AppUser\\Create.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Create.cshtml",
-              "RelativeToolTip": "Library\\Views\\AppUser\\Create.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-13T07:03:14.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Index.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\AppUser\\Index.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Index.cshtml",
-              "RelativeToolTip": "Library\\Views\\AppUser\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAQwA4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-13T06:48:22.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Program.cs",
-              "RelativeDocumentMoniker": "Library\\Program.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Program.cs",
-              "RelativeToolTip": "Library\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:43:02.3Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -327,16 +62,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Library\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwCAAAAAAAAAAAAACICAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-10T16:00:49.593Z",
+              "DocumentIndex": 3,
+              "Title": "IAppUserService.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IAppUserService.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\IAppUserService.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IAppUserService.cs",
+              "RelativeToolTip": "Library\\Services\\IAppUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T11:05:22.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppUserServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\AppUserServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\AppUserServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\AppUserServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\AppUserServiceImp.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAASwCsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:12:12.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\appsettings.json",
+              "RelativeDocumentMoniker": "Library\\appsettings.json",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\appsettings.json",
+              "RelativeToolTip": "Library\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T10:02:41.829Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Program.cs",
+              "RelativeDocumentMoniker": "Library\\Program.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Program.cs",
+              "RelativeToolTip": "Library\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T09:55:24.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUserController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\AppUserController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeToolTip": "Library\\Controllers\\AppUserController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T09:41:55.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BorrowServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\BorrowServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\BorrowServiceImp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T09:37:18.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUserpermissionServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\AppUserpermissionServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\AppUserpermissionServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\AppUserpermissionServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\AppUserpermissionServiceImp.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T09:11:28.37Z"
             }
           ]
         }
