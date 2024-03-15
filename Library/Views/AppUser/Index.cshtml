@@ -42,6 +42,9 @@
                 <td>
                     @Html.DisplayFor(ModelAppUser => appuser.Password)
                 </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new {AppUserId = appuser.AppUserId})
+                </td>
             </tr>
         }
     </tbody>

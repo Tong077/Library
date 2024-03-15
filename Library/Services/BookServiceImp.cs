@@ -29,10 +29,8 @@ namespace Library.Services
         public bool Delete(Book book)
         {
             var sql = "DELETE FROM BOOK WHERE BookId = @BookId";
-            var roweEffect = _service.Connection.Execute(sql, new
-            {
-                BookId = book.BookId,
-            });
+            var roweEffect = _service.Connection.Execute(sql, new { book });
+            
             return roweEffect > 0;
         }
 

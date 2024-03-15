@@ -27,7 +27,7 @@ namespace Library.Services
         {
             var sql = "DELETE FROM AppUser Where AppUserId=@AppUserId";
             var roweEffect = _service.Connection.Execute(sql, new {
-                AppUserId = appUser.AppUserId,
+               appUser,
             });
             return roweEffect > 0;
         }

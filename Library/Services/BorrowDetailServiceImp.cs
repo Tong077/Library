@@ -29,10 +29,7 @@ namespace Library.Services
         public bool Delete(BorrowDetail borrowDetail)
         {
             var sql = "DELETE FROM BorrowDetail Where BorrowDetailId=@BorrowDetailId)";
-            var roweEffect = _service.Connection.Execute(sql, new
-            {
-                BorrowDetailId = borrowDetail.BorrowDetailId
-            });
+            var roweEffect = _service.Connection.Execute(sql, new { borrowDetail });
             return roweEffect > 0;
 
         }
