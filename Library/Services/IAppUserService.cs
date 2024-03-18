@@ -8,7 +8,7 @@ namespace Library.Services
 
         bool Update(AppUser appUser);
 
-        bool Delete(AppUser appUser);
+        bool Delete(int appUserId);
 
         IEnumerable<AppUser> GetAll();
 

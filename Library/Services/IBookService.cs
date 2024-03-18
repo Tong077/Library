@@ -6,7 +6,7 @@ namespace Library.Services
     {
         bool Create(Book book);
         bool Update(Book book);
-        bool Delete(Book book);
+        bool Delete(int bookId);
         IEnumerable<Book> GetAll();
         Book Get(int BookId);
     }

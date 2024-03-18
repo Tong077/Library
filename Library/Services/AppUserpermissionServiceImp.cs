@@ -24,13 +24,11 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public bool Delete(AppuserPermission appuserPermission)
+        public bool Delete(int appuserPermissionId)
         {
             var sql = "DELETE FROM AppUserPermission WHERE AppUserpermissionId = @AppUserpermissionId";
-            var roweEffect = _service.Connection.Execute(sql, new
-            {
-                appuserPermissionId = appuserPermission.AppUserPermissionId
-            });
+            var roweEffect = _service.Connection.Execute(sql, new {@AppuserPermissionId = appuserPermissionId});
+            
             return roweEffect > 0;
         }
 

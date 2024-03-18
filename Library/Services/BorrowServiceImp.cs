@@ -30,10 +30,10 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public bool Delete(Borrow borrow)
+        public bool Delete(int borrowId)
         {
             var sql = "DELECT FROM Borrow Where BorrowId = @BorrowId";
-            var roweEffect = _service.Connection.Execute(sql, new { borrow });
+            var roweEffect = _service.Connection.Execute(sql, new { @BorrowId = borrowId });
             return roweEffect > 0;
         }
 

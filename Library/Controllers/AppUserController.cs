@@ -67,18 +67,18 @@ namespace Library.Controllers
             return View("Delete", result);
         }
         [HttpPost]
-        public IActionResult Destroy(AppUser appUser)
+        public IActionResult Destroy(int appUserId)
         {
             if (!ModelState.IsValid)
             {
-                return View(appUser);
+                return View(appUserId);
             }
-            var result = _service.Delete(appUser);
+            var result = _service.Delete(appUserId);
             if (result)
             {
                 return RedirectToAction("Index");
             }
-            return View(appUser);
+            return View(appUserId);
         }
     }
 }

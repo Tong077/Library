@@ -37,7 +37,7 @@ namespace Library.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Destroy(Book book)
+        public IActionResult Destroy(int bookId)
         {
             return View();
         }

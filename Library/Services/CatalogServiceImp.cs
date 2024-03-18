@@ -28,10 +28,10 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public bool Delete(Catalog catalog)
+        public bool Delete(int catalogId)
         {
             var sql = "DELETE FROM Catalog WHERE CatalogId = @CatalogId";
-            var roweEffect = _service.Connection.Execute(sql, new { catalog });
+            var roweEffect = _service.Connection.Execute(sql, new { @Catalog = catalogId });
             return roweEffect > 0;
         }
 

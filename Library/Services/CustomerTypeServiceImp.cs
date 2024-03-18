@@ -21,10 +21,10 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public bool Delete(CustomerType customerType)
+        public bool Delete(int customerTypeId)
         {
             var sql = "DELETE FROM CustomerType WHERE CustomerTypeId = @CustomerTypeId";
-            var roweEffect = _service.Connection.Execute(sql, customerType);
+            var roweEffect = _service.Connection.Execute(sql, new { @CustomerTypeId = customerTypeId });
             return roweEffect > 0;
         }
 

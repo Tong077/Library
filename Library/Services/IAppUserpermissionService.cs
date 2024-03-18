@@ -6,7 +6,7 @@ namespace Library.Services
     {
         bool Create(AppuserPermission appuserPermission);
         bool Update(AppuserPermission appuserPermission);
-        bool Delete(AppuserPermission appuserPermission);
+        bool Delete(int appuserPermissionId);
         IEnumerable<AppuserPermission> GetAll();
         AppuserPermission GetById(int AppUserPermissionId);
     }

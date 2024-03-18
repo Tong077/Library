@@ -6,7 +6,7 @@ namespace Library.Services
     {
         bool Create(Borrow borrow);
         bool Updade(Borrow borrow);
-        bool Delete(Borrow borrow);
+        bool Delete(int borrowId);
         IEnumerable<Borrow> GetAll();
         Borrow Get(int BorrowId);
     }

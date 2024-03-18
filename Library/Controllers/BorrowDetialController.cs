@@ -38,7 +38,7 @@ namespace Library.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Delete(BorrowDetail borrowdetail)
+        public IActionResult Destroy(int borrowdetailId)
         {
             return View();
         }

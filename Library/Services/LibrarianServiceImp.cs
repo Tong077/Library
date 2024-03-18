@@ -27,10 +27,10 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public bool Delete(Librarian librarian)
+        public bool Delete(int librarianId)
         {
             var sql = "DELETE FROM Librarain WHERE LibrarianId=@LibrarianId";
-            var roweEffect = _service.Connection.Execute(sql, new { librarian });
+            var roweEffect = _service.Connection.Execute(sql, new { @LibrarianId = librarianId });
             return roweEffect > 0;
         }
 

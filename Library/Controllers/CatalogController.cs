@@ -38,7 +38,7 @@ namespace Library.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Delete(Catalog catalog)
+        public IActionResult Destroy(int CatalogId)
         {
             return View();
         }

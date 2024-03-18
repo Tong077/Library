@@ -41,7 +41,7 @@ namespace Library.Controllers
         }
 
         [HttpPost]
-        public IActionResult Destroy(AppuserPermission appuserPermission)
+        public IActionResult Destroy(int appuserPermissionId)
         {
             return View();
         }

@@ -23,12 +23,12 @@ namespace Library.Services
             });
             return roweEffect > 0;
         }
-        public bool Delete(AppUser appUser)
+        public bool Delete(int appUserId)
         {
             var sql = "DELETE FROM AppUser Where AppUserId=@AppUserId";
-            var roweEffect = _service.Connection.Execute(sql, new {
-               appUser,
-            });
+            var roweEffect = _service.Connection.Execute(sql, new { @AppUserId=appUserId });
+
+
             return roweEffect > 0;
         }
 
