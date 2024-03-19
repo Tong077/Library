@@ -7,7 +7,7 @@ namespace Library.Models
         public int BookId { get; set; }
         public bool IsHidden {  get; set; }
        
-        public int CataLogId { get; set; }
+        public int CatalogId { get; set; }
         public string? BookCode { get; set; }
         public string? BookDescription { get; set; }
     }

@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +26,54 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\borrowdetialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\borrowdetialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\customertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\customertypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\librarianserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\librarianserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\catalogserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\catalogserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 8c6cce648aa3044ba6a48a1f4c34a47db3dab8c4
     }
   ],
   "DocumentGroupContainers": [
@@ -34,10 +83,171 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
+=======
+          "SelectedChildIndex": 0,
+>>>>>>> 8c6cce648aa3044ba6a48a1f4c34a47db3dab8c4
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppUserController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\AppUserController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeToolTip": "Library\\Controllers\\AppUserController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:39:40.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\BorrowController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\BorrowController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\BorrowController.cs",
+              "RelativeToolTip": "Library\\Controllers\\BorrowController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:39:26.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowDetialController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\BorrowDetialController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\BorrowDetialController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\BorrowDetialController.cs",
+              "RelativeToolTip": "Library\\Controllers\\BorrowDetialController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:39:12.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CatalogController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CatalogController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\CatalogController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\CatalogController.cs",
+              "RelativeToolTip": "Library\\Controllers\\CatalogController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:38:55.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Library\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:38:41.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerTypeController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerTypeController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\CustomerTypeController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerTypeController.cs",
+              "RelativeToolTip": "Library\\Controllers\\CustomerTypeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:38:19.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LibrarianServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\LibrarianServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\LibrarianServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\LibrarianServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\LibrarianServiceImp.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:37:09.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerTypeServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\CustomerTypeServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\CustomerTypeServiceImp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:35:38.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\CustomerServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\CustomerServiceImp.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:35:16.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CatalogServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CatalogServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\CatalogServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CatalogServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\CatalogServiceImp.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:34:54.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BorrowServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\BorrowServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\BorrowServiceImp.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:34:26.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\BookServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\BookServiceImp.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T18:33:18.504Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
+<<<<<<< HEAD
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
@@ -112,6 +322,25 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T11:15:26.742Z"
+=======
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+>>>>>>> 8c6cce648aa3044ba6a48a1f4c34a47db3dab8c4
             }
           ]
         }

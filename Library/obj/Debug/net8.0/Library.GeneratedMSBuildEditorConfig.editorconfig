@@ -18,6 +18,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Year3 (semester2)\Oracle (Project)\Library\Library
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_Script.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

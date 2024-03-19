@@ -7,15 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Services\" />
+    <Folder Include="Views\AppUserpermission\" />
+    <Folder Include="Views\Book\" />
+    <Folder Include="Views\Borrow\" />
+    <Folder Include="Views\BorrowDetail\" />
+    <Folder Include="Views\Catalog\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\CustomerType\" />
+    <Folder Include="Views\Libraian\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.28" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>
 
 </Project>
