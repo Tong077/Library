@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
+  "WorkspaceRootPath": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,37 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Library\\Models\\Customer.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Customer.cs",
               "RelativeToolTip": "Library\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAAgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-06T17:05:45.212Z",
               "EditorCaption": ""
@@ -73,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Borrow.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Borrow.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Borrow.cs",
               "RelativeDocumentMoniker": "Library\\Models\\Borrow.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Borrow.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Borrow.cs",
               "RelativeToolTip": "Library\\Models\\Borrow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Book.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Book.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Library\\Models\\Book.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Book.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Book.cs",
               "RelativeToolTip": "Library\\Models\\Book.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AppuserPermission.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\AppuserPermission.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppuserPermission.cs",
               "RelativeDocumentMoniker": "Library\\Models\\AppuserPermission.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\AppuserPermission.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppuserPermission.cs",
               "RelativeToolTip": "Library\\Models\\AppuserPermission.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,9 +93,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\AppUser.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "Library\\Models\\AppUser.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\AppUser.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppUser.cs",
               "RelativeToolTip": "Library\\Models\\AppUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,9 +105,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BorrowDetail.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\BorrowDetail.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\BorrowDetail.cs",
               "RelativeDocumentMoniker": "Library\\Models\\BorrowDetail.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\BorrowDetail.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\BorrowDetail.cs",
               "RelativeToolTip": "Library\\Models\\BorrowDetail.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
