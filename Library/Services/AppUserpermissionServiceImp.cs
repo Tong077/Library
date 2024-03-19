@@ -52,5 +52,6 @@ namespace Library.Services
             var roweEffect = _service.Connection.Execute(sql, appuserPermission);
             return roweEffect > 0;
         }
+
     }
 }
