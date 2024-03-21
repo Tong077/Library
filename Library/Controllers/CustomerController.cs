@@ -1,13 +1,20 @@
 ﻿using Library.Models;
+using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.Controllers
 {
     public class CustomerController : Controller
     {
+        private readonly ICustomerService _service;
+        public CustomerController(ICustomerService service)
+        {
+            this._service = service;
+        }
         public IActionResult Index()
         {
-            return View();
+           var customer = _service.GetAll();
+            return View("Index",customer);
         }
         [HttpGet]
         public IActionResult Create()

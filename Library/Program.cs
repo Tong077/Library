@@ -7,6 +7,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<DapperDbConnext>();
 builder.Services.AddScoped<IAppUserService, AppUserServiceImp>();
+builder.Services.AddScoped<ICustomerService, CustomerServiceImp>();
 var app = builder.Build();
 
 app.UseStaticFiles();
