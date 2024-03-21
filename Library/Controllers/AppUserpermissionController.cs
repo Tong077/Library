@@ -1,10 +1,16 @@
 ﻿using Library.Models;
+using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.Controllers
 {
     public class AppUserpermissionController : Controller
     {
+        private readonly IAppUserpermissionService _service;
+        public AppUserpermissionController(IAppUserpermissionService service)
+        {
+            _service = service;
+        }
         public IActionResult Index()
         {
             return View();

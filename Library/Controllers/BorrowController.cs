@@ -1,11 +1,18 @@
 ﻿using Library.Models;
+using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.Controllers
 {
     public class BorrowController : Controller
     {
-        public IActionResult Index()
+        private readonly IBorrowService _service;
+        public BorrowController(IBorrowService service)
+        {
+            _service = service;
+        }
+
+		public IActionResult Index()
         {
             return View();
         }

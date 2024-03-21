@@ -1,10 +1,16 @@
 ﻿using Library.Models;
+using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.Controllers
 {
     public class BookController : Controller
     {
+        private readonly IBookService _serive;
+        public BookController(IBookService serive)
+        {
+            _serive = serive;
+        }
         public IActionResult Index()
         {
             return View();

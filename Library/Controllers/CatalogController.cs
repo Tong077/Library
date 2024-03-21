@@ -1,11 +1,17 @@
 ﻿using Library.Models;
+using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.Controllers
 {
     public class CatalogController : Controller
     {
-        public IActionResult Index()
+        private readonly ICatalogService _service;
+        public CatalogController(ICatalogService service)
+        {
+            _service = service;
+        }
+		public IActionResult Index()
         {
             return View();
         }
