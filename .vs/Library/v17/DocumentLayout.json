@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
+  "WorkspaceRootPath": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,16 +18,25 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\borrowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\borrowdetialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\borrowdetialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\views\\appuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\appuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\data\\dapperdbconnext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\data\\dapperdbconnext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,6 +51,50 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\librariancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\services\\borrowdetailserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\borrowdetailserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customertypeserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\services\\iappuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\iappuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\services\\appuserserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\appuserserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\borrowdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuserpermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\year3 (semester2)\\oracle (project)\\library\\library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +104,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "Library\\Views\\Customer\\Create.cshtml",
@@ -63,11 +122,22 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAD8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-21T12:35:37.732Z",
+=======
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\appsettings.json",
+              "RelativeDocumentMoniker": "Library\\appsettings.json",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\appsettings.json",
+              "RelativeToolTip": "Library\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T12:11:39.975Z",
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Index.cshtml",
               "RelativeDocumentMoniker": "Library\\Views\\Customer\\Index.cshtml",
@@ -76,10 +146,99 @@
               "ViewState": "AQIAAEoAAAAAAAAAAAAowGkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-21T12:35:23.025Z",
+=======
+              "Title": "AppUserController.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\AppUserController.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Controllers\\AppUserController.cs",
+              "RelativeToolTip": "Library\\Controllers\\AppUserController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAADwv1QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:11:03.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DapperDbConnext.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Data\\DapperDbConnext.cs",
+              "RelativeDocumentMoniker": "Library\\Data\\DapperDbConnext.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Data\\DapperDbConnext.cs",
+              "RelativeToolTip": "Library\\Data\\DapperDbConnext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:08:29.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BorrowDetailServiceImp.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\BorrowDetailServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\BorrowDetailServiceImp.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\BorrowDetailServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\BorrowDetailServiceImp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:08:20.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerTypeServiceImp.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\CustomerTypeServiceImp.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\CustomerTypeServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\CustomerTypeServiceImp.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:08:10.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAppUserService.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\IAppUserService.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\IAppUserService.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\IAppUserService.cs",
+              "RelativeToolTip": "Library\\Services\\IAppUserService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:08:06.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICatalogService.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\ICatalogService.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\ICatalogService.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\ICatalogService.cs",
+              "RelativeToolTip": "Library\\Services\\ICatalogService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:08:02.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppUserServiceImp.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\AppUserServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\AppUserServiceImp.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Services\\AppUserServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\AppUserServiceImp.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T12:07:57.252Z",
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 9,
               "Title": "LibrarianController.cs",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\LibrarianController.cs",
@@ -89,10 +248,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T12:31:13.618Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Views\\AppUser\\Create.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\AppUser\\Create.cshtml",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Views\\AppUser\\Create.cshtml",
+              "RelativeToolTip": "Library\\Views\\AppUser\\Create.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-19T12:07:44.926Z",
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "CustomerTypeController.cs",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerTypeController.cs",
@@ -102,10 +273,34 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T12:30:39.463Z",
+=======
+              "DocumentIndex": 10,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Customer.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Customer.cs",
+              "RelativeToolTip": "Library\\Models\\Customer.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T17:05:45.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Borrow.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Borrow.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Borrow.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Borrow.cs",
+              "RelativeToolTip": "Library\\Models\\Borrow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T17:05:25.007Z",
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "CatalogController.cs",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CatalogController.cs",
@@ -142,16 +337,44 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T12:28:48.217Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 12,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Book.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\Book.cs",
+              "RelativeToolTip": "Library\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T17:05:20.128Z"
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppuserPermission.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppuserPermission.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\AppuserPermission.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppuserPermission.cs",
+              "RelativeToolTip": "Library\\Models\\AppuserPermission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T17:05:07.439Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\AppUser.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\AppUser.cs",
+              "RelativeToolTip": "Library\\Models\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T11:45:38.701Z"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
@@ -201,6 +424,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T12:27:38.893Z",
               "EditorCaption": ""
+=======
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BorrowDetail.cs",
+              "DocumentMoniker": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\BorrowDetail.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\BorrowDetail.cs",
+              "ToolTip": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\Models\\BorrowDetail.cs",
+              "RelativeToolTip": "Library\\Models\\BorrowDetail.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T11:15:26.742Z"
+>>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
             }
           ]
         }
