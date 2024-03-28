@@ -1,16 +1,14 @@
-﻿@* @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-@model IEnumerable<Library.Models.Customer>
-
+﻿@model IEnumerable<Library.Models.Customer>
 @{
     ViewData["Title"] = "Index";
-    Layout = "_Layout";
+
 }
 <div class="row">
     <div class=col-sm-6>
         <h3 class="text-uppercase">List Customer</h3>
     </div>
     <div class="col-sm-6">
-        <a asp-action="Create" class="btn btn-primary btn-sm float-right"><i class="fas fa-plus-circle">Add New</i></a>
+        <a asp-action="Create" class="btn btn-primary btn-sm float-right"><i class="fas fa-plus-circle"></i>Add New</a>
     </div>
 </div>
 <div class="mt-2 card">
@@ -18,25 +16,38 @@
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
-                    <th class="text-white">
+                    <th>
+                        @Html.DisplayNameFor(model => model.CustomerId)
+                    </th>
+                    <th>
                         @Html.DisplayNameFor(model => model.CustomerCode)
                     </th>
-                    <th class="text-white">
-                        @Html.DisplayNameFor(model => model.CustomerName)
-                    </th>
-                    <th class="text-white">
-                        @Html.DisplayNameFor(model => model.Address)
-                    </th>
-                    <th class="text-white">
-                        @Html.DisplayNameFor(model => model.Date)
-                    </th>
-                    <th class="text-white">
-                        @Html.DisplayNameFor(model => model.Phone)
-                    </th>
-                    <th class="text-white">
+                    <th>
                         @Html.DisplayNameFor(model => model.CustomerTypeId)
                     </th>
-                    <th class="text-white">Action</th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CustomerName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Sex)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Dob)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Pob)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsHidden)
+                    </th>
+
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,13 +55,22 @@
                 {
                     <tr>
                         <td>
+                            @Html.DisplayFor(modelItem => item.CustomerId)
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.CustomerCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CustomerTypeId)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.CustomerName)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Address)
+                            @Html.DisplayFor(modelItem => item.Sex)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Dob)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Pob)
@@ -59,14 +79,15 @@
                             @Html.DisplayFor(modelItem => item.Phone)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.CustomerTypeId)
+                            @Html.DisplayFor(modelItem => item.Address)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.CustomerId" class="btn btn-success btn-edit btn-sm rounded-circle"><i class="fas fa-edit"></i></a>
-                            <a asp-action="Details" asp-route-id="@item.CustomerId" class="btn btn-info btn-sm rounded-circle"><i class="fas fa-eye"></i></a>
-                            <form asp-action="Delete" asp-route-id="@item.CustomerId" class="d-inline-block delete-form">
-                                <button type="submit" class="btn btn-danger btn-sm rounded-circle"><i class="fas fa-trash"></i></button>
-                            </form>
+                            @Html.DisplayFor(modelItem => item.IsHidden)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Customer" asp-route-CustomerId="@item.CustomerId" class="btn btn-success btn-edit btn-sm rounded-circle"><i class="fas fa-edit"></i>Edit</a>
+                            <a asp-action="Details" asp-route-CustomerId="@item.CustomerId" class="btn btn-info btn-sm rounded-circle"><i class="fas fa-eye"></i>Delete</a>
+
                         </td>
                     </tr>
                 }
@@ -74,33 +95,4 @@
         </table>
     </div>
 </div>
-<script>
-    // Function to handle form submission with SweetAlert
-    function handleFormSubmission(event) {
-        event.preventDefault(); // Prevent default form submission
 
-        // Use SweetAlert to confirm deletion
-        Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // If confirmed, submit the form
-                event.target.submit();
-            }
-        });
-    }
-
-    // Add event listeners to all delete forms
-    document.querySelectorAll('.delete-form').forEach(form => {
-        form.addEventListener('submit', handleFormSubmission);
-    });
-</script>
-
-
- *@

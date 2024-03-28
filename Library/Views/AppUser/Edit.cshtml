@@ -1,8 +1,7 @@
-﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+﻿
 @model Library.Models.AppUser
-
 @{
-    Layout = "_Script";
+    ViewData["Title"] = "Edit";
 }
 
 
@@ -11,7 +10,7 @@
         <form asp-action="Update" asp-controller="AppUser" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input asp-for="AppUserId" type="hidden" class="form-control" />
-            
+
             <div class="form-group">
                 <label asp-for="UserName" class="control-label"></label>
                 <input asp-for="UserName" class="form-control" />
@@ -37,5 +36,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
-

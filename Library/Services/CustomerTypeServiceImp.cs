@@ -13,10 +13,10 @@ namespace Library.Services
         }
         public bool Create(CustomerType customerType)
         {
-            var sql = "INSERT INTO CustomerType(CustomerName) Values(@CustomerName)";
+            var sql = "INSERT INTO CustomerType(CustomerTypeName) Values(@CustomerTypeName)";
             var roweEffect = _service.Connection.Execute(sql, new
             {
-                CustomerName = customerType.CustomerName
+                CustomerTypeName = customerType.CustomerTypeName
             });
             return roweEffect > 0;
         }
@@ -44,7 +44,7 @@ namespace Library.Services
 
         public bool Update(CustomerType customerType)
         {
-            var sql = "UPDATE CustomerType SET CustomerName=@CustomerName Where CustomerTypeId=@CustomerTypeId";
+            var sql = "UPDATE CustomerType SET CustomerTypeName=@CustomerTypeName Where CustomerTypeId=@CustomerTypeId";
             var roweEffect = _service.Connection.Execute(sql,customerType);
             return roweEffect > 0;
         }

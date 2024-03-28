@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xFQ27LGMyo2eonDbMMFTv2StDQgRuKuqa4MEUpiP70M=",
+  "Hash": "xAXRR7veqShgF74xLN3/hP49xi8g/yL6Elcsz/7j0Rk=",
   "Source": "Library",
   "BasePath": "_content/Library",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Library\\wwwroot",
       "Source": "Library",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\css\\adminlte.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\css\\adminlte.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/css/adminlte.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\css\\adminlte.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\AdminLTELogo.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\AdminLTELogo.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/AdminLTELogo.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\AdminLTELogo.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/avatar.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\avatar.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar2.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar2.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/avatar2.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\avatar2.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar3.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar3.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/avatar3.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\avatar3.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar4.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar4.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/avatar4.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\avatar4.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar5.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\avatar5.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/avatar5.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\avatar5.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\boxed-bg.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\boxed-bg.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/boxed-bg.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\boxed-bg.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\boxed-bg.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\boxed-bg.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/boxed-bg.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\boxed-bg.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\american-express.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\american-express.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/american-express.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\american-express.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\cirrus.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\cirrus.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/cirrus.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\cirrus.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\mastercard.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\mastercard.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/mastercard.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\mastercard.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\paypal.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\paypal.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/paypal.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\paypal.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\paypal2.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\paypal2.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/paypal2.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\paypal2.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\visa.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\credit\\visa.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/credit/visa.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\credit\\visa.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\default-150x150.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\default-150x150.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/default-150x150.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\default-150x150.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\icons.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\icons.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/icons.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\icons.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\photo1.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\photo1.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/photo1.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\photo1.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\photo2.png",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\photo2.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/photo2.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\photo2.png"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\photo3.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\photo3.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/photo3.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\photo3.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\photo4.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\photo4.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/photo4.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\photo4.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-1.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-1.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/prod-1.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\prod-1.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-2.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-2.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/prod-2.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\prod-2.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-3.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-3.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/prod-3.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\prod-3.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-4.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-4.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/prod-4.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\prod-4.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-5.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\prod-5.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/prod-5.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\prod-5.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user1-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user1-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user1-128x128.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user1-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user2-160x160.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user2-160x160.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user2-160x160.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user2-160x160.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user3-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user3-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user3-128x128.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user3-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user4-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user4-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user4-128x128.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user4-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user5-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user5-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user5-128x128.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user5-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user6-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user6-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user6-128x128.jpg",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user6-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user7-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user7-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user7-128x128.jpg",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user7-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\img\\user8-128x128.jpg",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\img\\user8-128x128.jpg",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/img/user8-128x128.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\img\\user8-128x128.jpg"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\admin-lte\\js\\adminlte.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\js\\adminlte.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "admin-lte/js/adminlte.min.js",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\admin-lte\\js\\adminlte.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\all.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\all.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/all.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\all.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\all.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\all.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/all.min.css",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\all.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\brands.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\brands.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/brands.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\brands.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\brands.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\brands.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/brands.min.css",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\brands.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\fontawesome.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\fontawesome.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/fontawesome.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\fontawesome.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\fontawesome.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/fontawesome.min.css",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\regular.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\regular.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/regular.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\regular.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\regular.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\regular.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/regular.min.css",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\regular.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\solid.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\solid.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/solid.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\solid.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\solid.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\solid.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/solid.min.css",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\solid.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\svg-with-js.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\svg-with-js.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/svg-with-js.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\svg-with-js.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\svg-with-js.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/svg-with-js.min.css",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-font-face.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-font-face.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v4-font-face.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v4-font-face.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-font-face.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-font-face.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v4-font-face.min.css",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v4-font-face.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-shims.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-shims.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v4-shims.css",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v4-shims.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v4-shims.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v4-shims.min.css",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v5-font-face.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v5-font-face.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v5-font-face.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v5-font-face.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\css\\v5-font-face.min.css",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\css\\v5-font-face.min.css",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/css/v5-font-face.min.css",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\css\\v5-font-face.min.css"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\js\\all.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\js\\all.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/js/all.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\js\\all.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\js\\all.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\js\\all.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/js/all.min.js",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\js\\all.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "font-awesome/webfonts/fa-v4compatibility.woff2",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\jquery\\jquery.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\jquery\\jquery.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "jquery/jquery.min.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\jquery-validate\\jquery.validate.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\jquery-validate\\jquery.validate.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "jquery-validate/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-validate\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Asp_net\\Library\\Library\\wwwroot\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Library",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Year3 (semester2)\\Oracle (Project)\\Library\\Library\\wwwroot\\",
+      "ContentRoot": "D:\\Asp_net\\Library\\Library\\wwwroot\\",
       "BasePath": "_content/Library",
       "RelativePath": "jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",

@@ -13,13 +13,14 @@ namespace Library.Services
         }
         public bool Create(Customer customer)
         {
-            var sql = "INSERT INTO Customer (IsHidden,CustomerCode,CustomerTypeId,CustomerName,Sex,Date,Pob,Phone,Address) Values(@IsHiDden,@CustomerCode,@CustomerType,@CustomerName,@Sex,@Date,@Pob,@Phone,@Address)";
+            var sql = "INSERT INTO Customer (IsHidden,CustomerCode,CustomerTypeId,CustomerName,Sex,Dob,Pob,Phone,Address) Values(@IsHiDdden,@CustomerCode,@CustomerTypeId,@CustomerName,@Sex,@Dob,@Pob,@Phone,@Address)";
             var roweEffect = _service.Connection.Execute(sql, new  {
-                IsHiDden = customer.IsHiDden,
-                CustomserCode = customer.CustomerCode,
-                CustomerName = customer.CustomerName,
+                IsHidden = customer.IsHidden,
+				CustomerCode = customer.CustomerCode,
+                CustomerTypeId = customer.CustomerTypeId,
+				CustomerName = customer.CustomerName,
                 Sex = customer.Sex,
-                Date = customer.Date,
+				Dob = customer.Dob,
                 Pob = customer.Pob,
                 Phone = customer.Phone,
                 Address = customer.Address,
@@ -38,14 +39,14 @@ namespace Library.Services
 
         public Customer Get(int CustomerId)
         {
-            var sql = "SELECT * FROM Customer Wher CustomerId=@CustomerId";
-            var cusomter = _service.Connection.QueryFirstOrDefault<Customer>(sql, new {CustomerId = CustomerId });
-            return cusomter;
+            var sql = "SELECT * FROM Customer Where CustomerId=@CustomerId";
+            var cusomter = _service.Connection.QueryFirstOrDefault<Customer>(sql, new {@CustomerId = CustomerId });
+            return cusomter!;
         }
 
         public IEnumerable<Customer> GetAll()
         {
-            var sql = "SELECT * FROM Customer ";
+            var sql = "SELECT * FROM Customer";
             var customers = _service.Connection.Query<Customer>(sql);
             return customers;
 
@@ -53,8 +54,8 @@ namespace Library.Services
 
         public bool Update(Customer customer)
         {
-            var sql = "UPDATE Customer SET IsHiDden=@IsHiDden,CustomerCode=@CustomerCode,CustomerTypeId=@CustomerTypeId,CustomerName=@CustomerName,Sex=@Sex,Date=@Date,Pob=@Pob,Phone=@Phone,Address=@Address Where CustomerId=@CustomerId";
-            var roweEffect = _service.Connection.Execute(sql,new { customer });
+            var sql = "UPDATE CUSTOMER SET IsHidden=@IsHidden,CustomerCode=@CustomerCode,CustomerTypeId=@CustomerTypeId,CustomerName=@CustomerName,Sex=@Sex,Dob=@Dob,Pob=@Pob,Phone=@Phone,Address=@Address Where CustomerId=@CustomerId";
+            var roweEffect = _service.Connection.Execute(sql, customer);
             return roweEffect > 0;
         }
     }

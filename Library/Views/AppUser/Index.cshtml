@@ -1,4 +1,4 @@
-﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+﻿
 @model IEnumerable<Library.Models.AppUser>
 
 @{
@@ -9,10 +9,10 @@
     <a asp-action="Create">Create</a>
 </p>
 <table class="table">
-    <thead >
+    <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model=>model.AppUserId)
+                @Html.DisplayNameFor(model => model.AppUserId)
 
             </th>
             <th>
@@ -27,7 +27,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var appuser in Model)
+        @foreach (var appuser in Model)
         {
             <tr>
                 <td>
@@ -43,8 +43,10 @@
                     @Html.DisplayFor(ModelAppUser => appuser.Password)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new {AppUserId = appuser.AppUserId})
-                    @Html.ActionLink("Delete", "Delete", new {AppUserId = appuser.AppUserId})
+                   
+
+                    <a asp-controller="AppUser" asp-action="Edit" asp-route-AppUserId="@appuser.AppUserId" class="btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                    <a asp-controller="AppUser" asp-action="Delete" asp-route-AppUserId="@appuser.AppUserId" class="btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i> Delete</a>
                 </td>
             </tr>
         }

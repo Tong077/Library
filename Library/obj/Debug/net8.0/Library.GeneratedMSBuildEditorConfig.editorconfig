@@ -17,38 +17,49 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Library
 build_property.RootNamespace = Library
-build_property.ProjectDir = D:\Year3 (semester2)\Oracle (Project)\Library\Library\
+build_property.ProjectDir = D:\Asp_net\Library\Library\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Year3 (semester2)\Oracle (Project)\Library\Library
+build_property.MSBuildProjectDirectory = D:\Asp_net\Library\Library
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Create.cshtml]
+[D:/Asp_net/Library/Library/Views/AppUser/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Delete.cshtml]
+[D:/Asp_net/Library/Library/Views/AppUser/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Edit.cshtml]
+[D:/Asp_net/Library/Library/Views/AppUser/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/AppUser/Index.cshtml]
+[D:/Asp_net/Library/Library/Views/AppUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Book/Index.cshtml]
+[D:/Asp_net/Library/Library/Views/Book/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
+[D:/Asp_net/Library/Library/Views/CustomerType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJUeXBlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/CustomerType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Asp_net/Library/Library/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Asp_net/Library/Library/Views/Customer/Index.cshtml]
@@ -56,20 +67,37 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Asp_net/Library/Library/Views/Home/Index.cshtml]
-=======
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Home/Index.cshtml]
->>>>>>> 683e9913ed9c389c5d669b983f747f1a6ad6efc0
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_Layout.cshtml]
+[D:/Asp_net/Library/Library/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_Script.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHQuY3NodG1s
+[D:/Asp_net/Library/Library/Views/Shared/_Nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Year3 (semester2)/Oracle (Project)/Library/Library/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Asp_net/Library/Library/Views/Shared/_Side.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/Shared/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp_net/Library/Library/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -9,7 +9,7 @@ namespace Library.Controllers
         private readonly ILibrarianService _service;
         public LibrarianController(ILibrarianService service)
         {
-            _service = service
+            _service = service;
         }
 		public IActionResult Index()
         {

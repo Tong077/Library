@@ -12,6 +12,6 @@ namespace Library.Services
 
         IEnumerable<AppUser> GetAll();
 
-        AppUser Get(int AppuserId);
+        AppUser Get(int appuserId);
     }
 }

@@ -1,42 +1,82 @@
-﻿using Library.Models;
+﻿using Dapper;
+using Library.Data;
+using Library.Models;
 using Library.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Library.Controllers
 {
     public class CustomerController : Controller
     {
+        private readonly DapperDbConnext _dapperDb;
         private readonly ICustomerService _service;
-        public CustomerController(ICustomerService service)
+        private readonly ICustomerTypeService _ctx;
+        public CustomerController(ICustomerService service, ICustomerTypeService ctx, DapperDbConnext dapperDb)
         {
-            this._service = service;
+            _service = service;
+            _ctx = ctx;
+            _dapperDb = dapperDb;
         }
+
         public IActionResult Index()
         {
-           var customer = _service.GetAll();
-            return View("Index",customer);
+
+            var customerType = @"SELECT Customer.CustomerId, CustomerType.CustomerTypeName
+            FROM Customer
+            INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
+            var customerTypes = _dapperDb.Connection.Query<Customer>(customerType);
+
+            var customers = _service.GetAll();
+
+           
+
+            return View("Index",customers);
         }
+
         [HttpGet]
         public IActionResult Create()
         {
+            var customertype = _ctx.GetAll();
+            ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerName");
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Customer customer)
+        public IActionResult Store(Customer customer)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(customer);
+            }
+            var customers = _service.Create(customer);
+            if (customers)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(customer);
         }
 
         [HttpGet]
         public IActionResult Edit(int CustomerId)
         {
-            return View();
+            var customer = _service.Get(CustomerId);
+            return View("Edit", customer);
         }
 
         [HttpPost]
         public IActionResult Update(Customer customer)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View("Edit", customer);
+            }
+            var result = _service.Update(customer);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Edit", customer);
         }
 
         [HttpGet]

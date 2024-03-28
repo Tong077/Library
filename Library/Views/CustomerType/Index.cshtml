@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Library.Models.CustomerType>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-success btn-sm float-lg-right"><i class="fa-solid fa-plus"></i> Create</a>
+</p>
+<table class="table">
+    <thead class="table-warning">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerTypeId)
+            </th>
+           <th>
+                @Html.DisplayNameFor(model => model.CustomerTypeName)
+           </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customertype in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(ModelCustomertype => customertype.CustomerTypeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(ModelCustomertype => customertype.CustomerTypeName)
+                </td>
+                <td>
+                    <a asp-controller="CustomerType" asp-action="Edit" asp-route-id="@customertype.CustomerTypeId" class="btn btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

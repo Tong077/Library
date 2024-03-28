@@ -1,4 +1,4 @@
-﻿@* @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @model Library.Models.Customer
 @{
 	
@@ -9,7 +9,7 @@
 		<h5>Create Customer</h5>
 	</div>
 	<div class="card-body">
-		<form asp-action="Create" asp-controller="Customer">
+		<form asp-action="Store" asp-controller="Customer" method="post">
 			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 			<div class="row">
 				<div class="form-group col-sm-4">
@@ -18,9 +18,9 @@
 					<span asp-validation-for="CustomerCode" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-4">
-					<label asp-for="CustomerTypeId" class="control-label"></label>
-					<input asp-for="CustomerTypeId" class="form-control" />
-					<span asp-validation-for="CustomerTypeId" class="text-danger"></span>
+					<label asp-for="CustomerTypeId" class="control-label">Select Type</label>
+					<select asp-for="CustomerTypeId" class="form-control select-to"
+							asp-items="@ViewBag.customerTypes"></select>
 				</div>
 				<div class="form-group col-sm-4">
 					<label asp-for="CustomerName" class="control-label"></label>
@@ -31,29 +31,35 @@
 			<div class="row">
 				<div class="form-group col-sm-4">
 					<label asp-for="Sex" class="control-label"></label>
-					<input asp-for="Sex" type="date" class="form-control" />
+					<input asp-for="Sex" type="text" class="form-control" />
 					<span asp-validation-for="Sex" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-4">
-					<label asp-for="CustomerTypeId" class="control-label">Select Type</label>
-					<select asp-for="CustomerTypeId" class="form-control select-to"
-							asp-items="@ViewBag.CustomerTypes"></select>
+					<label asp-for="Dob" class="control-label"></label>
+					<input asp-for="Dob" type="date" class="form-control" />
+					<span asp-validation-for="Dob" class="text-danger"></span>
+				</div>
+				<div class="form-group col-sm-4">
+					<label asp-for="Pob" class="control-label"></label>
+					<input asp-for="Pob" type="text" class="form-control" />
+					<span asp-validation-for="Pob" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-4">
 					<label asp-for="Phone" class="control-label"></label>
-					<input asp-for="Phone" class="form-control" />
+					<input asp-for="Phone" type="tel" class="form-control" />
 					<span asp-validation-for="Phone" class="text-danger"></span>
 				</div>
 			</div>
+			
 			<div class="form-group">
 				<label asp-for="Address" class="control-label"></label>
 				<textarea asp-for="Address" class="form-control"></textarea>
 				<span asp-validation-for="Address" class="text-danger"></span>
 			</div>
-			<div class="form-group">
-				<label asp-for="Pob" class="control-label"></label>
-				<textarea asp-for="Pob" class="form-control"></textarea>
-				<span asp-validation-for="Pob" class="text-danger"></span>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
+				</label>
 			</div>
 			<div class="form-group">
 				<input type="submit" value="Create" class="btn btn-primary btn-sm float-right ml-1" />
@@ -61,4 +67,4 @@
 			</div>
 		</form>
 	</div>
-</div> *@
+</div>
