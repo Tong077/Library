@@ -16,20 +16,24 @@
            <th>
                 @Html.DisplayNameFor(model => model.CustomerTypeName)
            </th>
+           <th>
+               Action
+           </th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var customertype in Model)
+        @foreach (var item in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(ModelCustomertype => customertype.CustomerTypeId)
+                    @Html.DisplayFor(ModelCustomertype => item.CustomerTypeId)
                 </td>
                 <td>
-                    @Html.DisplayFor(ModelCustomertype => customertype.CustomerTypeName)
+                    @Html.DisplayFor(ModelCustomertype => item.CustomerTypeName)
                 </td>
                 <td>
-                    <a asp-controller="CustomerType" asp-action="Edit" asp-route-id="@customertype.CustomerTypeId" class="btn btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                    <a asp-controller="CustomerType" asp-action="Edit" asp-route-CustomerTypeId="@item.CustomerTypeId">Edit</a>
+                    <a asp-controller="CustomerType" asp-action="Delete" asp-route-CustomerTypeId="@item.CustomerTypeId">Delete</a>
                    
                 </td>
             </tr>

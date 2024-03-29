@@ -46,7 +46,7 @@ namespace Library.Controllers
         public IActionResult Edit(int CustomerTypeId)
         {
             var customertype = _service.Get(CustomerTypeId);
-            return View("Edit",CustomerTypeId);
+            return View("Edit", customertype);
         }
 
         [HttpPost]
@@ -68,12 +68,23 @@ namespace Library.Controllers
         [HttpGet]
         public IActionResult Delete(int CustomerTypeId)
         {
-            return View();
+
+            var customertype = _service.Get(CustomerTypeId);
+            return View("Delete", customertype);
         }
         [HttpPost]
         public IActionResult Destroy(int customerTypeId)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(customerTypeId);
+            }
+            var result = _service.Delete(customerTypeId);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(customerTypeId);
         }
     }
 }

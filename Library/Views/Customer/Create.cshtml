@@ -1,9 +1,6 @@
-﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+﻿
 @model Library.Models.Customer
-@{
-	
-	Layout = "_Layout";
-}
+
 <div class="card">
 	<div class="card-header text-uppercase">
 		<h5>Create Customer</h5>
@@ -19,8 +16,10 @@
 				</div>
 				<div class="form-group col-sm-4">
 					<label asp-for="CustomerTypeId" class="control-label">Select Type</label>
-					<select asp-for="CustomerTypeId" class="form-control select-to"
-							asp-items="@ViewBag.customerTypes"></select>
+					<select asp-for="CustomerTypeId" class="custom-select"
+							asp-items="@ViewBag.customerTypes">
+						<option >Please select CustomerType</option>
+					</select>
 				</div>
 				<div class="form-group col-sm-4">
 					<label asp-for="CustomerName" class="control-label"></label>
@@ -29,22 +28,22 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-3">
 					<label asp-for="Sex" class="control-label"></label>
 					<input asp-for="Sex" type="text" class="form-control" />
 					<span asp-validation-for="Sex" class="text-danger"></span>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-3">
 					<label asp-for="Dob" class="control-label"></label>
 					<input asp-for="Dob" type="date" class="form-control" />
 					<span asp-validation-for="Dob" class="text-danger"></span>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-3">
 					<label asp-for="Pob" class="control-label"></label>
 					<input asp-for="Pob" type="text" class="form-control" />
 					<span asp-validation-for="Pob" class="text-danger"></span>
 				</div>
-				<div class="form-group col-sm-4">
+				<div class="form-group col-sm-3">
 					<label asp-for="Phone" class="control-label"></label>
 					<input asp-for="Phone" type="tel" class="form-control" />
 					<span asp-validation-for="Phone" class="text-danger"></span>

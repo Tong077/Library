@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\customertype\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\customertype\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\customerserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\appuser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\appuser\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\customertype\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\customertype\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,67 +58,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\CustomerType\\Index.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\CustomerType\\Index.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\CustomerType\\Index.cshtml",
-              "RelativeToolTip": "Library\\Views\\CustomerType\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-28T08:20:13.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Library\\Controllers\\CustomerController.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Library\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAgwB0AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T08:30:24.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Index.cshtml",
               "RelativeDocumentMoniker": "Library\\Views\\Customer\\Index.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Index.cshtml",
-              "RelativeToolTip": "Library\\Views\\Customer\\Index.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAABkAAABKAAAA",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Index.cshtml*",
+              "RelativeToolTip": "Library\\Views\\Customer\\Index.cshtml*",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-27T08:29:00.842Z",
+              "WhenOpened": "2024-03-29T06:16:44.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Customer.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Models\\Customer.cs",
+              "RelativeToolTip": "Library\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T06:05:50.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomerServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\CustomerServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\CustomerServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\CustomerServiceImp.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAiwDAAAAAvAAAA",
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Library\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAD0AAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T08:09:28.967Z",
+              "WhenOpened": "2024-03-29T06:00:19.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Library\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T05:50:39.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\AppUser\\Edit.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\AppUser\\Edit.cshtml",
-              "RelativeToolTip": "Library\\Views\\AppUser\\Edit.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\CustomerType\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\CustomerType\\Edit.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\CustomerType\\Edit.cshtml",
+              "RelativeToolTip": "Library\\Views\\CustomerType\\Edit.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-26T14:28:45.012Z"
+              "WhenOpened": "2024-03-29T05:27:57.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Create.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Customer\\Create.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Customer\\Create.cshtml",
+              "RelativeToolTip": "Library\\Views\\Customer\\Create.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwC0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T05:25:15.709Z",
+              "EditorCaption": ""
             }
           ]
         }

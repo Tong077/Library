@@ -28,11 +28,11 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public CustomerType Get(int CustomerTypeId)
+        public CustomerType Get(int customerTypeId)
         {
             var sql = "SELECT * FROM CustomerType WHERE CustomerTypeId = @CustomerTypeId";
-            var customer = _service.Connection.QueryFirstOrDefault<CustomerType>(sql ,new {@CustomerTypeId = CustomerTypeId});
-            return customer;
+            var customer = _service.Connection.QueryFirstOrDefault<CustomerType>(sql, new  {@CustomerTypeId = customerTypeId});
+            return customer!;
         }
 
         public IEnumerable<CustomerType> GetAll()

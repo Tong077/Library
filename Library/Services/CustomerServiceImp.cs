@@ -47,7 +47,10 @@ namespace Library.Services
         public IEnumerable<Customer> GetAll()
         {
             var sql = "SELECT * FROM Customer";
-            var customers = _service.Connection.Query<Customer>(sql);
+            var type = "SELECT Customer.CustomerId, CustomerType.CustomerTypeName FROM Customer " +
+                "INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId;";
+
+			var customers = _service.Connection.Query<Customer>(sql);
             return customers;
 
         }

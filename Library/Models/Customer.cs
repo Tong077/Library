@@ -15,5 +15,6 @@ namespace Library.Models
         public string? Pob {  get; set; }
         public string? Phone { get; set; }
         public string? Address { get; set; }
+        public ICollection<CustomerType>? CustomerTypes { get; set; }
     }
 }

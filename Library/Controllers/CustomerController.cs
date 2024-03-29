@@ -22,15 +22,12 @@ namespace Library.Controllers
         public IActionResult Index()
         {
 
-            var customerType = @"SELECT Customer.CustomerId, CustomerType.CustomerTypeName
-            FROM Customer
-            INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
-            var customerTypes = _dapperDb.Connection.Query<Customer>(customerType);
+            //var customerType = @"SELECT Customer.CustomerId, CustomerType.CustomerTypeName
+            //FROM Customer
+            //INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
+            //var customerTypes = _dapperDb.Connection.Query<Customer>(customerType);
 
             var customers = _service.GetAll();
-
-           
-
             return View("Index",customers);
         }
 
@@ -38,7 +35,7 @@ namespace Library.Controllers
         public IActionResult Create()
         {
             var customertype = _ctx.GetAll();
-            ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerName");
+            ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerTypeName");
             return View();
         }
         [HttpPost]
@@ -61,7 +58,9 @@ namespace Library.Controllers
         public IActionResult Edit(int CustomerId)
         {
             var customer = _service.Get(CustomerId);
-            return View("Edit", customer);
+			var customertype = _ctx.GetAll();
+			ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerTypeName");
+			return View("Edit", customer);
         }
 
         [HttpPost]
