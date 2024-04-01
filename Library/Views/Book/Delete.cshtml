@@ -1,0 +1,46 @@
+﻿@model Library.Models.Book
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="card">
+    <div class="card-header">
+        <h4 class="title">Add Book</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Destroy" asp-controller="Book" method="post">
+            <input type="hidden" asp-for="BookId" />
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="CatalogId" class="control-label">Catalog Id</label>
+                    <select asp-for="CatalogId" asp-items="@ViewBag.catalogs" class="custom-select">
+                        <option>Please Select Catalog Name</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="BookCode" class="control-label">Book Code</label>
+                    <input type="text" placeholder="BookCode" asp-for="BookCode" class="form-control" />
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="BookDescription" class="control-label">BookDescription</label>
+                    <input type="text" placeholder="BookDescription" asp-for="BookDescription" class="form-control" />
+                </div>
+
+            </div>
+
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Delete Book</button>
+                <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+

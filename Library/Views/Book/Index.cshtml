@@ -1,1 +1,67 @@
-﻿
+﻿@model IEnumerable<Library.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Book List</h2>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create" class="btn btn-primary btn-sm float-right">Add New Book</a>
+        </p>
+        <table class="table tab-custom-content table-info">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CatalogId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookDescription)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsHidden)
+                    </th>
+                   
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => item.BookId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.CatalogId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.BookCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.BookDescription)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.IsHidden)
+                        </td>
+                       
+                        <td>
+                            <a asp-controller="Book" asp-action="Edit" asp-route-BookId="@item.BookId" class="btn btn-outline-primary"><i class="fas fa-edit"></i>Edit</a>
+                            <a asp-controller="Book" asp-action="Delete" asp-route-bookId="@item.BookId" class="btn btn btn-outline-danger"><i class="fa-solid fa-trash"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

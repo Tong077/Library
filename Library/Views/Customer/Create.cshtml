@@ -3,7 +3,7 @@
 
 <div class="card">
 	<div class="card-header text-uppercase">
-		<h5>Create Customer</h5>
+		<h4 class="h4">Add New Customer</h4>
 	</div>
 	<div class="card-body">
 		<form asp-action="Store" asp-controller="Customer" method="post">
@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="form-group col-sm-4">
 					<label asp-for="CustomerCode" class="control-label"></label>
-					<input asp-for="CustomerCode" class="form-control" />
+					<input asp-for="CustomerCode" placeholder="CustomerCode" class="form-control" />
 					<span asp-validation-for="CustomerCode" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-4">
@@ -23,36 +23,41 @@
 				</div>
 				<div class="form-group col-sm-4">
 					<label asp-for="CustomerName" class="control-label"></label>
-					<input asp-for="CustomerName" class="form-control" />
+					<input asp-for="CustomerName" placeholder="CustomerName" class="form-control" />
 					<span asp-validation-for="CustomerName" class="text-danger"></span>
 				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-sm-3">
 					<label asp-for="Sex" class="control-label"></label>
-					<input asp-for="Sex" type="text" class="form-control" />
+					<select asp-for="Sex" class="custom-select">
+						<option>Please Select Your Sex</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+
+					</select>
 					<span asp-validation-for="Sex" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-3">
 					<label asp-for="Dob" class="control-label"></label>
-					<input asp-for="Dob" type="date" class="form-control" />
+					<input asp-for="Dob" placeholder="DOB" type="date" class="form-control" />
 					<span asp-validation-for="Dob" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-3">
 					<label asp-for="Pob" class="control-label"></label>
-					<input asp-for="Pob" type="text" class="form-control" />
+					<input asp-for="Pob" placeholder="POB" type="text" class="form-control" />
 					<span asp-validation-for="Pob" class="text-danger"></span>
 				</div>
 				<div class="form-group col-sm-3">
 					<label asp-for="Phone" class="control-label"></label>
-					<input asp-for="Phone" type="tel" class="form-control" />
+					<input asp-for="Phone" placeholder="PHONE" type="tel" class="form-control" />
 					<span asp-validation-for="Phone" class="text-danger"></span>
 				</div>
 			</div>
 			
 			<div class="form-group">
 				<label asp-for="Address" class="control-label"></label>
-				<textarea asp-for="Address" class="form-control"></textarea>
+				<textarea asp-for="Address" placeholder="ADDRESS" class="form-control"></textarea>
 				<span asp-validation-for="Address" class="text-danger"></span>
 			</div>
 			<div class="form-group form-check">
@@ -61,8 +66,8 @@
 				</label>
 			</div>
 			<div class="form-group">
-				<input type="submit" value="Create" class="btn btn-primary btn-sm float-right ml-1" />
-				<a asp-action="Index" class="btn btn-secondary btn-sm float-right">Close</a>
+				<button type="submit" class="btn btn-success btn-sm float-right ml-1">Add New </button>
+				<a asp-action="Index" class="btn btn-danger btn-sm float-right">Cancel</a>
 			</div>
 		</form>
 	</div>

@@ -43,7 +43,7 @@ namespace Library.Services
 
         public IEnumerable<Librarian> GetAll()
         {
-            var sql = "SELECT * FROM Librarain";
+            var sql = "SELECT * FROM Librarian";
             var librarains = _service.Connection.Query<Librarian>(sql);
             return librarains;
         }

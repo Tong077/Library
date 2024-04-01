@@ -3,17 +3,15 @@
     ViewData["Title"] = "Index";
 
 }
-<div class="row">
-    <div class=col-sm-6>
-        <h3 class="text-uppercase">List Customer</h3>
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Customer List</h2>
     </div>
-    <div class="col-sm-6">
-        <a asp-action="Create" class="btn btn-primary btn-sm float-right"><i class="fas fa-plus-circle"></i>Add New</a>
-    </div>
-</div>
-<div class="mt-2 card">
     <div class="card-body">
-        <table class="table table-hover table-bordered">
+        <p>
+            <a class="btn btn-primary btn-sm float-right" asp-action="Create"><i class="fa-solid fa-square-plus"></i> Add New Customer</a>
+        </p>
+        <table id="example" class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>
@@ -22,9 +20,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.CustomerCode)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.CustomerTypeId)
-                    </th>
+
                     <th>
                         @Html.DisplayNameFor(model => model.CustomerName)
                     </th>
@@ -60,9 +56,7 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.CustomerCode)
                         </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.CustomerTypeId)
-                        </td>
+
                         <td>
                             @Html.DisplayFor(modelItem => item.CustomerName)
                         </td>
@@ -85,14 +79,15 @@
                             @Html.DisplayFor(modelItem => item.IsHidden)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-controller="Customer" asp-route-CustomerId="@item.CustomerId" class="btn btn btn-outline-danger"><i class="fas fa-edit"></i>Edit</a>
-                            <a asp-action="Details" asp-route-CustomerId="@item.CustomerId" class="btn btn btn-outline-danger"><i class="fas fa-eye"></i>Delete</a>
+                            <a asp-action="Edit" asp-controller="Customer" asp-route-CustomerId="@item.CustomerId" class="btn btn-outline-primary"><i class="fas fa-edit"></i>Edit</a>
+                            <a asp-action="Details" asp-route-CustomerId="@item.CustomerId" class="btn btn btn-outline-danger"><i class="fa-solid fa-trash"></i>Delete</a>
 
                         </td>
                     </tr>
                 }
+
             </tbody>
+
         </table>
     </div>
 </div>
-

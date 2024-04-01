@@ -1,0 +1,60 @@
+﻿@model Library.Models.Librarian
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4 class="title">Librarain</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Update" asp-controller="Librarian">
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="LibrarainName" class="control-label">Librarain Name</label>
+                    <input type="text" placeholder="LibrarainName" asp-for="LibrarainName" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="LibrarainCode" class="control-label">Librarain Code</label>
+                    <input type="text" placeholder="LibrarainCode" asp-for="LibrarainCode" class="form-control" />
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="Pob" class="control-label">POB</label>
+                    <input type="date" placeholder="POB" asp-for="Pob" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="Sex" class="control-label">Sex</label>
+                    <select class="custom-select">
+                        <option>Please Select Your Sex</option>
+
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="Dob" class="control-label">DOB</label>
+                    <input type="text" placeholder="DOB" asp-for="Dob" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="Phone" class="control-label">Phone</label>
+                    <input type="tel" placeholder="Phone Number" asp-for="Phone" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsHiDden" /> @Html.DisplayNameFor(model => model.IsHiDden)
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Update</button>
+                <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+

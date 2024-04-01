@@ -13,7 +13,9 @@ namespace Library.Controllers
         }
 		public IActionResult Index()
         {
-            return View();
+            var librarian = _service.GetAll();
+            return View("Index", librarian);
+
         }
         [HttpGet]
         public IActionResult Create()

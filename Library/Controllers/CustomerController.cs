@@ -21,14 +21,16 @@ namespace Library.Controllers
 
         public IActionResult Index()
         {
-
-            //var customerType = @"SELECT Customer.CustomerId, CustomerType.CustomerTypeName
-            //FROM Customer
-            //INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
-            //var customerTypes = _dapperDb.Connection.Query<Customer>(customerType);
-
             var customers = _service.GetAll();
-            return View("Index",customers);
+
+            // Fetch CustomerType names separately and populate CustomerTypeName property
+            foreach (var customer in customers)
+            {
+                var customerType = _ctx.Get(customer.CustomerTypeId);
+                customer.CustomerTypeName = customerType?.CustomerTypeName;
+            }
+
+            return View(customers);
         }
 
         [HttpGet]
@@ -57,9 +59,11 @@ namespace Library.Controllers
         [HttpGet]
         public IActionResult Edit(int CustomerId)
         {
+            var customertype = _ctx.GetAll();
+            ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerTypeName");
+
+
             var customer = _service.Get(CustomerId);
-			var customertype = _ctx.GetAll();
-			ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerTypeName");
 			return View("Edit", customer);
         }
 

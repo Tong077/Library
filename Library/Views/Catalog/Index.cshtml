@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Library.Models.Catalog>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Catalog</h3>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create" class="btn btn-outline-danger btn-sm float-right">Create</a>
+        </p>
+        <table id="example1" class="table table-bordered table-striped-columns">
+            <thead class="tab-content">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CatalogId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CatalogCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CatalogName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AuthorName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PubliSher)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PublishYear)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Publisheditin)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsHidden)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Isbn)
+                    </th>
+                   
+                </tr>
+
+            </thead>
+            <tbody class="tab-content">
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.CatalogId)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.CatalogCode)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.CatalogName)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.AuthorName)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.PubliSher)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.PublishYear)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Publisheditin)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.IsHidden)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(modelItem => item.Isbn)
+                        </th>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

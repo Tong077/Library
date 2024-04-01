@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Library.Models.Librarian>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">All Librarian</h2>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create" class="btn btn-primary btn-sm float-right">Add New Librarian</a>
+        </p>
+        <table class="table tab-custom-content table-info">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LibrarianId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LibrarainName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LibrarainCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Sex)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Dob)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Pob)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsHiDden)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => item.LibrarianId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.LibrarainName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.LibrarainCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Sex)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Dob)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Pob)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.IsHiDden)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

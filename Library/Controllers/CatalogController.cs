@@ -13,15 +13,18 @@ namespace Library.Controllers
         }
 		public IActionResult Index()
         {
-            return View();
+            var catalog = _service.GetAll();
+
+            return View("Index", catalog);
         }
+
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            return View("Create");
         }
         [HttpPost]
-        public IActionResult Create(Catalog catalog)
+        public IActionResult Store(Catalog catalog)
         {
             return View();
         }

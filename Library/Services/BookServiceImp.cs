@@ -9,12 +9,12 @@ namespace Library.Services
         private readonly DapperDbConnext _service;
         public BookServiceImp(DapperDbConnext service)
         {
-            this._service = service;
+            _service = service;
         }
 
         public bool Create(Book book)
         {
-            var sql = "INSERT INTO Book(IsHiDden, CatalogId, BookCode,BookDescription) Values(@IsHiDden,@Catalog,@BookCode,BookDescription)";
+            var sql = "INSERT INTO Book(IsHiDden, CatalogId, BookCode,BookDescription) Values(@IsHiDden,@CatalogId,@BookCode,@BookDescription)";
             var roweEffect = _service.Connection.Execute(sql, new
             {
                 IsHiDden = book.IsHidden,
@@ -36,7 +36,7 @@ namespace Library.Services
 
         public Book Get(int BookId)
         {
-            var sql = "SELECT * FROM BOOK WHERE BookId=@BooId";
+            var sql = "SELECT * FROM BOOK WHERE BookId=@BookId";
             var book = _service.Connection.QueryFirstOrDefault<Book>(sql, new { BookId });
             return book;
         }
@@ -50,11 +50,9 @@ namespace Library.Services
 
         public bool Update(Book book)
         {
-            var sql = "UPDATE Book SET IsHidden=@IsHidden, CatalogId=@CatalogId,BookCode=@BookCode,BookDescription=@BookDescription WHERE BookId=@BookId)";
-            var roweEffect = _service.Connection.Execute(sql, new
-            {
-                BookId = book.BookId,
-            });
+            var sql = "UPDATE Book SET IsHidden=@IsHidden, CatalogId=@CatalogId,BookCode=@BookCode,BookDescription=@BookDescription WHERE BookId=@BookId";
+            var roweEffect = _service.Connection.Execute(sql, book);
+            
             return roweEffect > 0;
         }
     }

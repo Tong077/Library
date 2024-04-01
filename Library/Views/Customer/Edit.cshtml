@@ -1,48 +1,55 @@
 ﻿@model Library.Models.Customer
-<div class="row">
-    <div class="col-md-4">
+<div class="card">
+    <h5>Update Customer</h5>
+    <div class="card-body">
         <form asp-action="Update" asp-controller="Customer" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           
-              
-                <input asp-for="CustomerId" type="hidden" class="form-control" />
-                
-           
-           
-            <div class="form-group">
-                <label asp-for="CustomerCode" class="control-label"></label>
-                <input asp-for="CustomerCode" class="form-control" />
-                <span asp-validation-for="CustomerCode" class="text-danger"></span>
+            <input asp-for="CustomerId" type="hidden" class="form-control" />
+
+            <div class="row">
+                <div class="form-group col-sm-4">
+                    <label asp-for="CustomerCode" class="control-label"></label>
+                    <input asp-for="CustomerCode" class="form-control" />
+                    <span asp-validation-for="CustomerCode" class="text-danger"></span>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label asp-for="CustomerTypeId" class="control-label">Select Type</label>
+                    <select asp-for="CustomerTypeId" class="custom-select"
+                            asp-items="@ViewBag.customerTypes">
+                        <option>Please select CustomerType</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label asp-for="CustomerName" class="control-label"></label>
+                    <input asp-for="CustomerName" class="form-control" />
+                    <span asp-validation-for="CustomerName" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="CustomerTypeId" class="control-label"></label>
-                <input asp-for="CustomerTypeId" class="form-control" />
-                <span asp-validation-for="CustomerTypeId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CustomerName" class="control-label"></label>
-                <input asp-for="CustomerName" class="form-control" />
-                <span asp-validation-for="CustomerName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sex" class="control-label"></label>
-                <input asp-for="Sex" class="form-control" />
-                <span asp-validation-for="Sex" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Dob" class="control-label"></label>
-                <input asp-for="Dob" class="form-control" />
-                <span asp-validation-for="Dob" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Pob" class="control-label"></label>
-                <input asp-for="Pob" class="form-control" />
-                <span asp-validation-for="Pob" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
+            <div class="row">
+                <div class="form-group col-sm-3">
+                    <label asp-for="Sex" class="control-label"></label>
+                    <select asp-for="Sex" class="custom-select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+
+                    </select>
+                    <span asp-validation-for="Sex" class="text-danger"></span>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label asp-for="Dob" class="control-label"></label>
+                    <input asp-for="Dob" type="date" class="form-control" />
+                    <span asp-validation-for="Dob" class="text-danger"></span>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label asp-for="Pob" class="control-label"></label>
+                    <input asp-for="Pob" type="text" class="form-control" />
+                    <span asp-validation-for="Pob" class="text-danger"></span>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" type="tel" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
@@ -55,12 +62,11 @@
                 </label>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn btn-outline-danger">Save Chane</button>
+                <button type="submit" class="btn btn-success btn-sm float-right ml-1">Update</button>
+                <a asp-action="Index" class="btn btn-danger btn-sm float-right">Cancel</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+

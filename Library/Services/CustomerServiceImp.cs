@@ -13,14 +13,15 @@ namespace Library.Services
         }
         public bool Create(Customer customer)
         {
-            var sql = "INSERT INTO Customer (IsHidden,CustomerCode,CustomerTypeId,CustomerName,Sex,Dob,Pob,Phone,Address) Values(@IsHiDdden,@CustomerCode,@CustomerTypeId,@CustomerName,@Sex,@Dob,@Pob,@Phone,@Address)";
-            var roweEffect = _service.Connection.Execute(sql, new  {
+            var sql = "INSERT INTO Customer (IsHidden,CustomerCode,CustomerTypeId,CustomerName,Sex,Dob,Pob,Phone,Address) Values(@IsHidden,@CustomerCode,@CustomerTypeId,@CustomerName,@Sex,@Dob,@Pob,@Phone,@Address)";
+            var roweEffect = _service.Connection.Execute(sql, new
+            {
                 IsHidden = customer.IsHidden,
-				CustomerCode = customer.CustomerCode,
+                CustomerCode = customer.CustomerCode,
                 CustomerTypeId = customer.CustomerTypeId,
-				CustomerName = customer.CustomerName,
+                CustomerName = customer.CustomerName,
                 Sex = customer.Sex,
-				Dob = customer.Dob,
+                Dob = customer.Dob,
                 Pob = customer.Pob,
                 Phone = customer.Phone,
                 Address = customer.Address,
@@ -32,26 +33,41 @@ namespace Library.Services
         public bool Delete(int customerId)
         {
             var sql = "DELETE FROM Customer WHERE CustomerCode = @CustomerCode";
-            var roweEffect = _service.Connection.Execute(sql, new { @CustomerId = customerId});
+            var roweEffect = _service.Connection.Execute(sql, new { @CustomerId = customerId });
             return roweEffect > 0;
-            
+
         }
 
         public Customer Get(int CustomerId)
         {
             var sql = "SELECT * FROM Customer Where CustomerId=@CustomerId";
-            var cusomter = _service.Connection.QueryFirstOrDefault<Customer>(sql, new {@CustomerId = CustomerId });
+            var cusomter = _service.Connection.QueryFirstOrDefault<Customer>(sql, new { @CustomerId = CustomerId });
             return cusomter!;
         }
 
         public IEnumerable<Customer> GetAll()
         {
-            var sql = "SELECT * FROM Customer";
-            var type = "SELECT Customer.CustomerId, CustomerType.CustomerTypeName FROM Customer " +
-                "INNER JOIN CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId;";
 
-			var customers = _service.Connection.Query<Customer>(sql);
+
+            var sql = @"SELECT 
+                    Customer.CustomerId,
+                    Customer.CustomerCode,
+                    Customer.CustomerName,
+                    Customer.Sex,
+                    Customer.Dob,
+                    Customer.Pob,
+                    Customer.Phone,
+                    Customer.Address,
+                    Customer.IsHidden,
+                    CustomerType.CustomerTypeName
+                FROM 
+                    Customer
+                INNER JOIN 
+                    CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
+
+            var customers = _service.Connection.Query<Customer>(sql).ToList();
             return customers;
+
 
         }
 
