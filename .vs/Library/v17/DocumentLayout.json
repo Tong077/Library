@@ -65,8 +65,7 @@
               "RelativeToolTip": "Library\\Views\\Librarian\\Index.cshtml",
               "ViewState": "AQIAAD8AAAAAAAAAAAAUwEkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T18:17:31.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T18:17:31.044Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/GF63/Librarys/True/SqlTable/dbo.Book.sql",
               "ToolTip": "dbo.Book [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-01T18:15:53.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T18:15:53.243Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "Library\\Services\\BookServiceImp.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAC8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T18:14:44.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T18:14:44.788Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "Library\\Views\\Book\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T18:08:56.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T18:08:56.286Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "Library\\Views\\Book\\Create.cshtml",
               "ViewState": "AQIAAAIAAAAAAAAAAAAcwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T17:00:43.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T17:00:43.96Z"
             },
             {
               "$type": "Document",
@@ -125,7 +120,7 @@
               "RelativeDocumentMoniker": "Library\\Views\\Book\\Index.cshtml",
               "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Index.cshtml",
               "RelativeToolTip": "Library\\Views\\Book\\Index.cshtml",
-              "ViewState": "AQIAACgAAAAAAAAAAAAUwCsAAAAdAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAACsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-01T16:54:55.164Z",
               "EditorCaption": ""
