@@ -1,74 +1,74 @@
 ﻿
-@model Library.Models.Customer
+		@model Library.Models.Customer
 
-<div class="card">
-	<div class="card-header text-uppercase">
-		<h4 class="h4">Add New Customer</h4>
-	</div>
-	<div class="card-body">
-		<form asp-action="Store" asp-controller="Customer" method="post">
-			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-			<div class="row">
-				<div class="form-group col-sm-4">
-					<label asp-for="CustomerCode" class="control-label"></label>
-					<input asp-for="CustomerCode" placeholder="CustomerCode" class="form-control" />
-					<span asp-validation-for="CustomerCode" class="text-danger"></span>
-				</div>
-				<div class="form-group col-sm-4">
-					<label asp-for="CustomerTypeId" class="control-label">Select Type</label>
-					<select asp-for="CustomerTypeId" class="custom-select"
-							asp-items="@ViewBag.customerTypes">
-						<option >Please select CustomerType</option>
-					</select>
-				</div>
-				<div class="form-group col-sm-4">
-					<label asp-for="CustomerName" class="control-label"></label>
-					<input asp-for="CustomerName" placeholder="CustomerName" class="form-control" />
-					<span asp-validation-for="CustomerName" class="text-danger"></span>
-				</div>
+		<div class="card">
+			<div class="card-header text-uppercase">
+				<h4 class="h4">Add New Customer</h4>
 			</div>
-			<div class="row">
-				<div class="form-group col-sm-3">
-					<label asp-for="Sex" class="control-label"></label>
-					<select asp-for="Sex" class="custom-select">
-						<option>Please Select Your Sex</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
+			<div class="card-body">
+				<form asp-action="Store" asp-controller="Customer" method="post">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="row">
+						<div class="form-group col-sm-4">
+							<label asp-for="CustomerCode" class="control-label"></label>
+							<input asp-for="CustomerCode" placeholder="CustomerCode" class="form-control" />
+							<span asp-validation-for="CustomerCode" class="text-danger"></span>
+						</div>
+						<div class="form-group col-sm-4">
+							<label asp-for="CustomerTypeId" class="control-label">Select Type</label>
+							<select asp-for="CustomerTypeId" class="custom-select"
+									asp-items="@ViewBag.customerTypes">
+								<option >Please select CustomerType</option>
+							</select>
+						</div>
+						<div class="form-group col-sm-4">
+							<label asp-for="CustomerName" class="control-label"></label>
+							<input asp-for="CustomerName" placeholder="CustomerName" class="form-control" />
+							<span asp-validation-for="CustomerName" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-3">
+							<label asp-for="Sex" class="control-label"></label>
+							<select asp-for="Sex" class="custom-select">
+								<option>Please Select Your Sex</option>
+								<option value="M">Ma</option>
+								<option value="F">F</option>
 
-					</select>
-					<span asp-validation-for="Sex" class="text-danger"></span>
-				</div>
-				<div class="form-group col-sm-3">
-					<label asp-for="Dob" class="control-label"></label>
-					<input asp-for="Dob" placeholder="DOB" type="date" class="form-control" />
-					<span asp-validation-for="Dob" class="text-danger"></span>
-				</div>
-				<div class="form-group col-sm-3">
-					<label asp-for="Pob" class="control-label"></label>
-					<input asp-for="Pob" placeholder="POB" type="text" class="form-control" />
-					<span asp-validation-for="Pob" class="text-danger"></span>
-				</div>
-				<div class="form-group col-sm-3">
-					<label asp-for="Phone" class="control-label"></label>
-					<input asp-for="Phone" placeholder="PHONE" type="tel" class="form-control" />
-					<span asp-validation-for="Phone" class="text-danger"></span>
-				</div>
-			</div>
+							</select>
+							<span asp-validation-for="Sex" class="text-danger"></span>
+						</div>
+						<div class="form-group col-sm-3">
+							<label asp-for="Dob" class="control-label"></label>
+							<input asp-for="Dob" placeholder="DOB" type="date" class="form-control" />
+							<span asp-validation-for="Dob" class="text-danger"></span>
+						</div>
+						<div class="form-group col-sm-3">
+							<label asp-for="Pob" class="control-label"></label>
+							<input asp-for="Pob" placeholder="POB" type="text" class="form-control" />
+							<span asp-validation-for="Pob" class="text-danger"></span>
+						</div>
+						<div class="form-group col-sm-3">
+							<label asp-for="Phone" class="control-label"></label>
+							<input asp-for="Phone" placeholder="PHONE" type="tel" class="form-control" />
+							<span asp-validation-for="Phone" class="text-danger"></span>
+						</div>
+					</div>
 			
-			<div class="form-group">
-				<label asp-for="Address" class="control-label"></label>
-				<textarea asp-for="Address" placeholder="ADDRESS" class="form-control"></textarea>
-				<span asp-validation-for="Address" class="text-danger"></span>
+					<div class="form-group">
+						<label asp-for="Address" class="control-label"></label>
+						<textarea asp-for="Address" placeholder="ADDRESS" class="form-control"></textarea>
+						<span asp-validation-for="Address" class="text-danger"></span>
+					</div>
+					<div class="form-group form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
+						</label>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-success btn-sm float-right ml-1">Add New </button>
+						<a asp-action="Index" class="btn btn-danger btn-sm float-right">Cancel</a>
+					</div>
+				</form>
 			</div>
-			<div class="form-group form-check">
-				<label class="form-check-label">
-					<input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
-				</label>
-			</div>
-			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-sm float-right ml-1">Add New </button>
-				<a asp-action="Index" class="btn btn-danger btn-sm float-right">Cancel</a>
-			</div>
-		</form>
-	</div>
-</div>
+		</div>

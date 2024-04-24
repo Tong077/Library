@@ -11,18 +11,18 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 
-    <div class="wrapper">
+        <div class="wrapper">
 
-        <partial name="_Nav" />
+           <partial name="_Nav" />
 
-        <partial name="_Side" />
+            <partial name="_Side" />
+       
         
+            <div class="content-wrapper">
+                @RenderBody()   
 
-        <div class="content-wrapper">
-            @RenderBody()   
-
+            </div>
         </div>
-    </div>
     <script src="~/jquery/jquery.min.js"></script>
     <script src="~/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

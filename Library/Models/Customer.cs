@@ -24,7 +24,11 @@ namespace Library.Models
 
         public string? Address { get; set; }
 
-        public ICollection<CustomerType>? CustomerType { get; set; }
-        public string? CustomerTypeName { get; internal set; }
+        public ICollection<Borrow>? Borrow { get; set; }
+
+        public CustomerType? CustomerType { get; set; }
+
+      
+       
     }
 }

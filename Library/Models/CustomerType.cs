@@ -6,6 +6,6 @@
 
         public string? CustomerTypeName { get; set; }
 
-        public Customer? Customer { get; set; }
+        public ICollection <Customer>? Customer { get; set; }
     }
 }

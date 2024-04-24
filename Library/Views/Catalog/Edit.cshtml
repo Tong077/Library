@@ -1,0 +1,67 @@
+﻿@model Library.Models.Catalog
+@{
+    ViewData["Title"] = "Update Catalog";
+}
+<div class="Card">
+    <div class="card-header">
+        <p>
+
+        </p>
+    </div>
+    <div class="card-body">
+
+
+        <form asp-action="Update" asp-controller="Catalog" method="post">
+
+            <input asp-for="CatalogId" type="hidden" />
+
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="CatalogCode" class="control-label">Catalog Code</label>
+                    <input asp-for="CatalogCode" type="text" placeholder="CatalogCode" class="form-control " />
+
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="CatalogName" class="control-label">Catalog Name</label>
+                    <input asp-for="CatalogName" type="text" placeholder="CatalogName" class="form-control" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="AuthorName" class="control-label">AuthorName</label>
+                    <input asp-for="AuthorName" placeholder="AuthorName" type="text" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="PubliSher" class="control-label">PubliSher</label>
+                    <input asp-for="PubliSher" placeholder="PubliSher" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="PublishYear" class="control-label">PublishYear</label>
+                    <input asp-for="PublishYear" type="text" placeholder="PubliSher" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="PublisheDition" class="control-label">PublisheDition</label>
+                    <input asp-for="PublisheDition" type="text" placeholder="Publisheditin" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isbn" class="control-label">ISBN</label>
+                <input asp-for="Isbn" type="text" placeholder="ISBN" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input asp-for="IsHidden" type="checkbox" />
+                <label asp-for="IsHidden" class="control-label">IsHidden</label>
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-success float-right ml-1">Update</button>
+                <a asp-action="Index" class="btn btn-sm btn-danger float-right">Cancel</a>
+            </div>
+        </form>
+
+
+    </div>
+</div>

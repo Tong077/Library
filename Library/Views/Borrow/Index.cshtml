@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Library.Models.Borrow>
+@{
+    ViewData["Title"] = "Borrow";
+}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title"> Borrow List</h2>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create" class="btn btn-success float-right"> Add New Borrow</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BorrowId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Customer!.CustomerName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Librarian!.LibrarianName)
+
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BorrowDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Duedate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BorrowCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Depositamount)
+                    </th>
+            
+                    <th>
+                        @Html.DisplayNameFor(model => model.FineAmount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Memo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsHidden)
+                    </th>
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => item.BorrowId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Customer!.CustomerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Librarian!.LibrarianName)
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.BorrowDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Duedate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.BorrowCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Depositamount)
+                        </td>
+                       
+                        <td>
+                            @Html.DisplayFor(model => item.FineAmount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Memo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.IsHidden)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-action="Delete" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

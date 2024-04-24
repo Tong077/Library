@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Library.Models.Librarian>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Librarian";
 }
 <div class="card">
     <div class="card-header">
@@ -11,14 +11,14 @@
         <p>
             <a asp-action="Create" class="btn btn-primary btn-sm float-right">Add New Librarian</a>
         </p>
-        <table class="table tab-custom-content table-info">
+        <table class="table ">
             <thead>
                 <tr>
                     <th>
                         @Html.DisplayNameFor(model => model.LibrarianId)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.LibrarainName)
+                        @Html.DisplayNameFor(model => model.LibrarianName)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.LibrarainCode)
@@ -36,7 +36,7 @@
                         @Html.DisplayNameFor(model => model.Phone)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.IsHiDden)
+                        @Html.DisplayNameFor(model => model.IsHidden)
                     </th>
                 </tr>
             </thead>
@@ -48,7 +48,7 @@
                             @Html.DisplayFor(model => item.LibrarianId)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.LibrarainName)
+                            @Html.DisplayFor(model => item.LibrarianName)
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.LibrarainCode)
@@ -66,7 +66,11 @@
                             @Html.DisplayFor(model => item.Phone)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.IsHiDden)
+                            @Html.DisplayFor(model => item.IsHidden)
+                        </td>
+                        <td>
+                            <a asp-controller="Librarian" asp-action="Edit" asp-route-LibrarianId="@item.LibrarianId">Edit</a>
+                            <a asp-controller="Librarian" asp-action="Delete" asp-route-LibrarianId="@item.LibrarianId"> Delete</a>
                         </td>
                     </tr>
                 }

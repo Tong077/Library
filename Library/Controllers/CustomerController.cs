@@ -21,16 +21,9 @@ namespace Library.Controllers
 
         public IActionResult Index()
         {
-            var customers = _service.GetAll();
+            var customers = _service.GetAll().ToList();
 
-            // Fetch CustomerType names separately and populate CustomerTypeName property
-            foreach (var customer in customers)
-            {
-                var customerType = _ctx.Get(customer.CustomerTypeId);
-                customer.CustomerTypeName = customerType?.CustomerTypeName;
-            }
-
-            return View(customers);
+            return View("Index",customers);
         }
 
         [HttpGet]
@@ -85,13 +78,27 @@ namespace Library.Controllers
         [HttpGet]
         public IActionResult Delete(int CustomerId)
         {
-            return View();
+            var customertype = _ctx.GetAll();
+            ViewBag.customerTypes = new SelectList(customertype, "CustomerTypeId", "CustomerTypeName");
+
+            var cus = _service.Get(CustomerId);
+            return View("Delete",cus);
         }
 
         [HttpPost]
         public IActionResult Destroy(int customerId)
         {
-            return View();
+            if(!ModelState.IsValid)
+            {
+                return View("Delete",customerId);
+            }
+            var result = _service.Delete(customerId);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            
+            return View("Delete",customerId);
         }
     }
 }

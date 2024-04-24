@@ -3,27 +3,12 @@
   "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\book\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\borrowserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\book\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\librarian\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/GF63/Librarys/True/SqlTable/dbo.Book.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\borrow\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\borrow\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,72 +42,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Librarian\\Index.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Librarian\\Index.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Librarian\\Index.cshtml",
-              "RelativeToolTip": "Library\\Views\\Librarian\\Index.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAUwEkAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T18:17:31.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.Book [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/GF63/Librarys/True/SqlTable/dbo.Book.sql",
-              "ToolTip": "dbo.Book [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-01T18:15:53.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\BookServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
-              "RelativeToolTip": "Library\\Services\\BookServiceImp.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC8AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T18:14:44.788Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Book\\Edit.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Edit.cshtml",
-              "RelativeToolTip": "Library\\Views\\Book\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Borrow\\Index.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Borrow\\Index.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Borrow\\Index.cshtml",
+              "RelativeToolTip": "Library\\Views\\Borrow\\Index.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEAAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T18:08:56.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Create.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Book\\Create.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Create.cshtml",
-              "RelativeToolTip": "Library\\Views\\Book\\Create.cshtml",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAcwC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T17:00:43.96Z"
+              "WhenOpened": "2024-04-24T05:24:04.571Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Index.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Book\\Index.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Index.cshtml",
-              "RelativeToolTip": "Library\\Views\\Book\\Index.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAACsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T16:54:55.164Z",
+              "Title": "BorrowServiceImp.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\BorrowServiceImp.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BorrowServiceImp.cs",
+              "RelativeToolTip": "Library\\Services\\BorrowServiceImp.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:02:25.351Z",
               "EditorCaption": ""
             }
           ]

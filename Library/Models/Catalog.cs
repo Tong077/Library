@@ -10,6 +10,6 @@
         public string? AuthorName { get; set; }
         public string? PubliSher { get; set; }
         public string? PublishYear { get; set; }
-        public string? Publisheditin { get; set; }
+        public string? PublisheDition { get; set; }
     }
 }

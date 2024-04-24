@@ -13,12 +13,12 @@ namespace Library.Services
         }
         public bool Create(Librarian librarian)
         {
-            var sql = "INSERT INTO Librarain (IsHiDden,LibrarainCode,LibrarainName,Sex,Dob,Pob,Phone) Values(@IsHiDden,@LibrarainCode,@LibrarainName,@Sex,@Dob,@Pob,@Phone)";
+            var sql = "INSERT INTO Librarian(IsHidden,LibrarainCode,LibrarianName,Sex,Dob,Pob,Phone) Values(@IsHidden,@LibrarainCode,@LibrarianName,@Sex,@Dob,@Pob,@Phone)";
             var roweEffect = _service.Connection.Execute(sql, new
             {
-                IsHiDden = librarian.IsHiDden,
-                LibrarianCode = librarian.LibrarainCode,
-                LibrarianName = librarian.LibrarainName,
+                IsHidden = librarian.IsHidden,
+                LibrarainCode = librarian.LibrarainCode,
+                LibrarianName = librarian.LibrarianName,
                 Sex = librarian.Sex,
                 Dob = librarian.Dob,
                 Pob = librarian.Pob,
@@ -29,16 +29,16 @@ namespace Library.Services
 
         public bool Delete(int librarianId)
         {
-            var sql = "DELETE FROM Librarain WHERE LibrarianId=@LibrarianId";
+            var sql = "DELETE FROM Librarian WHERE LibrarianId=@LibrarianId";
             var roweEffect = _service.Connection.Execute(sql, new { @LibrarianId = librarianId });
             return roweEffect > 0;
         }
 
         public Librarian Get(int LibrarianId)
         {
-            var sql = "SELECT * FROM Librarain Where LibrarainId=@LibrarainId";
+            var sql = "SELECT * FROM Librarian Where LibrarianId=@LibrarianId";
             var librarain = _service.Connection.QueryFirstOrDefault<Librarian>(sql, new {LibrarianId});
-            return librarain;
+            return librarain!;
         }
 
         public IEnumerable<Librarian> GetAll()
@@ -50,7 +50,7 @@ namespace Library.Services
 
         public bool Update(Librarian librarian)
         {
-            var sql = "UPDATE Librarain SET IsHiDden=@IsHiDden,LibrarainCode=@LibrarainCode,LibrarainName=@LibrarainName,Sex=@Sex,Dob=@Dob,Pob=@Pob,Phone=@Phone";
+            var sql = "UPDATE Librarian SET IsHidden=@IsHidden,LibrarainCode=@LibrarainCode,LibrarianName=@LibrarianName,Sex=@Sex,Dob=@Dob,Pob=@Pob,Phone=@Phone Where LibrarianId=@LibrarianId";
             var roweEffect = _service.Connection.Execute(sql, librarian);
             return roweEffect > 0;
         }

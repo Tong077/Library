@@ -32,7 +32,7 @@ namespace Library.Services
 
         public bool Delete(int customerId)
         {
-            var sql = "DELETE FROM Customer WHERE CustomerCode = @CustomerCode";
+            var sql = "DELETE FROM Customer WHERE CustomerId = @CustomerId";
             var roweEffect = _service.Connection.Execute(sql, new { @CustomerId = customerId });
             return roweEffect > 0;
 
@@ -59,13 +59,23 @@ namespace Library.Services
                     Customer.Phone,
                     Customer.Address,
                     Customer.IsHidden,
+                    CustomerType.CustomerTypeId,
                     CustomerType.CustomerTypeName
                 FROM 
                     Customer
                 INNER JOIN 
                     CustomerType ON Customer.CustomerTypeId = CustomerType.CustomerTypeId";
 
-            var customers = _service.Connection.Query<Customer>(sql).ToList();
+            var customers = _service.Connection.Query<Customer, CustomerType, Customer>(sql,
+
+                       (customer, customerType) =>
+                       {
+                           customer.CustomerType = customerType;
+                           return customer;
+                       },
+                       splitOn: "CustomerTypeId");
+
+
             return customers;
 
 

@@ -13,17 +13,17 @@ namespace Library.Services
         }
         public bool Create(Catalog catalog)
         {
-            var sql = "INSERT INTO Catalog (IsHidden,CatalogCode,CatalogName,Isbn,AuthorName,PubliSher,PublishYear,Publisheditin) Values(@IsHidden,@CatalogCode,@CatalogName,@Isbn,@AuthorName,@PubliSher,@PulishYear,@Publisheditin)";
+            var sql = "INSERT INTO Catalog (IsHidden,CatalogCode,CatalogName,Isbn,AuthorName,PubliSher,PublishYear,PublisheDition) Values(@IsHidden,@CatalogCode,@CatalogName,@Isbn,@AuthorName,@PubliSher,@PublishYear,@PublisheDition)";
             var roweEffect = _service.Connection.Execute(sql, new
             {
-                IsHiiden = catalog.IsHidden,
+                IsHidden = catalog.IsHidden,
                 CatalogCode = catalog.CatalogCode,
                 CatalogName = catalog.CatalogName,
                 Isbn = catalog.Isbn,
                 AuthorName = catalog.AuthorName,
                 PubliSher = catalog.PubliSher,
                 PublishYear = catalog.PublishYear,
-                Publisheditin = catalog.Publisheditin,
+                PublisheDition = catalog.PublisheDition,
             });
             return roweEffect > 0;
         }
@@ -31,7 +31,7 @@ namespace Library.Services
         public bool Delete(int catalogId)
         {
             var sql = "DELETE FROM Catalog WHERE CatalogId = @CatalogId";
-            var roweEffect = _service.Connection.Execute(sql, new { @Catalog = catalogId });
+            var roweEffect = _service.Connection.Execute(sql, new { @CatalogId = catalogId });
             return roweEffect > 0;
         }
 
@@ -51,7 +51,7 @@ namespace Library.Services
 
         public bool Update(Catalog catalog)
         {
-            var sql = "UPDATE Catalog SET IsHiiden=@IsHidden, CatalogCode=@CatalogCode,Isbn=@Isbn,AuthorName=@AuthorName,PubliSher=@Publisher,PublishYear=@PublishYear,Publisheditin=@Publisheditin Where CatalogId=@CatalogId";
+            var sql = "UPDATE Catalog SET IsHidden=@IsHidden,CatalogName=@CatalogName,CatalogCode=@CatalogCode,Isbn=@Isbn,AuthorName=@AuthorName,PubliSher=@PubliSher,PublishYear=@PublishYear,PublisheDition=@PublisheDition Where CatalogId=@CatalogId";
             var roweEffect = _service.Connection.Execute(sql,  catalog );
             return roweEffect > 0;
         }

@@ -1,6 +1,6 @@
 ﻿@model Library.Models.Librarian
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Update Librarain";
 }
 
 <div class="card">
@@ -8,11 +8,13 @@
         <h4 class="title">Librarain</h4>
     </div>
     <div class="card-body">
-        <form asp-action="Update" asp-controller="Librarian">
+        <form asp-action="Update" asp-controller="Librarian" method="post">
+
+            <input asp-for="LibrarianId" type="hidden" />
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label asp-for="LibrarainName" class="control-label">Librarain Name</label>
-                    <input type="text" placeholder="LibrarainName" asp-for="LibrarainName" class="form-control" />
+                    <label asp-for="LibrarianName" class="control-label">Librarain Name</label>
+                    <input type="text" placeholder="LibrarainName" asp-for="LibrarianName" class="form-control" />
                 </div>
                 <div class="form-group col-sm-6">
                     <label asp-for="LibrarainCode" class="control-label">Librarain Code</label>
@@ -23,22 +25,22 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label asp-for="Pob" class="control-label">POB</label>
-                    <input type="date" placeholder="POB" asp-for="Pob" class="form-control" />
+                    <input type="text" placeholder="POB" asp-for="Pob" class="form-control" />
                 </div>
                 <div class="form-group col-sm-6">
                     <label asp-for="Sex" class="control-label">Sex</label>
-                    <select class="custom-select">
+                    <select class="custom-select" asp-for="Sex">
                         <option>Please Select Your Sex</option>
 
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label asp-for="Dob" class="control-label">DOB</label>
-                    <input type="text" placeholder="DOB" asp-for="Dob" class="form-control" />
+                    <input type="date" placeholder="DOB" asp-for="Dob" class="form-control" />
                 </div>
                 <div class="form-group col-sm-6">
                     <label asp-for="Phone" class="control-label">Phone</label>
@@ -47,7 +49,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsHiDden" /> @Html.DisplayNameFor(model => model.IsHiDden)
+                    <input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
                 </label>
             </div>
             <div class="form-group">

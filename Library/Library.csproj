@@ -8,13 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Views\AppUserpermission\" />
-    <Folder Include="Views\Borrow\" />
     <Folder Include="Views\BorrowDetail\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>

@@ -1,0 +1,78 @@
+﻿@model Library.Models.Borrow
+@{
+    ViewData["Title"] = "Update Borrow";
+}
+<div class="card">
+    <div class="card-header">
+        <h4 class="title">Update Borrow</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Update" asp-controller="Borrow" method="post">
+            <input asp-for="BorrowId"  type="hidden"/>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="CustomerId" class="control-label">Customer Name</label>
+                    <select asp-for="CustomerId" class="custom-select"
+                            asp-items="@ViewBag.Customer">
+                        <option> Please Select Customer Name</option>
+
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="LibrarianId" class="control-label">Librarian Name</label>
+                    <select asp-for="LibrarianId" class="custom-select"
+                            asp-items="@ViewBag.librarians">
+                        <option> Please Select Librarian Name</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="BorrowDate" class="control-label">BorrowDate</label>
+                    <input type="date" placeholder="BorrowDate" asp-for="BorrowDate" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="Duedate" class="control-label">DueDate</label>
+                    <input type="date" placeholder="DueDate" asp-for="Duedate" class="form-control" />
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-6">
+                    <label asp-for="BorrowCode" class="control-label"> BorrowCode</label>
+                    <input type="text" placeholder="BorrowCode" asp-for="BorrowCode" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="Memo" class="control-label"> Memo</label>
+                    <input type="text" asp-for="Memo" placeholder="Memo" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="Depositamount" class="control-label">Depositamount</label>
+                    <input type="text" placeholder="DespositamountOB" asp-for="Depositamount" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6 ">
+                    <label asp-for="FineAmount" class="control-label">FineAmount</label>
+                    <input class="form-control" placeholder="Fine Amount" type="text" asp-for="FineAmount" />
+
+                </div>
+
+            </div>
+            <div class="form-group form-check">
+
+                <input type="checkbox" asp-for="IsHidden" class="form-check-input" />
+                <label asp-for="IsHidden" class="form-check-label ml-1"> IsHidden</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Update Borrow</button>
+                <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

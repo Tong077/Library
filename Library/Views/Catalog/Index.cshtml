@@ -1,16 +1,16 @@
 ﻿@model IEnumerable<Library.Models.Catalog>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Catalog";
 }
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Catalog</h3>
+        <h2 class="card-title">All New Catalog</h2>
     </div>
     <div class="card-body">
         <p>
-            <a asp-action="Create" class="btn btn-outline-danger btn-sm float-right">Create</a>
+            <a asp-action="Create" class="btn btn-success float-right"><i class="fa-solid fa-plus"></i> Add New</a>
         </p>
-        <table id="example1" class="table table-bordered table-striped-columns">
+        <table id="example1" class="table">
             <thead class="tab-content">
                 <tr>
                     <th>
@@ -32,7 +32,7 @@
                         @Html.DisplayNameFor(model => model.PublishYear)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Publisheditin)
+                        @Html.DisplayNameFor(model => model.PublisheDition)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.IsHidden)
@@ -40,7 +40,9 @@
                     <th>
                         @Html.DisplayNameFor(model => model.Isbn)
                     </th>
-                   
+                   <th>
+                       Action
+                   </th>
                 </tr>
 
             </thead>
@@ -48,34 +50,37 @@
                 @foreach(var item in Model)
                 {
                     <tr>
-                        <th>
+                        <td>
                             @Html.DisplayFor(modelItem => item.CatalogId)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.CatalogCode)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.CatalogName)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.AuthorName)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.PubliSher)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.PublishYear)
-                        </th>
-                        <th>
-                            @Html.DisplayFor(modelItem => item.Publisheditin)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PublisheDition)
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.IsHidden)
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.Isbn)
-                        </th>
-
+                        </td>
+                        <td>
+                            <a asp-controller="Catalog" asp-action="Edit" asp-route-CatalogId="@item.CatalogId" class="btn btn-sm btn-success"> Edit</a>
+                            <a asp-controller="Catalog" asp-action="Delete" asp-route-CatalogId="@item.CatalogId" class="btn btn-sm btn-danger"> Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
