@@ -7,7 +7,9 @@ namespace Library.Services
         bool Create (BorrowDetail borrowDetail);
         bool Update (BorrowDetail borrowDetail);
         bool Delete (int borrowDetailId);
-        IEnumerable<BorrowDetail> GetAll ();
+
+        IEnumerable<BorrowDetail> GetAll();
+
         BorrowDetail Get (int BorrowDetailId);
     }
 }

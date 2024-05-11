@@ -4,7 +4,7 @@ using Library.Models;
 
 namespace Library.Services
 {
-    public class BorrowDetailServiceImp :IBorrowDetailService
+    public class BorrowDetailServiceImp : IBorrowDetailService
     {
         private readonly DapperDbConnext _service;
         public BorrowDetailServiceImp(DapperDbConnext service)
@@ -26,6 +26,9 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
+
+
+
         public bool Delete(int borrowDetailId)
         {
             var sql = "DELETE FROM BorrowDetail Where BorrowDetailId=@BorrowDetailId)";
@@ -36,17 +39,17 @@ namespace Library.Services
 
         public BorrowDetail Get(int BorrowDetailId)
         {
-           var sql = "SELECT * FROM BorrowDetail WHERE BorrowDetailId=@BorrowDetailId)";
+            var sql = "SELECT * FROM BorrowDetail WHERE BorrowDetailId=@BorrowDetailId)";
             var borrowdetail = _service.Connection.QueryFirstOrDefault<BorrowDetail>(sql, new { BorrowDetailId });
-            
-            return borrowdetail;
+
+            return borrowdetail!;
         }
 
         public IEnumerable<BorrowDetail> GetAll()
         {
             var sql = "SELECT * FROM BorrowDetail";
             var borrowdetail = _service.Connection.Query<BorrowDetail>(sql);
-            return borrowdetail;
+            return borrowdetail!;
         }
 
         public bool Update(BorrowDetail borrowDetail)

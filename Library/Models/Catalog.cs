@@ -11,5 +11,7 @@
         public string? PubliSher { get; set; }
         public string? PublishYear { get; set; }
         public string? PublisheDition { get; set; }
+
+        public ICollection<Book>? Book {  get; set; }
     }
 }

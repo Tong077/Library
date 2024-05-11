@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\Images\\images (1).jpg",
+      "PackagePath": "staticwebassets\\Images\\images (1).jpg"
+    },
+    {
       "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\admin-lte\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\admin-lte\\css\\adminlte.css"
     },
@@ -279,6 +283,34 @@
     {
       "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\jquery\\jquery.min.js",
       "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.all.js"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.css"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.d.ts"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.js"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Library.Microsoft.AspNetCore.StaticWebAssets.props",

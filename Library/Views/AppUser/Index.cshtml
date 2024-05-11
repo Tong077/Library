@@ -6,7 +6,7 @@
     Layout = "_Layout";
 }
 <p>
-    <a asp-action="Create" class="btn btn-primary float-lg-right">Add New</a>
+    <a asp-action="Create" class="btn btn btn-success btn-sm float-lg-right"> Add New</a>
 </p>
 <table class="table">
     <thead>
@@ -46,10 +46,8 @@
                     @Html.DisplayFor(ModelAppUser => appuser.Password)
                 </td>
                 <td>
-                   
-
-                    <a asp-controller="AppUser" asp-action="Edit" asp-route-AppUserId="@appuser.AppUserId" class="btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                    <a asp-controller="AppUser" asp-action="Delete" asp-route-AppUserId="@appuser.AppUserId" class="btn btn-outline-danger"><i class="fa-solid fa-pen-to-square"></i> Delete</a>
+                    <a asp-controller="AppUser" asp-action="Edit" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-success"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                    <a asp-controller="AppUser" asp-action="Delete" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-danger"><i class="fa-solid fa-pen-to-square"></i> Delete</a>
                 </td>
             </tr>
         }

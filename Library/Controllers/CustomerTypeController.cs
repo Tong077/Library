@@ -18,6 +18,7 @@ namespace Library.Controllers
 
 		public IActionResult Index()
         {
+      
             var customes = _service.GetAll();
             return View("Index",customes);
         }

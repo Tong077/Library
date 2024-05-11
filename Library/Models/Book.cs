@@ -10,5 +10,9 @@ namespace Library.Models
         public int? CatalogId { get; set; }
         public string? BookCode { get; set; }
         public string? BookDescription { get; set; }
+
+
+        public ICollection<BorrowDetail>? BorrowDetail { get; set; }
+        public Catalog? Catalog { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace Library.Services
 			var roweEffect = _service.Connection.Execute(sql, new
 			{
 				IsHiDden = appUser.IsHiDden,
-				Username = appUser.UserName,
+				UserName = appUser.UserName,
 				Password = appUser.Password,
 			});
 			return roweEffect > 0;

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Library.Models.AppuserPermission>
+@{
+    ViewData["Title"] = "UserPermission";
+}
+<div class="card">
+    <div class="card-header">
+        <h2 class="title">UserPermission</h2>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create"> Add New Permission</a>
+        </p>
+        <table class="table">
+           <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AppUserPermissionId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AppUserId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserPermission)
+                    </th>
+                </tr>
+           </thead>
+            @foreach(var item in Model)
+            {
+                @* <tr>
+                    <td>
+                        @Html.DisplayFor(item =>)
+                    </td>
+                </tr> *@
+            }
+
+            
+        </table>
+    </div>
+</div>

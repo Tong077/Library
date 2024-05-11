@@ -8,17 +8,17 @@
     <a asp-action="Create" class="btn btn-outline-success btn-sm float-lg-right"><i class="fa-solid fa-plus"></i> Create</a>
 </p>
 <table class="table">
-    <thead class="table-warning">
+    <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.CustomerTypeId)
             </th>
-           <th>
+            <th>
                 @Html.DisplayNameFor(model => model.CustomerTypeName)
-           </th>
-           <th>
-               Action
-           </th>
+            </th>
+            <th>
+                Action
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -34,9 +34,10 @@
                 <td>
                     <a asp-controller="CustomerType" asp-action="Edit" asp-route-CustomerTypeId="@item.CustomerTypeId">Edit</a>
                     <a asp-controller="CustomerType" asp-action="Delete" asp-route-CustomerTypeId="@item.CustomerTypeId">Delete</a>
-                   
+
                 </td>
             </tr>
         }
     </tbody>
 </table>
+

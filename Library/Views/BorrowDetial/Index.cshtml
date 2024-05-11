@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Library.Models.BorrowDetail>
+@{
+    ViewData["Title"] = "Borrow Detail";
+}
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title"> Borrow Detail</h2>
+    </div>
+    <div class="card-body">
+        <p>
+            <a asp-action="Create" class="btn btn-success float-right"> Add New Borrow</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.BorrowId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookId)
+
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Note)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IsReturn)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ReturnDate)
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(model => item.BorrowId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.BookId)
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Note)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.IsReturn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.ReturnDate)
+                        </td>
+
+                        <td>
+                            <a asp-action="Edit" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-action="Delete" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,29 +1,62 @@
 ﻿using Library.Models;
 using Library.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Library.Controllers
 {
     public class BorrowDetialController : Controller
     {
+        private readonly ICustomerService _cus;
+        private readonly ICatalogService _ca;
+        private readonly IBorrowService _borrow;
+        private readonly IBookService _book;
         private readonly IBorrowDetailService _service;
-        public BorrowDetialController(IBorrowDetailService service)
+        public BorrowDetialController(IBorrowDetailService service, IBorrowService borrow, IBookService book, ICatalogService ca, ICustomerService cus)
         {
             _service = service;
+            _borrow = borrow;
+            _book = book;
+            _ca = ca;
+            _cus = cus;
         }
-		public IActionResult Index()
+        public IActionResult Index()
         {
-            return View();
+            var borrowdetail = _service.GetAll();
+            return View("Index",borrowdetail);
         }
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            //var customer = _borrow.GetAll();
+            //ViewBag.Borrow = new SelectList(customer, "BorrowId", "BorrowCode");
+            var customer = _cus.GetAll();
+            ViewBag.Customer = new SelectList(customer, "CustomerId", "CustomerName");
+
+            //-------------------------------------------------------------
+
+
+            //var book = _book.GetAll();
+
+            //ViewBag.Book = new SelectList(book, "BookId", "CatalogId", "CatalogName");
+            var catalog = _ca.GetAll();
+            ViewBag.Catalog = new SelectList(catalog,"CatalogId", "CatalogName");
+            return View("Create");
         }
+
         [HttpPost]
-        public IActionResult Create(BorrowDetail borrowdetail)
+        public IActionResult Store(BorrowDetail borrowdetail)
         {
-            return View();
+            if(!ModelState.IsValid)
+            {
+                return View("Create", borrowdetail);
+            }
+            var result = _service.Create(borrowdetail);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Create", borrowdetail);
         }
 
         [HttpGet]

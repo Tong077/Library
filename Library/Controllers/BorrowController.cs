@@ -10,14 +10,16 @@ namespace Library.Controllers
         private readonly IBorrowService _service;
         private readonly ICustomerService _cus;
         private readonly ILibrarianService _lia;
-        public BorrowController(IBorrowService service,ICustomerService cus,ILibrarianService lia)
+        private readonly IBorrowDetailService _borrowdetail;
+        public BorrowController(IBorrowService service, ICustomerService cus, ILibrarianService lia, IBorrowDetailService borrowdetail)
         {
             _service = service;
             _cus = cus;
             _lia = lia;
+            _borrowdetail = borrowdetail;
         }
 
-		public IActionResult Index()
+        public IActionResult Index()
         {
             var borrows = _service.GetAll();
             return View("Index", borrows);
@@ -33,22 +35,28 @@ namespace Library.Controllers
             var librarian = _lia.GetAll();
             ViewBag.librarians = new SelectList(librarian, "LibrarianId", "LibrarianName");
 
-
+            var borrow = new Borrow();
+            var borrodetail = new BorrowDetail();
+            var model = new BorrowandBorrowDetail
+            {
+                Borrow = borrow,
+                BorrowDetail = borrodetail,
+            };
             return View("Create");
         }
         [HttpPost]
-        public IActionResult Store(Borrow borrow)
+        public IActionResult Store(Borrow borrow, BorrowDetail borrowDetail)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                return View("Create",borrow);
+                return View("Create");
             }
-            var result = _service.Create(borrow);
+            var result = _service.Create(borrow, borrowDetail);
             if (result)
             {
                 return RedirectToAction("Index");
             }
-            return View("Create",borrow);
+            return View("Create");
         }
 
         [HttpGet]

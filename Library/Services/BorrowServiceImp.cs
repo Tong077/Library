@@ -14,27 +14,41 @@ namespace Library.Services
             this._service = service;
         }
 
-        public bool Create(Borrow borrow)
+        public bool Create(Borrow borrow, BorrowDetail borrowDetail)
         {
-
-            var sql = "INSERT INTO Borrow(IsHidden,CustomerId,LibrarianId,BorrowDate,BorrowCode,Depositamount,Duedate,FineAmount,Memo) Values(@IsHidden,@CustomerId,@LibrarianId,@BorrowDate,@BorrowCode,@Depositamount,@Duedate,@FineAmount,@Memo)";
-            var rowEffect = _service.Connection.Execute(sql, new
+            using (var connection = _service.Connection)
             {
-                // Access properties of borrow.Borrow with null checks
-                IsHidden = borrow.IsHidden,
-                CustomerId = borrow.CustomerId,
-                LibrarianId = borrow.LibrarianId,
-                BorrowDate = borrow.BorrowDate,
-                BorrowCode = borrow.BorrowCode,
-                Depositamount = borrow.Depositamount,
-                Duedate = borrow.Duedate,
-                FineAmount = borrow.FineAmount,
-                Memo = borrow.Memo,
-            });
+                connection.Open();
+                using (var transaction = connection.BeginTransaction())
+                {
+                    try
+                    {
+                        string insertBorrowQuery = @"
+                    INSERT INTO Borrow (IsHidden, CustomerId, LibrarianId, BorrowDate, BorrowCode, Depositamount, Duedate, FineAmount, Memo) 
+                    VALUES (@IsHidden, @CustomerId, @LibrarianId, @BorrowDate, @BorrowCode, @Depositamount, @Duedate, @FineAmount, @Memo);
+                    SELECT SCOPE_IDENTITY();"; // Get the ID of the inserted Borrow record
 
-            return rowEffect > 0;
+                        int borrowId = connection.ExecuteScalar<int>(insertBorrowQuery, borrow, transaction: transaction);
 
+                        string insertDetailsQuery = @"
+                    INSERT INTO BorrowDetail (BorrowId, BookId, Note, IsReturn, ReturnDate) 
+                    VALUES (@BorrowId, @BookId, @Note, @IsReturn, @ReturnDate);";
+
+                        borrowDetail.BorrowId = borrowId; // Set the BorrowId for the BorrowDetail
+                        connection.Execute(insertDetailsQuery, borrowDetail, transaction: transaction);
+
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+            }
+            return true;
         }
+
 
         public bool Delete(int borrowId)
         {

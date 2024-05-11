@@ -5,7 +5,11 @@ namespace Library.Models
     public class AppuserPermission
     {
         public int AppUserPermissionId { get; set; }
-        public int AppUserId {  get; set; }
+
+        [ForeignKey(nameof(AppUser))]
+        public int AppUserId { get; set; }
         public string? UserPermission { get; set; }
+
+        public AppUser? AppUser { get; set; }
     }
 }

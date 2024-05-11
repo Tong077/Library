@@ -10,7 +10,7 @@
         <form asp-action="Store" asp-controller="Book" method="post">
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label asp-for="CatalogId" class="control-label">Catalog Id</label>
+                    <label asp-for="CatalogId" class="control-label">Catalog Name</label>
                     <select asp-for="CatalogId" asp-items="@ViewBag.catalogs" class="custom-select">
                         <option>Please Select Catalog Name</option>
                     </select>
@@ -21,20 +21,19 @@
                 </div>
 
             </div>
-            <div class="row">
-                <div class="form-group col-sm-6">
-                    <label asp-for="BookDescription" class="control-label">BookDescription</label>
-                    <input type="text" placeholder="BookDescription" asp-for="BookDescription" class="form-control" />
-                </div>
+            <div class="form-group">
+
+                <label asp-for="BookDescription" class="control-label">BookDescription</label>
+                <input type="text" placeholder="BookDescription" asp-for="BookDescription" class="form-control" />
+
+
+            </div>
+
+            <div class="form-group form-check">
+                <input class="form-check-input" asp-for="IsHidden" />
+                <label class="form-check-label"> IsHidden</label>
                
             </div>
-           
-           
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" asp-for="IsHidden" /> @Html.DisplayNameFor(model => model.IsHidden)
-                        </label>
-                    </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Add New Book</button>
                 <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>

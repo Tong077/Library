@@ -4,7 +4,7 @@ using Library.Models;
 
 namespace Library.Services
 {
-    public class BookServiceImp :IBookService
+    public class BookServiceImp : IBookService
     {
         private readonly DapperDbConnext _service;
         public BookServiceImp(DapperDbConnext service)
@@ -30,7 +30,7 @@ namespace Library.Services
         {
             var sql = "DELETE FROM BOOK WHERE BookId = @BookId";
             var roweEffect = _service.Connection.Execute(sql, new { @BookId = bookId });
-            
+
             return roweEffect > 0;
         }
 
@@ -43,8 +43,23 @@ namespace Library.Services
 
         public IEnumerable<Book> GetAll()
         {
-            var sql = "SELECT * FROM Book";
-            var books = _service.Connection.Query<Book>(sql);
+            var sql = @"SELECT
+                            Book.BookId,
+                            Book.BookCode,
+                            Book.BookDescription,
+                            Book.IsHidden,
+                            Book.CatalogId,
+                            Catalog.CatalogName
+                        FROM
+                            Book
+                        INNER JOIN
+                            Catalog ON Book.CatalogId = Catalog.CatalogId";
+            var books = _service.Connection.Query<Book, Catalog, Book>(sql,
+                (book, catalog) =>
+                {
+                    book.Catalog = catalog;
+                    return book;
+                }, splitOn: "CatalogId");
             return books;
         }
 
@@ -52,7 +67,7 @@ namespace Library.Services
         {
             var sql = "UPDATE Book SET IsHidden=@IsHidden, CatalogId=@CatalogId,BookCode=@BookCode,BookDescription=@BookDescription WHERE BookId=@BookId";
             var roweEffect = _service.Connection.Execute(sql, book);
-            
+
             return roweEffect > 0;
         }
     }

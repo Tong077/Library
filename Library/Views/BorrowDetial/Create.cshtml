@@ -1,0 +1,52 @@
+﻿@model Library.Models.BorrowDetail
+@{
+    ViewData["Title"] = "Add New Borrow";
+}
+<div class="Card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+
+
+        <form asp-action="Store" asp-controller="BorrowDetial" method="post">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="BorrowId" class="control-label">Select Customer</label>
+                    <select asp-for="BorrowId" class="custom-select" asp-items="@ViewBag.Customer">
+                        <option>Please select Customer Name</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="BookId" class="control-label">Select Book Name</label>
+                    <select asp-for="BookId" class="custom-select" asp-items="@ViewBag.Catalog">
+                        <option>Please select Book Name</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label asp-for="ReturnDate" class="control-label">ReturnDate</label>
+                    <input asp-for="ReturnDate" placeholder="ReturnDate" type="date" class="form-control" />
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label asp-for="Note" class="control-label">Note</label>
+                    <input asp-for="Note" placeholder="Note" type="text" class="form-control" />
+                </div>
+            </div>
+           
+       
+            <div class="form-group">
+                <input asp-for="IsReturn" type="checkbox" class="form-check-input ml-1" />
+                <label asp-for="IsReturn" class="control-label ml-4">IsReturn</label>
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-sm btn-success float-right ml-1">Submit</button>
+                <a asp-action="Index" class="btn btn-sm btn-danger float-right">Cancel</a>
+            </div>
+        </form>
+
+
+    </div>
+</div>
