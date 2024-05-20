@@ -69,8 +69,8 @@
                             @Html.DisplayFor(model => item.IsHidden)
                         </td>
                         <td>
-                            <a asp-controller="Librarian" asp-action="Edit" asp-route-LibrarianId="@item.LibrarianId">Edit</a>
-                            <a asp-controller="Librarian" asp-action="Delete" asp-route-LibrarianId="@item.LibrarianId"> Delete</a>
+                            <a asp-controller="Librarian" asp-action="Edit" asp-route-LibrarianId="@item.LibrarianId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-controller="Librarian" asp-action="Delete" asp-route-LibrarianId="@item.LibrarianId" class="btn btn-sm btn-danger"> Delete</a>
                         </td>
                     </tr>
                 }

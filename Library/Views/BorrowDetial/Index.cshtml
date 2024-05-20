@@ -10,7 +10,7 @@
         <p>
             <a asp-action="Create" class="btn btn-success float-right"> Add New Borrow</a>
         </p>
-        <table class="table">
+        <table id="example1" class="table table-bordered table-striped">
             <thead>
                 <tr>
 
@@ -60,8 +60,8 @@
                         </td>
 
                         <td>
-                            <a asp-action="Edit" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
-                            <a asp-action="Delete" asp-controller="Borrow" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                            <a asp-action="Edit" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-action="Delete" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" class="btn btn-sm btn-danger">Delete</a>
                         </td>
 
                     </tr>

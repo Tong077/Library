@@ -44,22 +44,26 @@ namespace Library.Services
         public IEnumerable<Book> GetAll()
         {
             var sql = @"SELECT
-                            Book.BookId,
-                            Book.BookCode,
-                            Book.BookDescription,
-                            Book.IsHidden,
-                            Book.CatalogId,
-                            Catalog.CatalogName
-                        FROM
-                            Book
-                        INNER JOIN
-                            Catalog ON Book.CatalogId = Catalog.CatalogId";
+                           Book.BookId,
+                           Book.BookCode,
+                           Book.BookDescription,
+                           Book.IsHidden,
+                           Book.CatalogId,
+                           Catalog.CatalogName
+                       FROM
+                           Book
+                       INNER JOIN
+                           Catalog ON Book.CatalogId = Catalog.CatalogId";
+            int pageNumber = 1;
+            int pageSize = 10;
             var books = _service.Connection.Query<Book, Catalog, Book>(sql,
                 (book, catalog) =>
                 {
                     book.Catalog = catalog;
                     return book;
-                }, splitOn: "CatalogId");
+                }, splitOn: "CatalogId",
+                param: new { Offset = (pageNumber - 1) * pageSize, PageSize = pageSize });
+
             return books;
         }
 

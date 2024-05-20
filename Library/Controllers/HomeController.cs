@@ -39,5 +39,9 @@ namespace Library.Controllers
 
             return View("Index", book);
         }
+        public IActionResult AreaChate()
+        {
+            return View("AreaChate");
+        }
     }
 }

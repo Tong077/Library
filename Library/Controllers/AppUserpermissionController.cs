@@ -1,55 +1,105 @@
 ﻿using Library.Models;
 using Library.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Library.Controllers
 {
     public class AppUserpermissionController : Controller
     {
         private readonly IAppUserpermissionService _service;
-        public AppUserpermissionController(IAppUserpermissionService service)
+        private readonly IAppUserService _user;
+
+        public AppUserpermissionController(IAppUserService user, IAppUserpermissionService service)
         {
+            _user = user;
             _service = service;
         }
+
+
         public IActionResult Index()
         {
-            return View();
+            var result = _service.GetAll();
+
+            return View("Index", result);
         }
 
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            var user = _user.GetAll();
+
+            ViewBag.User = new SelectList(user, "AppUserId", "UserName");
+            
+            return View("Create");
         }
 
         [HttpPost]
         public IActionResult Store(AppuserPermission appuserPermission)
         {
-            return View();
+            if(!ModelState.IsValid)
+            {
+                return View("Create", appuserPermission);
+            }
+            var result = _service.Create(appuserPermission);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Create", appuserPermission);
         }
 
         [HttpGet]
         public IActionResult Edit (int appuserPermissionId)
         {
-            return View();
+            var user = _user.GetAll();
+
+            ViewBag.User = new SelectList(user, "AppUserId", "UserName");
+
+            var get = _service.GetById(appuserPermissionId);
+
+            return View("Edit",get);
         }
 
         [HttpPost]
         public IActionResult Update (AppuserPermission appuserPermission)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View("Edit",appuserPermission);
+            }
+            var result = _service.Update(appuserPermission);
+            if (result != null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Edit",appuserPermission);
         }
 
         [HttpGet]
         public IActionResult Delete(int appuserPermissionId)
         {
-            return View();
+            var user = _user.GetAll();
+
+            ViewBag.User = new SelectList(user, "AppUserId", "UserName");
+
+            var get = _service.GetById(appuserPermissionId);
+            return View("Delete",get);
         }
 
         [HttpPost]
         public IActionResult Destroy(int appuserPermissionId)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View("Delete", appuserPermissionId);
+            }
+            var result = _service.Delete(appuserPermissionId);
+            if (result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Delete", appuserPermissionId);
         }
     }
 }

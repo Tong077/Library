@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library.Models
 {
@@ -16,6 +18,7 @@ namespace Library.Models
 
         public string? Sex { get; set; }
 
+        [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime Dob { get; set; }
 
         public string? Pob {  get; set; }

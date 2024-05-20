@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Library.Data;
+using Library.Migrations;
 using Library.Models;
 
 namespace Library.Services
@@ -14,12 +15,12 @@ namespace Library.Services
 
         public bool Create(AppuserPermission appuserPermission)
         {
-            var sql = "INSERT INTO ApuserPermission (AppUserId, UserPermission) Values(@AppUserId,@UserPermission)";
-            var roweEffect = _service.Connection.Execute(sql, new
-            {
-               AppUserId = appuserPermission.AppUserId,
-               UserPermission = appuserPermission.UserPermission,
+       
+            var sql = "INSERT INTO AppUserPermission (AppUserId, UserPermission) Values(@AppUserId,@UserPermission)";
 
+            var roweEffect = _service.Connection.Execute(sql, new {
+               AppUserId = appuserPermission.AppUserId,
+                UserPermission = appuserPermission.UserPermission,
             });
             return roweEffect > 0;
         }
@@ -34,8 +35,24 @@ namespace Library.Services
 
         public IEnumerable<AppuserPermission> GetAll()
         {
-            var sql = "SELECT * FROM AppUserpermission";
-            var appuserPermission = _service.Connection.Query<AppuserPermission>(sql);
+            var sql = @"SELECT  
+                                AppUserPermission.AppUserPermissionId,
+                                AppUserPermission.UserPermission,
+                                AppUserPermission.AppUserId,
+                                AppUser.UserName
+                            FROM
+                                AppUserPermission
+                            INNER JOIN
+                                AppUser ON AppUserPermission.AppUserId = AppUser.AppUserId;";
+
+
+            var appuserPermission = _service.Connection.Query<AppuserPermission, AppUser, AppuserPermission>(sql,
+                (appuserPermission, appuser) =>
+                {
+                    appuserPermission.AppUser = appuser;
+                    return appuserPermission;
+                }, splitOn: "AppUserId");
+                
             return appuserPermission;
         }
 

@@ -1,0 +1,41 @@
+﻿@model Library.Models.AppUser
+
+@{
+    ViewData["Titel"] = "Login Form";
+    Layout = "_Login";
+}
+
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="../../index2.html"><b>Register</b>Now</a>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body login-card-body " style="justify-content:center;">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form asp-action="Register" asp-controller="Account" asp-route-returnUrl="@ViewBag.returnUrl" method="post">
+            <div class="input-group mb-3">
+                <input type="text" asp-for="UserName" class="form-control" placeholder="UserName">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" asp-for="Password" class="form-control" placeholder="Password">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+               
+            </div>
+        </form>
+    </div>
+</div>

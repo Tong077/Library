@@ -1,0 +1,46 @@
+﻿@model Library.Models.AppuserPermission
+
+@{
+    ViewData["Title"] = "UserManagerment";
+}
+<div class="card">
+    <div class="card-header">
+        <h4 class="title">Update User</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Update" asp-controller="AppUserPermission" method="post">
+            <input type="hidden" asp-for="AppUserPermissionId" />
+
+
+            <div class="form-group">
+                <label asp-for="AppUserId" class="form-label"> UserName</label>
+                <select asp-for="AppUserId" asp-items="@ViewBag.User" class="custom-select">
+                    <option>Plese Select UserName</option>
+                </select>
+            </div>
+
+
+
+            <div class="title">
+                <p class="title">Action Permission</p>
+            </div>
+
+            <div class="body">
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label me-lg-1"> Permission</label>
+                   <select asp-for="UserPermission" class="custom-select"> Please Select Permission
+                        <option value="Admin">Admin</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Customer">Customer</option>
+                   </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Update User</button>
+                <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+</div>

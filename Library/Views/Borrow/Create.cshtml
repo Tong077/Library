@@ -67,10 +67,15 @@
                 <input type="checkbox" asp-for="Borrow.IsHidden" class="form-check-input" />
                 <label asp-for="Borrow.IsHidden" class="form-check-label ml-1"> IsHidden</label>
             </div>
+
+
             <div class="row">
+                <input asp-for="BorrowDetail.BorrowId" type="hidden"/>
                 <div class="form-group col-sm-6">
                     <label asp-for="BorrowDetail.BookId" class="control-label">Book Name</label>
-                    <input asp-for="BorrowDetail.BookId" placeholder="Book Name" class="form-control" />
+                    <select asp-for="BorrowDetail.BookId" asp-items="@ViewBag.Book" class="custom-select">
+                        <option> Please Select Book Name</option>
+                    </select>
 
                 </div>
 

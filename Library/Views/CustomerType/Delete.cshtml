@@ -1,27 +1,29 @@
 ﻿@model Library.Models.CustomerType
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "CustomerType";
 }
-<h1>Create</h1>
 
-<h4>CustomerType</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Destroy" asp-controller="CustomerType" method="post">
-            <input asp-for="CustomerTypeId" type="hidden"/>
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">Delete CustomerType</h4>
+    </div>
+    <div class="card-header">
+
+
+        <form asp-action="Update" asp-controller="CustomerType" method="post">
+            <input type="hidden" asp-for="CustomerTypeId" />
             <div class="form-group">
                 <label asp-for="CustomerTypeName" class="control-label"></label>
-                <input asp-for="CustomerTypeName" class="form-control" />
+                <input asp-for="CustomerTypeName" type="text" placeholder="CustomerTypeName" class="form-control" />
                 <span asp-validation-for="CustomerTypeName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Delete CustomerType</button>
+                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Delete</button>
+                <a class="btn btn-danger btn-sm float-lg-right" asp-action="Index">Cancel</a>
             </div>
         </form>
+
+
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>

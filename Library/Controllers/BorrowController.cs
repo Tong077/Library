@@ -11,19 +11,36 @@ namespace Library.Controllers
         private readonly ICustomerService _cus;
         private readonly ILibrarianService _lia;
         private readonly IBorrowDetailService _borrowdetail;
-        public BorrowController(IBorrowService service, ICustomerService cus, ILibrarianService lia, IBorrowDetailService borrowdetail)
+        private readonly IBookService _book;
+        private readonly ICatalogService _catalog;
+        public BorrowController(IBorrowService service, ICustomerService cus, ILibrarianService lia, IBorrowDetailService borrowdetail, IBookService book, ICatalogService catalog)
         {
             _service = service;
             _cus = cus;
             _lia = lia;
             _borrowdetail = borrowdetail;
+            _book = book;
+            _catalog = catalog;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            var borrows = _service.GetAll();
+            int pageNumber = page ?? 1;
+            int pageSize = 10;
+
+            var totalCount = _service.GetAll().Count();
+
+            int skip = (pageNumber - 1) * pageSize;
+
+            var borrows = _service.GetAll().Skip(skip).Take(pageSize).ToList();
+
+            ViewBag.TotalCount = totalCount;
+            ViewBag.PageNumber = pageNumber;
+            ViewBag.PageSize = pageSize;
+
             return View("Index", borrows);
         }
+
 
         [HttpGet]
         public IActionResult Create()
@@ -35,13 +52,13 @@ namespace Library.Controllers
             var librarian = _lia.GetAll();
             ViewBag.librarians = new SelectList(librarian, "LibrarianId", "LibrarianName");
 
-            var borrow = new Borrow();
-            var borrodetail = new BorrowDetail();
-            var model = new BorrowandBorrowDetail
-            {
-                Borrow = borrow,
-                BorrowDetail = borrodetail,
-            };
+            var book = _book.GetAll();
+            ViewBag.Book = new SelectList(book, "BookId", "Catalog.CatalogName");
+
+            //var catalog = _catalog.GetAll();
+            //ViewBag.Catalog = new SelectList(catalog, "CatalogId", "CatalogName");
+
+
             return View("Create");
         }
         [HttpPost]

@@ -9,5 +9,8 @@ namespace Library.Services
         bool Delete(int customerTypeId);
         IEnumerable<CustomerType> GetAll();
         CustomerType Get(int CustomerTypeId);
+
+       
+
     }
 }

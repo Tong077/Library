@@ -4,36 +4,47 @@
 }
 <div class="card">
     <div class="card-header">
-        <h2 class="title">UserPermission</h2>
+        <h2 class="card-title">UserPermission</h2>
     </div>
     <div class="card-body">
         <p>
-            <a asp-action="Create"> Add New Permission</a>
+            <a asp-action="Create" class="btn btn-sm btn-success float-lg-right"> Add New Permission</a>
         </p>
-        <table class="table">
+        <table id="example1" class="table table-bordered table-striped">
            <thead>
                 <tr>
                     <th>
                         @Html.DisplayNameFor(model => model.AppUserPermissionId)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.AppUserId)
+                        @Html.DisplayNameFor(model => model.AppUser!.UserName)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.UserPermission)
+                    </th>
+                    <th>
+                        Action
                     </th>
                 </tr>
            </thead>
             @foreach(var item in Model)
             {
-                @* <tr>
+               <tr>
+                   <td>
+                       @Html.DisplayFor(modelItem => item.AppUserPermissionId)
+                   </td>
                     <td>
-                        @Html.DisplayFor(item =>)
+                        @Html.DisplayFor(modelItem => item.AppUser!.UserName)
+                    <td>
+                       @Html.DisplayFor(modeltItem =>item.UserPermission)
                     </td>
-                </tr> *@
+                    <td>
+                        <a asp-action="Edit" asp-controller="AppUserpermission" asp-route-appuserPermissionId="@item.AppUserPermissionId" class="btn btn btn-sm btn-success"> Editt</a>
+                        <a asp-action="Delete" asp-controller="AppUserpermission" asp-route-appuserPermissionId="@item.AppUserPermissionId" class="btn btn btn-sm btn-danger"> Delete</a>
+                    </td>
+               </tr>
             }
 
-            
         </table>
     </div>
 </div>

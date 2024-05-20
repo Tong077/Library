@@ -14,10 +14,27 @@ namespace Library.Controllers
             _serive = serive;
             _catalogService = catalogService;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            var book = _serive.GetAll();
-            return View("Index",book);
+            int pageNumber = page ?? 1; // If no page number is provided, default to page 1
+            int pageSize = 10; // Number of books per page
+
+            // Get the total count of books
+            var totalCount = _serive.GetAll().Count();
+
+            // Calculate the number of items to skip
+            int skip = (pageNumber - 1) * pageSize;
+
+            // Get the paginated list of books
+            var books = _serive.GetAll().Skip(skip).Take(pageSize).ToList();
+
+            // Pass the paginated list of books and total count to the view
+
+            ViewBag.TotalCount = totalCount;
+            ViewBag.PageNumber = pageNumber;
+            ViewBag.PageSize = pageSize;
+
+            return View(books);
         }
 
         [HttpGet]

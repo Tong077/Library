@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Library.Models
 {
@@ -12,9 +14,12 @@ namespace Library.Models
         
         public int LibrarianId { get; set; }
 
+        [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? BorrowDate { get; set; }
         public string? BorrowCode { get; set; }
         public decimal? Depositamount { get; set; }
+
+        [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? Duedate { get; set; }
         public decimal? FineAmount { get; set; }
         public string? Memo {  get; set; }

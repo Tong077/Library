@@ -1,15 +1,18 @@
 ﻿using Dapper;
 using Library.Data;
 using Library.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Services
 {
     public class CustomerTypeServiceImp : ICustomerTypeService
     {
         private readonly DapperDbConnext _service;
-        public CustomerTypeServiceImp(DapperDbConnext service)
+        private readonly EntityContext _entity;
+        public CustomerTypeServiceImp(DapperDbConnext service, EntityContext entity)
         {
             this._service = service;
+            _entity = entity;
         }
         public bool Create(CustomerType customerType)
         {
@@ -42,11 +45,15 @@ namespace Library.Services
             return customers;
         }
 
+      
+
         public bool Update(CustomerType customerType)
         {
             var sql = "UPDATE CustomerType SET CustomerTypeName=@CustomerTypeName Where CustomerTypeId=@CustomerTypeId";
             var roweEffect = _service.Connection.Execute(sql,customerType);
             return roweEffect > 0;
         }
+
+
     }
 }

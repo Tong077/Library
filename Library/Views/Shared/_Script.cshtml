@@ -1,0 +1,64 @@
+﻿<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jqueryui/jquery-ui.min.js"></script>
+
+<script src="~/jqplugin/jquery.jqplugin.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="~/admin-lte/js/pages/dashboard.min.js"></script>
+<script src="~/admin-lte/js/demo.min.js"></script>
+
+
+
+
+<script src="~/anyjs/any.min.js"></script>
+
+<script src="~/bootstrap-toaster/js/bootstrap-toaster.min.js"></script>
+
+<script src="~/sweetalert2/sweetalert2.min.js"></script>
+
+
+<script src="~/javascript.util/javascript.util.min.js"></script>
+<script src="~/admin-lte/js/adminlte.min.js"></script>
+<script src="~/font-awesome/js/all.min.js"></script>
+
+
+<script>
+    // Function to handle delete action
+    function handleDelete(id) {
+        // Display SweetAlert confirmation dialog
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'You will not be able to recover this item!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user confirms, navigate to the delete action
+                window.location.href = '/YourController/Delete/' + id;
+            }
+        });
+    }
+
+    // Attach event listeners to buttons
+    $(document).ready(function () {
+        $('.edit-btn').click(function () {
+            // Add your edit action here
+            // Example: window.location.href = '/YourController/Edit/' + $(this).data('id');
+        });
+
+        $('.details-btn').click(function () {
+            // Add your details action here
+            // Example: window.location.href = '/YourController/Details/' + $(this).data('id');
+        });
+
+        $('.delete-btn').click(function () {
+            // Call handleDelete function passing the item id
+            handleDelete($(this).data('id'));
+        });
+    });
+</script>

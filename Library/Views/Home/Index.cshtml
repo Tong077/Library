@@ -1,19 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Home";
-  
+
 }
 
 <section class="content">
-    <img src="~/images/images (1).jpg" class="img-fluid. max-width: 100%;" alt="Responsive image">
-   
+
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-4 col-4">
                 <!-- small box -->
-                <div class="small-box" style="background-color:whitesmoke;">
+                <div class="small-box  bg-info">
                     <div class="inner">
-                        <h3> @ViewData["BookCount"]<i class="fa-solid fa-book-journal-whills float-lg-right"></i></h3>
+                        <h3> @ViewData["BookCount"]<i class="fa-solid fa-book float-lg-right"></i></h3>
 
                         <p>Total Book</p>
                     </div>
@@ -22,14 +21,16 @@
                     </div>
                     <a asp-controller="Book" asp-action="Index" class="small-box-footer">Add New Book <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
+
             </div>
+
             <!-- ./col -->
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-4 col-4">
                 <!-- small box -->
-                <div class="small-box" style="background-color:whitesmoke;">
+                <div class="small-box bg-warning">
                     <div class="inner">
                         <h3>
-                            @ViewData["BorrowCount"]<i class="fas fa-handshake float-lg-right" ></i>
+                            @ViewData["BorrowCount"]<i class="fas fa-handshake float-lg-right"></i>
                         </h3>
                         <p> All Borrow </p>
                     </div>
@@ -40,9 +41,9 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-4 col-6">
+            <div class="col-lg-4 col-4">
                 <!-- small box -->
-                <div class="small-box" style="background-color:whitesmoke;">
+                <div class="small-box bg-danger">
                     <div class="inner ">
                         <h3>@ViewData["IsReturn"]</h3>
 
@@ -55,11 +56,15 @@
                 </div>
             </div>
             <!-- ./col -->
-           
             <!-- ./col -->
         </div>
     </div>
 </section>
+
+<partial name="AreaChate"/>
+
+
+
 
 
 

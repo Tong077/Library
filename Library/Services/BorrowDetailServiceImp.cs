@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Library.Data;
 using Library.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Services
 {
@@ -27,11 +28,9 @@ namespace Library.Services
         }
 
 
-
-
         public bool Delete(int borrowDetailId)
         {
-            var sql = "DELETE FROM BorrowDetail Where BorrowDetailId=@BorrowDetailId)";
+            var sql = "DELETE FROM BorrowDetail Where BorrowDetailId=@BorrowDetailId";
             var roweEffect = _service.Connection.Execute(sql, new { @borrowDetailId = borrowDetailId });
             return roweEffect > 0;
 
@@ -39,7 +38,7 @@ namespace Library.Services
 
         public BorrowDetail Get(int BorrowDetailId)
         {
-            var sql = "SELECT * FROM BorrowDetail WHERE BorrowDetailId=@BorrowDetailId)";
+            var sql = "SELECT * FROM BorrowDetail WHERE BorrowDetailId=@BorrowDetailId";
             var borrowdetail = _service.Connection.QueryFirstOrDefault<BorrowDetail>(sql, new { BorrowDetailId });
 
             return borrowdetail!;
@@ -47,9 +46,13 @@ namespace Library.Services
 
         public IEnumerable<BorrowDetail> GetAll()
         {
-            var sql = "SELECT * FROM BorrowDetail";
+            //var sql = "SELECT   bd.BorrowDetailId,bd.BorrowDate,b.BookId,b.BookCode,b.BookDescription,c.CatalogId,c.CatalogName FROM BorrowDetail INNER JOIN Book b ON bd.BookId = b.BookId INNER JOIN Catalog c ON b.CatalogId = c.CatalogId Were c.CatalogName";
+
+            //var bodetail  = _service.Connection.Query<BorrowDetail>(sql, )
+            var sql = "SELECT * FROM Borrowdetail";
             var borrowdetail = _service.Connection.Query<BorrowDetail>(sql);
-            return borrowdetail!;
+            return borrowdetail.ToList();
+           
         }
 
         public bool Update(BorrowDetail borrowDetail)
