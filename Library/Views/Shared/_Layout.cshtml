@@ -1,39 +1,46 @@
 ﻿﻿
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-   <partial name="_Allcss"/>
+    <partial name="_csslink" />
 
-    
+   
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body>
 
-    <div class="wrapper">
-
-        <partial name="_Nav" />
-
-        <partial name="_Side" />
-
-
-        <div class="content-wrapper">
-           <div class="content-header">
-               <div class="container-fluid">
-
-               </div>
-           </div>
-           <div class="content">
-                <div class="container-fluid">
-                    @RenderBody()
-               </div>
-           </div>
-
+    <div id="main-wrapper">
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="#">
+                    <b class="logo-abbr">
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                    </b>
+                    <span class="logo-compact">
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                    </span>
+                    <span class="brand-title">
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                    </span>
+                </a>
+            </div>
         </div>
+       
+        <partial name="_navigationbar" />
+        <partial name="_sidebar" />
+
+        <div class="content-body">
+            <div class="container-fluid mt-3">
+                @RenderBody()
+            </div>
+       </div>
     </div>
-    
-   <partial name="_Script"/>
+
+    <partial name="_scip" />
     
     @RenderSection("Scripts", required: false)
 </body>

@@ -1,0 +1,29 @@
+﻿@model Library.Models.Role
+@{
+    ViewData["Title"] = "Role";
+}
+<di class="card">
+    <div class="card-header">
+        <h4 class="title float-left">Role</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Update" asp-controller="Role" method="post">
+            <input asp-for="RoleId" type="hidden" />
+            <div class="row">
+                <div class="form-group sm-col-6">
+                    <label asp-for="RoleName" class="control-label"> RolName</label>
+                    <input type="text" placeholder="RoleName" asp-for="RoleName" class="form-control" />
+                </div>
+                <div class="form-group sm-col-6">
+                    <select class="custom-select" asp-for="AppUserId" asp-items="@ViewBag.User">
+                        <option> Pleas Select UserName</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-sm btn-success">Update New</button>
+                <a asp-action="Index" class="btn btn-sm btn-danger">Cancel</a>
+            </div>
+        </form>
+    </div>
+</di>

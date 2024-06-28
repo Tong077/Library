@@ -81,6 +81,8 @@ namespace Library.Services
 
         }
 
+      
+
         public bool Update(Customer customer)
         {
             var sql = "UPDATE CUSTOMER SET IsHidden=@IsHidden,CustomerCode=@CustomerCode,CustomerTypeId=@CustomerTypeId,CustomerName=@CustomerName,Sex=@Sex,Dob=@Dob,Pob=@Pob,Phone=@Phone,Address=@Address Where CustomerId=@CustomerId";

@@ -5,7 +5,7 @@
 }
 <div class="card">
     <div class="card-header">
-        <h2 class="card-title">Customer List</h2>
+        <h4 class="title float-left">Customer List</h2>
     </div>
     <div class="card-body">
         <p>
@@ -14,34 +14,34 @@
         <table id="example1" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.CustomerId)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.CustomerCode)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.CustomerType!.CustomerTypeName)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.CustomerName)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Sex)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Dob)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Pob)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Phone)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Address)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.IsHidden)
                     </th>
 
@@ -80,7 +80,19 @@
                             @Html.DisplayFor(modelItem => item.Address)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.IsHidden)
+                           @*  @if (item.IsHidden)
+                            {
+                                <i class="fa fa-check" style="color: green;"></i>
+                            }
+                            else
+                            {
+                                <a class="fas fa-times " style="color: red;"></a>
+                            } *@
+                            <form id="hiddenStatusForm-@item.CustomerId" asp-action="Hidden" method="post">
+                                <input type="hidden" name="id" value="@item.CustomerId" />
+                                <input type="hidden" name="isHidden" value="@(item.IsHidden ? "false" : "true")" />
+                                <input type="checkbox" @(item.IsHidden ? "checked" : " ") onchange="updateHiddenStatus(@item.CustomerId)" />
+                            </form>
                         </td>
                         <td>
                             <a asp-action="Edit" asp-controller="Customer" asp-route-CustomerId="@item.CustomerId" class="btn btn-sm btn-success">Edit</a>

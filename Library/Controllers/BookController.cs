@@ -1,5 +1,6 @@
 ﻿using Library.Models;
 using Library.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -9,11 +10,15 @@ namespace Library.Controllers
     {
         private readonly ICatalogService _catalogService;
         private readonly IBookService _serive;
-        public BookController(IBookService serive, ICatalogService catalogService)
+        private readonly IBorrowDetailService _detail;
+        public BookController(IBookService serive, ICatalogService catalogService, IBorrowDetailService detail)
         {
             _serive = serive;
             _catalogService = catalogService;
+            _detail = detail;
         }
+
+        
         public IActionResult Index(int? page)
         {
             int pageNumber = page ?? 1; // If no page number is provided, default to page 1
@@ -28,11 +33,20 @@ namespace Library.Controllers
             // Get the paginated list of books
             var books = _serive.GetAll().Skip(skip).Take(pageSize).ToList();
 
+            var borrowDetails = _detail.GetAll();
+
+            // Use SelectMany to flatten the list of BookIds
+            var selectedBookCodes = borrowDetails.SelectMany(bd => new[] { bd.BookId }).ToList();
+
+
+
             // Pass the paginated list of books and total count to the view
 
             ViewBag.TotalCount = totalCount;
             ViewBag.PageNumber = pageNumber;
             ViewBag.PageSize = pageSize;
+            ViewBag.SelectedBookCodes = selectedBookCodes;
+
 
             return View(books);
         }

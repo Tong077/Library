@@ -1,4 +1,48 @@
-﻿@{
-    ViewData["Title"] = "LogOut";
+﻿@model Library.Models.AppUser
+
+@{
+    ViewData["Titel"] = "LogOut";
+    Layout = "_Login";
 }
 
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="../../index2.html"><b>Library</b></a>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body login-card-body " style="justify-content:center;">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form asp-action="LogOut" asp-controller="Account" method="post">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+            <input asp-for="AppUserId" type="hidden"/>
+            <div class="input-group mb-3">
+                <input type="text" asp-for="UserName" class="form-control" placeholder="UserName">
+                <span asp-validation-for="UserName"></span>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" asp-for="Password" class="form-control" placeholder="Password">
+                <span asp-validation-for="Password"></span>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                <a asp-action="Register" asp-controller="Account" class="float-lg-right">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

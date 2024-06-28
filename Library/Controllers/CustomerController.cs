@@ -100,5 +100,17 @@ namespace Library.Controllers
             
             return View("Delete",customerId);
         }
+
+        [HttpPost]
+        public IActionResult Hidden(int customerId, bool isHidden)
+        {
+            var customer = _service.Get(customerId);
+            if(customer != null)
+            {
+                customer.IsHidden = isHidden;
+                _service.Update(customer);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

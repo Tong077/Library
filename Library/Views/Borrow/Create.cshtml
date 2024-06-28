@@ -69,37 +69,42 @@
             </div>
 
 
-            <div class="row">
-                <input asp-for="BorrowDetail.BorrowId" type="hidden"/>
-                <div class="form-group col-sm-6">
-                    <label asp-for="BorrowDetail.BookId" class="control-label">Book Name</label>
-                    <select asp-for="BorrowDetail.BookId" asp-items="@ViewBag.Book" class="custom-select">
-                        <option> Please Select Book Name</option>
-                    </select>
+            
+                <div class="card-header">
+                    <h4 class="title">BorrowDetail</h4>
+                </div>
+                <div class="row">
+                    <input asp-for="BorrowDetail.BorrowId" type="hidden" />
+                    <div class="form-group col-sm-6">
+                        <label asp-for="BorrowDetail.BookId" class="control-label">Book Name</label>
+                        <select asp-for="BorrowDetail.BookId"  asp-items="@ViewBag.Book" class="custom-select">
+                            <option> Please Select Book Name</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <label asp-for="BorrowDetail.Note" class="control-label">Note</label>
+                        <input asp-for="BorrowDetail.Note" placeholder="Note" class="form-control" />
+
+                    </div>
 
                 </div>
-
-                <div class="form-group col-sm-6">
-                    <label asp-for="BorrowDetail.Note" class="control-label">Note</label>
-                    <input asp-for="BorrowDetail.Note" placeholder="Note" class="form-control" />
-
+                <div class="form-group">
+                    <label asp-for="BorrowDetail.ReturnDate" class="control-label"> ReturnDate</label>
+                    <input asp-for="BorrowDetail.ReturnDate" type="date" class="form-control" />
                 </div>
-
-            </div>
-            <div class="form-group">
-                <label asp-for="BorrowDetail.ReturnDate" class="control-label"> ReturnDate</label>
-                <input asp-for="BorrowDetail.ReturnDate" type="date" class="form-control"/>
-            </div>
-            <div class="form-group fomr-check">
-                <input asp-for="BorrowDetail.IsReturn" class="form-check-input" />
-                <label asp-for="BorrowDetail.IsReturn" class="form-check-label">IsReturn</label>
-            </div>
+                <div class="form-group fomr-check">
+                    <input asp-for="BorrowDetail.IsReturn" class="form-check-input" />
+                    <label asp-for="BorrowDetail.IsReturn" class="form-check-label">IsReturn</label>
+                </div>
+            
 
 
 
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Add Borrow</button>
-                <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
+                <a asp-action="Index" asp-controller="Borrowdeatil" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
             </div>
         </form>
     </div>

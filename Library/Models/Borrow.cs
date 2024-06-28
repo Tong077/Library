@@ -9,9 +9,11 @@ namespace Library.Models
         public int BorrowId { get; set; }
 
         public bool IsHidden { get; set; }
-       
+
+        [ForeignKey(nameof(Customer))]
         public int CustomerId { get; set; }
-        
+
+        [ForeignKey(nameof(Librarian))]
         public int LibrarianId { get; set; }
 
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]

@@ -9,5 +9,8 @@ namespace Library.Services
         bool Delete(int appuserPermissionId);
         IEnumerable<AppuserPermission> GetAll();
         AppuserPermission GetById(int AppUserPermissionId);
+
+
+       Task<IEnumerable<string>> userpermission(string UserName);
     }
 }

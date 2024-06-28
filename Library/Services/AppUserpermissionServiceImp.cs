@@ -1,6 +1,7 @@
 ﻿using Dapper;
+using Humanizer;
 using Library.Data;
-using Library.Migrations;
+
 using Library.Models;
 
 namespace Library.Services
@@ -70,5 +71,22 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
+        public async Task<IEnumerable<string>> userpermission(string UserName)
+        {
+            var sql = "SELECT " +
+                "AppUser.AppUserId," +
+                "AppUser.UserName " +
+               "AppUserpermission.UserPermission " +
+               "FROM  AppUserpermission " +
+               "INNER JOIN " +
+               "AppUser ON" +
+               " AppUserpermission.AppUserId = AppUser.AppUserId " +
+               "WHERE AppUserpermission.AppUserpermissionId = @AppUserpermissionId;";
+
+            var permission = await _service.Connection.QueryAsync<string>(sql, new { UserName = UserName });
+            return  permission;
+        }
+
+       
     }
 }

@@ -1,72 +1,109 @@
-﻿@model IEnumerable<Library.Models.BorrowDetail>
-@{
-    ViewData["Title"] = "Borrow Detail";
-}
+﻿@model IPagedList<Library.Models.BorrowDetailView>
+@using X.PagedList.Mvc.Core
+@using X.PagedList
 <div class="card">
     <div class="card-header">
         <h2 class="card-title"> Borrow Detail</h2>
     </div>
     <div class="card-body">
         <p>
-            <a asp-action="Create" class="btn btn-success float-right"> Add New Borrow</a>
+            <a asp-action="Create" class="btn btn-success btn-sm float-right"> Add New Borrow</a>
         </p>
-        <table id="example1" class="table table-bordered table-striped">
+        <table class="table table-responsive table-condensed">
             <thead>
                 <tr>
-
-                    <th>
-                        @Html.DisplayNameFor(model => model.BorrowId)
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().CustomerName)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.BookId)
-
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().LibrarianName)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Note)
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().BookCode)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.IsReturn)
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().BorrowDate)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.ReturnDate)
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().Duedate)
                     </th>
-
-                    <th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().ReturnDate)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().Depositamount)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().FineAmount)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().Note)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.First().IsReturn)
+                    </th>
+                    <th class="fst-italic">
                         Action
                     </th>
-
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model)
                 {
                     <tr>
-
                         <td>
-                            @Html.DisplayFor(model => item.BorrowId)
+                            @Html.DisplayFor(model => item.CustomerName)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.BookId)
-
+                            @Html.DisplayFor(model => item.LibrarianName)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.Note)
+                            @Html.DisplayFor(model => item.BookCode)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.IsReturn)
+                            @Html.DisplayFor(model => item.BorrowDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Duedate)
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.ReturnDate)
                         </td>
-
                         <td>
-                            <a asp-action="Edit" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" class="btn btn-sm btn-success">Edit</a>
-                            <a asp-action="Delete" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" class="btn btn-sm btn-danger">Delete</a>
+                            @Html.DisplayFor(model => item.Depositamount)
                         </td>
+                        <td>
+                            @Html.DisplayFor(model => item.FineAmount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Note)
+                        </td>
+                        <td class="form-check form-switch">
 
+                            @Html.CheckBoxFor(model => item.IsReturn, new { @class = "form-check-input ml-2"})
+
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-action="Delete" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
         </table>
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+   {
+       DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+       DisplayLinkToLastPage = PagedListDisplayMode.Always,
+       DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+       DisplayLinkToNextPage = PagedListDisplayMode.Always,
+       Display = PagedListDisplayMode.IfNeeded,
+       PageClasses = new[] { "page-link" },
+       LinkToPreviousPageFormat = "Previous",
+       LinkToNextPageFormat = "Next",
+       LinkToFirstPageFormat = "First",
+       LinkToLastPageFormat = "Last"
+   })
     </div>
 </div>

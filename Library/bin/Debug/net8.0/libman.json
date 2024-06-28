@@ -2260,10 +2260,6 @@
       "destination": "wwwroot/jqplugin/"
     },
     {
-      "library": "bootstrap-toaster@5.1.0",
-      "destination": "wwwroot/bootstrap-toaster/"
-    },
-    {
       "library": "floating.js@2.7.3",
       "destination": "wwwroot/floating.js/",
       "files": []
@@ -2678,6 +2674,14 @@
         "themes/vader/images/ui-icons_cccccc_256x240.png",
         "themes/vader/images/ui-icons_cd0a0a_256x240.png",
         "themes/vader/images/ui-icons_f29a00_256x240.png"
+      ]
+    },
+    {
+      "library": "bootstrap-toaster@5.1.0",
+      "destination": "wwwroot/bootstrap-toaster/",
+      "files": [
+        "css/bootstrap-toaster.min.css",
+        "js/bootstrap-toaster.min.js"
       ]
     }
   ]

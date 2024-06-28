@@ -4,10 +4,10 @@
 }
 <div class="card">
     <div class="card-header">
-        <h4 class="title">Delete User</h4>
+        <h4 class="title float-left">Delete User</h4>
     </div>
     <div class="card-body">
-        <form asp-action="Destroy" asp-controller="AppUser" method="post">
+        <form id="deleteForm" asp-action="Destroy" asp-controller="AppUser" method="post">
             <input asp-for="AppUserId" type="hidden" />
             <div class="row">
                 <div class="form-group col-sm-6">
@@ -27,10 +27,38 @@
                 </label>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Delete User</button>
+                <button type="button" onclick="confirmDelete()" class="btn btn-success btn-sm float-lg-right ml-2">Delete User</button>
                 <a asp-action="Index" class="btn btn-danger btn-sm float-lg-right">Cancel</a>
             </div>
         </form>
     </div>
 </div>
 
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            swal({
+                title: "Are you sure?",
+                text: "Do you really want to delete this user?",
+                icon: "warning",
+                buttons: {
+                    cancel: "No, keep it",
+                    confirm: {
+                        text: "Yes, delete it",
+                        value: true,
+                        visible: true,
+                        className: "btn-danger",
+                        closeModal: true
+                    }
+                },
+                dangerMode: true,
+            }).then((willDelete) => {
+                if (willDelete) {
+                    $('#deleteForm').submit();
+                } else {
+                   
+                }
+            });
+        }
+    </script>
+}

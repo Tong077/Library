@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Library.Models.Role>
+@{
+    ViewData["Title"] = "Role";
+}
+<div class="card">
+    <div class="card-header">
+        <h4 class="title float-left">Role</h4>
+    </div>
+    <div class="card-body">
+       <p>
+            <a asp-action="Create" class="btn btn-sm btn-success float-right">Add Role</a>
+       </p>
+        <table id="example1" class="table table-bordered table-striped">
+            
+            <thead>
+                <tr>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.RoleId)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.AppUser.UserName)
+                    </th>
+                    <th class="fst-italic">
+                        @Html.DisplayNameFor(model => model.RoleName)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => item.RoleId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.AppUser.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.RoleName)
+                        </td>
+                        <td>
+                            <a asp-controller="Role" asp-action="Edit" asp-route-RoleId="@item.RoleId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-controller="Role" asp-action="Delete" asp-route-RoleId="@item.RoleId" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+       </table>
+    </div>
+
+</div>

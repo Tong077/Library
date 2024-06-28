@@ -1,0 +1,108 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor _contex
+@{
+    var roles = _contex.HttpContext.Session.GetString("roles")?.Split(',') ?? new string[0];
+    var IsAdmin = roles.Contains("Admin");
+    var IsStaff = roles.Contains("Staff");
+    var IsUser = roles.Contains("User");
+}
+
+<div class="nk-sidebar">
+   <div class="nk-nav-scroll">
+        <ul class="metismenu in" id="menu">
+
+            <li>
+                <a asp-controller="Home" asp-action="Index" aria-expanded="false">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span class="nav-text ml-1">Home</span>
+                </a>
+            </li>
+            @if (IsAdmin || IsStaff || IsUser)
+            {
+                <li class="mega-menu mega-menu-sm">
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span class="nav-text ml-1"> Customer</span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li>
+
+                            <a asp-controller="Customer" asp-action="Index">
+                                <ion-icon name="person-add-outline"></ion-icon>
+                                <span class="nav-text ml-1"> Customer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="CustomerType" asp-action="Index">
+                                <ion-icon name="person"></ion-icon>
+                                <span class="nav-text ml-1"> CustomerType</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a asp-controller="Catalog" asp-action="Index">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                        <span class="nav-text ml-1">Catalog</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Book" asp-action="Index">
+                        <ion-icon name="book-outline"></ion-icon>
+                        <span class="nav-text ml-1">Book</span>
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="BorrowDetial" asp-action="Index" aria-expanded="false">
+                        <ion-icon name="wallet-outline"></ion-icon>
+                        <span class="nav-text ml-1">Borrow</span>
+                    </a>
+                </li>
+            }
+
+            @if (IsAdmin || IsStaff)
+            {
+                <li>
+                    <a asp-controller="Librarian" asp-action="Index" aria-expanded="false">
+                        <ion-icon name="person"></ion-icon>
+                        <span class="nav-text ml-1">Librian</span>
+                    </a>
+                </li>
+            }
+
+            @if (IsAdmin)
+            {
+                <li class="nav-label">User Manager</li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <ion-icon name="person"></ion-icon>
+                        <span class="nav-text ml-2">App User</span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li>
+                            <a asp-controller="AppUser" asp-action="Index">
+                                User
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Role" asp-action="Index">User Role</a>
+                        </li>
+                        <li>
+                            <a asp-controller="AppUserPermission" asp-action="Index">UserPermission</a>
+                        </li>
+
+                    </ul>
+                </li>
+            }
+        </ul>
+   </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.has-arrow').on('click', function () {
+            $(this).next('.collapse').slideToggle();
+            $(this).parent().toggleClass('open');
+        });
+    });
+
+</script>

@@ -1,6 +1,6 @@
-﻿@model Library.Models.Borrow
+﻿@model Library.Models.BorrowandBorrowDetail
 @{
-    ViewData["Title"] = "Update Borrow";
+    ViewData["Title"] = "Borrow And BorrowDeatil";
 }
 <div class="card">
     <div class="card-header">
@@ -8,65 +8,97 @@
     </div>
     <div class="card-body">
         <form asp-action="Update" asp-controller="Borrow" method="post">
-            <input asp-for="BorrowId"  type="hidden"/>
+            <input asp-for="Borrow.BorrowId" type="hidden" />
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label asp-for="CustomerId" class="control-label">Customer Name</label>
-                    <select asp-for="CustomerId" class="custom-select"
+                    <label asp-for="Borrow.CustomerId" class="control-label">Customer Name</label>
+                    <select asp-for="Borrow.CustomerId" class="custom-select"
                             asp-items="@ViewBag.Customer">
                         <option> Please Select Customer Name</option>
 
                     </select>
                 </div>
                 <div class="form-group col-sm-6">
-                    <label asp-for="LibrarianId" class="control-label">Librarian Name</label>
-                    <select asp-for="LibrarianId" class="custom-select"
+                    <label asp-for="Borrow.LibrarianId" class="control-label">Librarian Name</label>
+                    <select asp-for="Borrow.LibrarianId" class="custom-select"
                             asp-items="@ViewBag.librarians">
                         <option> Please Select Librarian Name</option>
                     </select>
                 </div>
-
-            </div>
-            <div class="row">
-                <div class="form-group col-sm-6">
-                    <label asp-for="BorrowDate" class="control-label">BorrowDate</label>
-                    <input type="date" placeholder="BorrowDate" asp-for="BorrowDate" class="form-control" />
-                </div>
-                <div class="form-group col-sm-6">
-                    <label asp-for="Duedate" class="control-label">DueDate</label>
-                    <input type="date" placeholder="DueDate" asp-for="Duedate" class="form-control" />
-                </div>
-
-
             </div>
 
             <div class="row">
-
                 <div class="form-group col-sm-6">
-                    <label asp-for="BorrowCode" class="control-label"> BorrowCode</label>
-                    <input type="text" placeholder="BorrowCode" asp-for="BorrowCode" class="form-control" />
+                    <label asp-for="Borrow.BorrowDate" class="control-label">BorrowDate</label>
+                    <input type="date" placeholder="BorrowDate" asp-for="Borrow.BorrowDate" class="form-control" />
                 </div>
                 <div class="form-group col-sm-6">
-                    <label asp-for="Memo" class="control-label"> Memo</label>
-                    <input type="text" asp-for="Memo" placeholder="Memo" class="form-control" />
+                    <label asp-for="Borrow.Duedate" class="control-label">DueDate</label>
+                    <input type="date" placeholder="DueDate" asp-for="Borrow.Duedate" class="form-control" />
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-sm-6">
+                    <label asp-for="Borrow.BorrowCode" class="control-label"> BorrowCode</label>
+                    <input type="text" placeholder="BorrowCode" asp-for="Borrow.BorrowCode" class="form-control" />
+                </div>
+                <div class="form-group col-sm-6">
+                    <label asp-for="Borrow.Memo" class="control-label"> Memo</label>
+                    <input type="text" asp-for="Borrow.Memo" placeholder="Memo" class="form-control" />
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-6">
-                    <label asp-for="Depositamount" class="control-label">Depositamount</label>
-                    <input type="text" placeholder="DespositamountOB" asp-for="Depositamount" class="form-control" />
+                    <label asp-for="Borrow.Depositamount" class="control-label">Depositamount</label>
+                    <input type="text" placeholder="DespositamountOB" asp-for="Borrow.Depositamount" class="form-control" />
                 </div>
                 <div class="form-group col-sm-6 ">
-                    <label asp-for="FineAmount" class="control-label">FineAmount</label>
-                    <input class="form-control" placeholder="Fine Amount" type="text" asp-for="FineAmount" />
+                    <label asp-for="Borrow.FineAmount" class="control-label">FineAmount</label>
+                    <input class="form-control" placeholder="Fine Amount" type="text" asp-for="Borrow.FineAmount" />
 
                 </div>
 
             </div>
             <div class="form-group form-check">
 
-                <input type="checkbox" asp-for="IsHidden" class="form-check-input" />
-                <label asp-for="IsHidden" class="form-check-label ml-1"> IsHidden</label>
+                <input type="checkbox" asp-for="Borrow.IsHidden" class="form-check-input" />
+                <label asp-for="Borrow.IsHidden" class="form-check-label ml-1"> IsHidden</label>
+            </div>
+
+
+
+            <div class="card-header">
+                <h4 class="title">BorrowDetail</h4>
+            </div>
+            <input asp-for="BorrowDetail.BorrowDetailId" type="hidden" />
+            <div class="row">
+                <input asp-for="BorrowDetail.BorrowId" type="hidden" />
+                <div class="form-group col-sm-6">
+                    <label asp-for="BorrowDetail.BookId" class="control-label">Book Name</label>
+                    <select asp-for="BorrowDetail.BookId" asp-items="@ViewBag.Book" class="custom-select">
+                        <option> Please Select Book Name</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label asp-for="BorrowDetail.Note" class="control-label">Note</label>
+                    <input asp-for="BorrowDetail.Note" placeholder="Note" class="form-control" />
+
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="BorrowDetail.ReturnDate" class="control-label"> ReturnDate</label>
+                <input asp-for="BorrowDetail.ReturnDate" type="date" class="form-control" />
+            </div>
+            <div class="form-group fomr-check">
+                <input asp-for="BorrowDetail.IsReturn" class="form-check-input" />
+                <label asp-for="BorrowDetail.IsReturn" class="form-check-label">IsReturn</label>
             </div>
 
             <div class="form-group">

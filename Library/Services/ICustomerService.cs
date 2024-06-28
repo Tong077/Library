@@ -9,5 +9,7 @@ namespace Library.Services
         bool Delete (int customerId);
         IEnumerable<Customer> GetAll ();
         Customer Get(int CustomerId);
+
+        //bool Hidden(int customerId, bool IsHidden);
     }
 }

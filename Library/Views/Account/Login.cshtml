@@ -15,23 +15,26 @@
     <div class="card-body login-card-body " style="justify-content:center;">
         <p class="login-box-msg">Sign in to start your session</p>
         <form asp-action="Login" asp-controller="Account" asp-route-returnUrl="@ViewBag.returnUrl" method="post">
-            
+           <div class="text-danger" asp-validation-summary="ModelOnly"></div>
             <div class="input-group mb-3">
                 <input type="text" asp-for="UserName" class="form-control" placeholder="UserName">
-                <span
+                <span asp-validation-for="UserName"></span>
                 <div class="input-group-append">
                     <div class="input-group-text">
                         <span class="fas fa-envelope"></span>
                     </div>
                 </div>
+                <span asp-validation-for="UserName"class="text-danger"></span>
             </div>
             <div class="input-group mb-3">
                 <input type="password" asp-for="Password" class="form-control" placeholder="Password">
+                <span asp-validation-for="Password"></span>
                 <div class="input-group-append">
                     <div class="input-group-text">
                         <span class="fas fa-lock"></span>
                     </div>
                 </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
             <div class="form-group">

@@ -8,11 +8,11 @@ namespace Library.Services
     public class CustomerTypeServiceImp : ICustomerTypeService
     {
         private readonly DapperDbConnext _service;
-        private readonly EntityContext _entity;
-        public CustomerTypeServiceImp(DapperDbConnext service, EntityContext entity)
+        
+        public CustomerTypeServiceImp(DapperDbConnext service)
         {
             this._service = service;
-            _entity = entity;
+          
         }
         public bool Create(CustomerType customerType)
         {

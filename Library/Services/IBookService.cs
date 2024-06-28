@@ -9,5 +9,7 @@ namespace Library.Services
         bool Delete(int bookId);
         IEnumerable<Book> GetAll();
         Book Get(int BookId);
+
+       bool IsBorrowed(int BookId);
     }
 }

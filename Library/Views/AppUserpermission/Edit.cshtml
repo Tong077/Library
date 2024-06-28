@@ -5,7 +5,7 @@
 }
 <div class="card">
     <div class="card-header">
-        <h4 class="title">Update User</h4>
+        <h4 class="title float-left">Update User</h4>
     </div>
     <div class="card-body">
         <form asp-action="Update" asp-controller="AppUserPermission" method="post">
@@ -26,15 +26,15 @@
             </div>
 
             <div class="body">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label me-lg-1"> Permission</label>
-                   <select asp-for="UserPermission" class="custom-select"> Please Select Permission
-                        <option value="Admin">Admin</option>
-                        <option value="Staff">Staff</option>
-                        <option value="Customer">Customer</option>
-                   </select>
-                </div>
+
+                <select asp-for="UserPermission" class="custom-select">
+                    <option>Please Select Permission</option>
+                    <option value="View">View</option>
+                    <option value="Create">Create</option>
+                    <option value="Edit">Edit</option>
+                </select>
             </div>
+           
 
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-sm float-lg-right ml-2">Update User</button>

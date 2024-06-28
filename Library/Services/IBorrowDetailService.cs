@@ -4,12 +4,15 @@ namespace Library.Services
 {
     public interface IBorrowDetailService
     {
-        bool Create (BorrowDetail borrowDetail);
-        bool Update (BorrowDetail borrowDetail);
-        bool Delete (int borrowDetailId);
+        bool Create(Borrow borrow, BorrowDetail borrowDetail);
+
+        bool Updade(Borrow borrow, BorrowDetail borrowDetail);
+        bool Delete(int BorrowId, int BorrowDetailId);
 
         IEnumerable<BorrowDetail> GetAll();
 
-        BorrowDetail Get (int BorrowDetailId);
+        BorrowandBorrowDetail Get(int BorrowId, int BorrowDetailId);
+        BorrowDetail GetById(int BorrowDetailId, bool IsReturn);
+        bool IsBorrowedAndNotReturned(int BookId);
     }
 }

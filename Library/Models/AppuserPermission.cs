@@ -11,12 +11,5 @@ namespace Library.Models
         public string? UserPermission { get; set; }
 
         public AppUser? AppUser { get; set; }
-
-        public bool View {  get; set; }
-        public bool Add { get; set; }
-        public bool Delete { get; set; }
-        public bool Edit { get; set; }
-
-        public AppUser? APPUSER { get; set; }
     }
 }

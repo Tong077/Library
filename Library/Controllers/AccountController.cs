@@ -1,69 +1,101 @@
 ﻿using Dapper;
 using Library.Data;
-using Library.Migrations;
+
 using Library.Models;
+using Library.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
+using Newtonsoft.Json;
 
 namespace Library.Controllers
 {
     public class AccountController : Controller
     {
         private readonly DapperDbConnext _dapper;
-
-        public AccountController(DapperDbConnext dapper)
+        private readonly IAccountService _account;
+        private readonly IRoleService _rolservice;
+        private readonly IHttpContextAccessor _context;
+        public AccountController(DapperDbConnext dapper, IAccountService account, IHttpContextAccessor context, IRoleService rolservice)
         {
             _dapper = dapper;
+            _account = account;
+            _context = context;
+            _rolservice = rolservice;
         }
+
         [HttpGet]
         public IActionResult Register()
         {
             return View("Register");
         }
+        
         [HttpPost]
         public IActionResult Register(AppUser appUser)
         {
             if (!ModelState.IsValid)
             {
-                return View("Register",appUser);
+                return View("Register", appUser);
             }
-            var insert = "INSERT INTO AppUser(UserName,Password) VALUES(@UserName,@Password);";
-            var result = _dapper.Connection.Execute(insert, new
-            {
-                UserName = appUser.UserName,
-                Password = appUser.Password
-            });
-            if (result != null)
+            var user = _account.Create(appUser);
+            if(user != null)
             {
                 return RedirectToAction("Login", "Account");
             }
             return View("Register", appUser);
+
         }
+
 
         [HttpGet]
         public IActionResult Login()
         {
+
             return View("Login");
         }
 
         [HttpPost]
         public IActionResult Login(AppUser appUser, string? returnUrl = null)
         {
+            
             returnUrl = returnUrl ?? Url.Content("/Home");
             ViewBag.returnUrl = returnUrl;
+
+
             if (!ModelState.IsValid)
             {
                 return View("Login", appUser);
             }
-
-            var query = "SELECT * FROM AppUser WHERE UserName=@UserName AND Password=@Password;";
-            var result = _dapper.Connection.QueryFirstOrDefault<AppUser>(query, new
-            {
-                appUser.Password,
-                appUser.UserName
-            });
-
+            var result = _account.GetUsers(appUser);
             if (result != null)
             {
+                var roles = _rolservice.GetUserRol(result.UserName);
+
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, result.UserName),
+                };
+
+                claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var authProperties = new AuthenticationProperties
+                {
+
+                };
+                _context.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,new ClaimsPrincipal(claimsIdentity), authProperties);
+
+                var rolestring = string.Join(",", roles);
+
+                _context.HttpContext.Session.SetString("roles", rolestring);
+                _context.HttpContext.Session.SetInt32("AppUserId", result.AppUserId);
+                _context.HttpContext.Session.SetString("UserName", result.UserName);
+
+              
                 return LocalRedirect(returnUrl);
             }
             else
@@ -71,30 +103,17 @@ namespace Library.Controllers
                 ModelState.AddModelError("", "Invalid username or password ");
             }
             return View("Login", appUser);
-
-        }
-
-        [HttpGet]
-        public IActionResult LogOut()
-        {
-            return View("LogOut");
         }
 
         [HttpPost]
-        public IActionResult LogOut(AppUser appUser)
+        [ValidateAntiForgeryToken]
+        public async Task <IActionResult> LogOut()
         {
-            if(appUser == null)
-            {
-                return View("LogOut", appUser);
-            }
-            var sql = "UPDATE APPUSER SET IsHiDden=@IsHiDden,Username=@Username,Password=@Password Where AppUserId=@AppUserId";
-            var logout = _dapper.Connection.Execute(sql, new { @AppUserId = appUser.AppUserId });
-            if(logout != null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            return View("LogOut", appUser);
+         
+           await _context.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Account");
         }
 
+       
     }
 }

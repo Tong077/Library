@@ -2,6 +2,8 @@
 using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using X.PagedList;
+
 
 namespace Library.Controllers
 {
@@ -11,115 +13,221 @@ namespace Library.Controllers
         private readonly ICatalogService _ca;
         private readonly IBorrowService _borrow;
         private readonly IBookService _book;
+        private readonly ILibrarianService _lia;
         private readonly IBorrowDetailService _service;
-        public BorrowDetialController(IBorrowDetailService service, IBorrowService borrow, IBookService book, ICatalogService ca, ICustomerService cus)
+        public BorrowDetialController(IBorrowDetailService service, IBorrowService borrow, IBookService book, ICatalogService ca, ICustomerService cus, ILibrarianService lia)
         {
             _service = service;
             _borrow = borrow;
             _book = book;
             _ca = ca;
             _cus = cus;
+            _lia = lia;
         }
-        public IActionResult Index()
-        {
-            var borrowdetail = _service.GetAll();
-            return View("Index",borrowdetail);
-        }
-        [HttpGet]
+
+
+        //public IActionResult Index(int? i)
+        //{
+        //    var borrowdetail = _service.GetAll();
+        //    var model = borrowdetail.Select(bd => new BorrowDetailView
+        //    {
+        //        BorrowDetailId = bd.BorrowDetailId,
+        //        BorrowId = (int)bd.BorrowId,
+        //        BookId = bd.BookId,
+        //        Note = bd.Note,
+        //        IsReturn = bd.IsReturn,
+        //        ReturnDate = bd.ReturnDate,
+        //        BookCode = bd.Book.BookCode,
+
+        //        IsHidden = bd.Borrow.IsHidden,
+        //        BorrowDate = bd.Borrow.BorrowDate,
+        //        BorrowCode = bd.Borrow.BorrowCode,
+        //        Depositamount = bd.Borrow.Depositamount,
+        //        Duedate = bd.Borrow.Duedate,
+        //        FineAmount = bd.Borrow.FineAmount,
+        //        Memo = bd.Borrow.Memo,
+
+        //        CustomerName = bd.Borrow.Customer.CustomerName,
+        //        LibrarianName = bd.Borrow.Librarian.LibrarianName,
+        //        BookDescription = bd.Book.BookDescription,
+               
+        //    }).ToList();
+
+
+        //    var paginatedList = model.ToPagedList(i ?? 1, 10);
+
+        //    return View("Index", paginatedList);
+        //}
+        //using X.PagedList;
+
+        public IActionResult Index(int? page)
+    {
+            var borrowdetails = _service.GetAll();
+
+            var model = borrowdetails.Select(bd => new BorrowDetailView
+            {
+                BorrowDetailId = bd.BorrowDetailId,
+                BorrowId = (int)bd.BorrowId,
+                BookId = bd.BookId,
+                Note = bd.Note,
+                IsReturn = bd.IsReturn,
+                ReturnDate = bd.ReturnDate,
+                BookCode = bd.Book.BookCode,
+
+                IsHidden = bd.Borrow.IsHidden,
+                BorrowDate = bd.Borrow.BorrowDate,
+                BorrowCode = bd.Borrow.BorrowCode,
+                Depositamount = bd.Borrow.Depositamount,
+                Duedate = bd.Borrow.Duedate,
+                FineAmount = bd.Borrow.FineAmount,
+                Memo = bd.Borrow.Memo,
+
+                CustomerName = bd.Borrow.Customer.CustomerName,
+                LibrarianName = bd.Borrow.Librarian.LibrarianName,
+                BookDescription = bd.Book.BookDescription,
+            }).ToList();
+
+        // Paginate the list
+        int pageNumber = page ?? 1; // If no page number is specified, default to page 1
+        int pageSize = 10; // Number of items per page
+
+        var paginatedList = model.ToPagedList(pageNumber, pageSize);
+
+        return View(paginatedList);
+    }
+
+
+
+    [HttpGet]
         public IActionResult Create()
         {
-            //var customer = _borrow.GetAll();
-            //ViewBag.Borrow = new SelectList(customer, "BorrowId", "Customer.CustomerName");
             var customer = _cus.GetAll();
             ViewBag.Customer = new SelectList(customer, "CustomerId", "CustomerName");
+            //---------------------------------------------------------------------//
 
-            //-------------------------------------------------------------
+            var librarian = _lia.GetAll();
+            ViewBag.librarians = new SelectList(librarian, "LibrarianId", "LibrarianName");
+            //---------------------------------------------------------------------//
+
+            var books = _book.GetAll();
+
+            // Determine which books are borrowed
+            var bookItems = books.Select(b => new SelectListItem
+            {
+                Value = b.BookId.ToString(),
+                Text = b.BookCode,
+                Selected = false
+            });
+            var availableBooks = bookItems.Where(b => !_service.IsBorrowedAndNotReturned(int.Parse(b.Value)));
+
+            ViewBag.Book = availableBooks.ToList();
+
+            //-------------------------------------------------------------------------//
+           
 
 
-            //var book = _book.GetAll();
-            //ViewBag.Book = new SelectList(book, "BookId",  "Catalog.CatalogName");
-            var catalog = _ca.GetAll();
-            ViewBag.Catalog = new SelectList(catalog, "CatalogId", "CatalogName");
             return View("Create");
         }
 
         [HttpPost]
-        public IActionResult Store(BorrowDetail borrowdetail)
-        {
-            if(!ModelState.IsValid)
-            {
-                return View("Create", borrowdetail);
-            }
-            var result = _service.Create(borrowdetail);
-            if (result)
-            {
-                return RedirectToAction("Index");
-            }
-            return View("Create", borrowdetail);
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int BorrowDetailId)
-        {
-
-
-            var customer = _borrow.GetAll();
-            ViewBag.Borrow = new SelectList(customer, "BorrowId", "BorrowCode");
-
-            //-------------------------------------------------------------
-
-            var catalog = _ca.GetAll();
-            ViewBag.Catalog = new SelectList(catalog, "CatalogId", "CatalogName");
-
-            var bodetail = _service.Get(BorrowDetailId);
-            return View("Edit", bodetail);
-        }
-
-        [HttpPost]
-        public IActionResult Update(BorrowDetail borrowdetail)
+        public IActionResult Store(Borrow borrow, BorrowDetail borrowDetail)
         {
             if (!ModelState.IsValid)
             {
-                return View("Edit",borrowdetail);
+                return View("Create");
             }
-            var result = _service.Update(borrowdetail);
-            if(result)
+            var result = _service.Create(borrow, borrowDetail);
+            if (result)
             {
+                TempData["ToastrMessage"] = "Borrow SuccessFully";
+                TempData["ToastrMessageType"] = "success";
                 return RedirectToAction("Index");
             }
-            return View("Edit", borrowdetail);
+            return View("Create");
         }
 
         [HttpGet]
-        public IActionResult Delete(int BorrowDetailId)
+        public IActionResult Edit(int BorrowId, int BorrowDetailId)
         {
-            var customer = _borrow.GetAll();
-            ViewBag.Borrow = new SelectList(customer, "BorrowId", "BorrowCode");
+            var customer = _cus.GetAll();
+            ViewBag.Customer = new SelectList(customer, "CustomerId", "CustomerName");
+            //---------------------------------------------------------------------//
 
-            //-------------------------------------------------------------
+            var librarian = _lia.GetAll();
+            ViewBag.librarians = new SelectList(librarian, "LibrarianId", "LibrarianName");
 
-            var catalog = _ca.GetAll();
-            ViewBag.Catalog = new SelectList(catalog, "CatalogId", "CatalogName");
+            //-------------------------------------------------------------------------//
+            var book = _book.GetAll();
+            ViewBag.Book = new SelectList(book, "BookId", "BookCode");
 
 
+            var borrow = _service.Get(BorrowId, BorrowDetailId);
+            if (borrow == null)
+            {
+                return NotFound();
+            }
 
-            var result = _service.Get(BorrowDetailId);
-            return View("Delete", result);
+            return View("Edit", borrow);
         }
+
         [HttpPost]
-        public IActionResult Destroy(int BorrowDetailId)
+        [ValidateAntiForgeryToken]
+        public IActionResult Update(Borrow borrow, BorrowDetail borrowDetail)
         {
             if (!ModelState.IsValid)
             {
-                return View("Delete", BorrowDetailId);
+                return View("Edit");
             }
-            var result = _service.Delete(BorrowDetailId);
+            var result = _service.Updade(borrow, borrowDetail);
             if (result)
+            {
+                TempData["ToastrMessage"] = "Update SuccessFully";
+                TempData["ToastrMessageType"] = "success";
+                return RedirectToAction("Index", "BorrowDetial");
+            }
+
+            return View("Edit");
+        }
+        
+
+        [HttpGet]
+        public IActionResult Delete(int BorrowId, int BorrowDetailId)
+        {
+
+            var customer = _cus.GetAll();
+            ViewBag.Customer = new SelectList(customer, "CustomerId", "CustomerName");
+            //---------------------------------------------------------------------//
+
+            var librarian = _lia.GetAll();
+            ViewBag.librarians = new SelectList(librarian, "LibrarianId", "LibrarianName");
+
+            //-------------------------------------------------------------------------//
+            var book = _book.GetAll();
+            ViewBag.Book = new SelectList(book, "BookId", "Catalog.CatalogName");
+
+
+            var borrow = _service.Get(BorrowId, BorrowDetailId);
+            if (borrow == null)
+            {
+                return NotFound();
+            }
+
+            return View("Delete", borrow); ;
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Destroy(int BorrowId, int BorrowDetailId)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Delete");
+            }
+            var result = _service.Delete(BorrowId, BorrowDetailId);
+            if (result != null)
             {
                 return RedirectToAction("Index");
             }
-            return View("Delete", BorrowDetailId);
-          
+            return View("Delete");
         }
     }
 }

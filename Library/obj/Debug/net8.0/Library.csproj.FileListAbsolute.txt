@@ -264,7 +264,6 @@ D:\Asp_net\Library\Library\bin\Debug\net8.0\Dapper.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Humanizer.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -286,7 +285,6 @@ D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -339,6 +337,9 @@ D:\Asp_net\Library\Library\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Asp_net\Library\Library\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Asp_net\Library\Library\bin\Debug\net8.0\X.PagedList.dll
+D:\Asp_net\Library\Library\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Z.Dapper.Plus.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\af\Humanizer.resources.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\ar\Humanizer.resources.dll

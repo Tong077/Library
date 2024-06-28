@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Library.Data;
 using Library.Models;
+using System.Net;
 
 namespace Library.Services
 {
@@ -61,10 +62,25 @@ namespace Library.Services
                 {
                     book.Catalog = catalog;
                     return book;
-                }, splitOn: "CatalogId",
-                param: new { Offset = (pageNumber - 1) * pageSize, PageSize = pageSize });
+                }, splitOn: "CatalogId");
 
             return books;
+        }
+
+        
+
+        public bool IsBorrowed(int BookId)
+        {
+            using (var connection = _service.Connection)
+            {
+                var sql = @"
+                            SELECT COUNT(*)
+                            FROM BorrowDetail
+                            WHERE BookId = @BookId AND IsReturn = 0";
+
+                var count = connection.QueryFirstOrDefault<int>(sql, new { BookId = BookId });
+                return count > 0;
+            }
         }
 
         public bool Update(Book book)

@@ -7,9 +7,11 @@ namespace Library.Models
     public class BorrowDetail
     {
         public int BorrowDetailId { get; set; }
-        
+
+        [ForeignKey(nameof(Borrow))]
         public int? BorrowId { get; set; }
-       
+
+        [ForeignKey(nameof(Book))]
         public int BookId { get; set; }
 
         public string? Note { get; set; }
@@ -17,12 +19,11 @@ namespace Library.Models
         public bool IsReturn { get; set; }
 
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
 
-        public ICollection<Book>? Book {  get; set; }
+        public Book? Book {  get; set; }
 
-
-
+        public Borrow? Borrow { get; set; } 
 
 
     }

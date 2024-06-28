@@ -2,67 +2,51 @@
     ViewData["Title"] = "Home";
 
 }
-
-<section class="content">
-
-    <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-            <div class="col-lg-4 col-4">
-                <!-- small box -->
-                <div class="small-box  bg-info">
-                    <div class="inner">
-                        <h3> @ViewData["BookCount"]<i class="fa-solid fa-book float-lg-right"></i></h3>
-
-                        <p>Total Book</p>
+<section>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-black">Book</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-black"> @ViewData["BookCount"]</h2>
+                        <a asp-controller="Book" asp-action="Index" class="small-box-footer text-black ml-4">Add New Book <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
-                    <div class="icon">
-                        <i class="ion ion-bag"></i>
-                    </div>
-                    <a asp-controller="Book" asp-action="Index" class="small-box-footer">Add New Book <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-
-            </div>
-
-            <!-- ./col -->
-            <div class="col-lg-4 col-4">
-                <!-- small box -->
-                <div class="small-box bg-warning">
-                    <div class="inner">
-                        <h3>
-                            @ViewData["BorrowCount"]<i class="fas fa-handshake float-lg-right"></i>
-                        </h3>
-                        <p> All Borrow </p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
-                    </div>
-                    <a asp-controller="Borrow" asp-action="Index" class="small-box-footer"> Borrow <i class="fas fa-arrow-circle-right"></i></a>
+                    <span class="float-right display-5 opacity-5"><i class="fa-solid fa-book"></i></span>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-4 col-4">
-                <!-- small box -->
-                <div class="small-box bg-danger">
-                    <div class="inner ">
-                        <h3>@ViewData["IsReturn"]</h3>
-
-                        <p class="">Total Return</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-person-add"></i>
-                    </div>
-                    <a asp-controller="BorrowDetial" asp-action="Index" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
-            <!-- ./col -->
-            <!-- ./col -->
         </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-black">Borrow</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-black"> @ViewData["BorrowCount"]</h2>
+
+                        <a asp-controller="BorrowDetail" asp-action="Index" class="small-box-footer text-black ml-4">Add New Borrow <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-bank"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-black"> Customers</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-black">  @ViewData["CustomerCount"]</h2>
+
+                        <a asp-controller="Customer" asp-action="Index" class="small-box-footer text-black">Add New Customer <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <partial name="GetChart" />
+  
 </section>
-
-<partial name="AreaChate"/>
-
 
 
 

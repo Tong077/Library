@@ -1,36 +1,36 @@
 ﻿@model IEnumerable<Library.Models.Book>
-
+@inject Library.Services.IBookService _book
 @{
     ViewData["Title"] = "Book";
 }
+
 <div class="card">
     <div class="card-header">
-        <h2 class="card-title">Book List</h2>
+        <h4 class="title float-left">Book List</h2>
     </div>
     <div class="card-body">
         <p>
             <a asp-action="Create" class="btn btn-primary btn-sm float-right">Add New Book</a>
         </p>
-        <table id ="example1" class="table table-bordered table-striped">
+        <table id="example1" class="table table-bordered table-striped">
             <thead>
-                <tr >
-                    <th>
+                <tr>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.BookId)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.Catalog!.CatalogName)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.BookCode)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.BookDescription)
                     </th>
-                    <th>
+                    <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.IsHidden)
                     </th>
-                   
-                    <th>
+                    <th class="fst-italic">
                         Action
                     </th>
                 </tr>
@@ -46,7 +46,14 @@
                             @Html.DisplayFor(model => item.Catalog!.CatalogName)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.BookCode)
+                            @if (_book.IsBorrowed(item.BookId))
+                            {
+                                <span class="text-danger">@Html.DisplayFor(model => item.BookCode)</span>
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(model => item.BookCode)
+                            }
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.BookDescription)
@@ -54,10 +61,9 @@
                         <td>
                             @Html.DisplayFor(model => item.IsHidden)
                         </td>
-                       
                         <td>
-                            <a asp-controller="Book" asp-action="Edit" asp-route-BookId="@item.BookId" class="btn btn-sm btn-success" >Edit</a>
-                            <a asp-controller="Book" asp-action="Delete" asp-route-bookId="@item.BookId" class="btn btn-sm btn-danger" > Delete</a>
+                            <a asp-controller="Book" asp-action="Edit" asp-route-BookId="@item.BookId" class="btn btn-sm btn-success">Edit</a>
+                            <a asp-controller="Book" asp-action="Delete" asp-route-bookId="@item.BookId" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
                 }

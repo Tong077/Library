@@ -1,0 +1,119 @@
+﻿<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jqueryui/jquery-ui.min.js"></script>
+
+<script src="~/jqplugin/jquery.jqplugin.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/bootstrap-toaster/js/bootstrap-toaster.min.js"></script>
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/common/common.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/js/custom.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/js/settings.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/js/gleek.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/js/plugins-init/sweetalert.init.js"></script>
+
+<!-- Chartjs -->
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/chart.js/chart.bundle.min.js"></script>
+
+<!-- Circle progress -->
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/circle-progress/circle-progress.min.js"></script>
+<!-- Datamap -->
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/d3v3/index.js"></script>
+
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/topojson/topojson.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/datamaps/datamaps.dma.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+<!-- Morrisjs -->
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/raphael/raphael.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/morris/morris.min.js"></script>
+
+<!-- Pignose Calender -->
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/moment/moment.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+
+
+<!-- ChartistJS -->
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/chart.js/chart.bundle.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/chartist/js/chartist.min.js"></script>
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/bootstrap-menu/bootstrapmenu.min.js"></script>
+
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/amcharts/plugins/dataloader.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/quill/js/quill.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/preview/plugin.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/peity/jquery.peity.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/pastefromword/filter/default.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/plugins/owl.carousel/dist/js/owl.carousel.min.js"></script>
+<script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+<script src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/js/dashboard/dashboard-1.js"></script>
+
+
+
+
+
+<script src="~/jqplugin/jquery.jqplugin.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+    @if (TempData["ToastrMessage"] != null && TempData["ToastrMessageType"] != null)
+    {
+        <text>
+                                            var messageType = '@TempData["ToastrMessageType"]';
+            var message = '@TempData["ToastrMessage"]';
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000"
+            };
+            toastr[messageType](message);
+        </text>
+    }
+                    });
+</script>
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            swal({
+                title: "Are you sure?",
+                text: "Do you really want to delete this user?",
+                icon: "warning",
+                buttons: {
+                    cancel: "No, keep it",
+                    confirm: {
+                        text: "Yes, delete it",
+                        value: true,
+                        visible: true,
+                        className: "btn-danger",
+                        closeModal: true
+                    }
+                },
+                dangerMode: true,
+            }).then((willDelete) => {
+                if (willDelete) {
+                    $('#deleteForm').submit();
+                } else {
+                    swal("Your user is safe!", {
+                        icon: "info",
+                    });
+                }
+            });
+        }
+    </script>
+}

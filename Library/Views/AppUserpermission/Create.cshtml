@@ -7,7 +7,7 @@
 }
 <div class="card">
     <div class="card-header">
-        <h4 class="title">Add User</h4>
+        <h4 class="title float-left">Add User</h4>
     </div>
     <div class="card-body">
         <form asp-action="Store" asp-controller="AppUserPermission" method="post">
@@ -28,9 +28,9 @@
             <div class="body">
                 <select asp-for="UserPermission" class="custom-select">
                     <option>Please Select Permission</option>
-                    <option value="Admin">Admin</option>
-                    <option value="Staff">Staff</option>
-                    <option value="Customer">Customer</option>
+                    <option value="View">View</option>
+                    <option value="Create">Create</option>
+                    <option value="Edit">Edit</option>
                 </select>
             </div>
 
