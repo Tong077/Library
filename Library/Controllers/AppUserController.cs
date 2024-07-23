@@ -53,24 +53,30 @@ namespace Library.Controllers
 			var result = _service.Get(AppUserId);
 			return View("Edit", result);
 		}
-		[HttpPost]
-		public IActionResult Update(AppUser appUser)
-		{
-			if (!ModelState.IsValid)
-			{
-				return View(appUser);
-			}
-			var result = _service.Update(appUser);
-			if (result)
-			{
-                TempData["ToastrMessage"] = "User Has ben Update SuccessFully";
+        [HttpPost]
+        public IActionResult Update(AppUser appUser)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(appUser);
+            }
+
+            var result = _service.Update(appUser);
+            if (result)
+            {
+                TempData["ToastrMessage"] = "User has been updated successfully!";
                 TempData["ToastrMessageType"] = "success";
                 return RedirectToAction("Index");
-			}
-			return View(appUser);
-		}
+            }
 
-		[HttpGet]
+            TempData["ToastrMessage"] = "Failed to update user!";
+            TempData["ToastrMessageType"] = "error";
+            return View(appUser);
+        }
+
+
+
+        [HttpGet]
 		public IActionResult Delete(int AppUserId)
 		{
 			var result = _service.Get(AppUserId);

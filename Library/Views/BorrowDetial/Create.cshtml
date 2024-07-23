@@ -71,7 +71,7 @@
                 <label asp-for="Borrow.IsHidden" class="form-check-label ml-1"> IsHidden</label>
             </div>
 
-           
+
             <div class="row">
 
 
@@ -89,8 +89,9 @@
                 <input asp-for="BorrowDetail.BorrowId" type="hidden" />
 
                 <label asp-for="BorrowDetail.BookId" class="control-label">Book Name</label>
-                <select asp-for="BorrowDetail.BookId" class="custom-select" id="bookSelect">
-                    <option value="">Please Select Book Name</option>
+                <select asp-for="BorrowDetail.BookId" class="custom-select" id="bookSelect" multiple>
+
+                    <option>Please Select Your Favorite Book</option>
                     @foreach (var item in ViewBag.Book as List<SelectListItem>)
                     {
                         <option value="@item.Value">@item.Text</option>
@@ -114,29 +115,11 @@
         </form>
     </div>
 </div>
-
+@* Add this at the end of your view *@
 @section Scripts {
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
-            // Function to hide borrowed books
-            function hideBorrowedBooks() {
-                $('#bookSelect option').each(function () {
-                    var isBorrowed = $(this).data('is-borrowed');
-                    if (isBorrowed) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
-                });
-            }
-
-            // Initially hide borrowed books
-            hideBorrowedBooks();
-
-            // Example: If you want to update visibility based on some event (e.g., onChange)
-            $('#bookSelect').change(function () {
-                hideBorrowedBooks();
-            });
+            $('#bookSelect').select2();
         });
     </script>
 }

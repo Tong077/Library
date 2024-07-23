@@ -43,6 +43,7 @@ namespace Library.Controllers
 
             return View("Index");
         }
+
         [HttpGet]
         public JsonResult GetChartData()
         {
@@ -57,29 +58,30 @@ namespace Library.Controllers
                 labels = new[] { "Books", "Borrows", "Returns" },
                 datasets = new[]
                 {
-                new
+            new
+            {
+                label = "Count",
+                data = new[] { bookCount, borrowCount, isReturnCount },
+                backgroundColor = new[]
                 {
-                    label = "Count",
-                    data = new[] { bookCount, borrowCount, isReturnCount },
-                    backgroundColor = new[]
-                    {
-                        "rgba(255, 99, 132, 0.2)",   // Background color for Books
-                        "rgba(54, 162, 235, 0.2)",   // Background color for Borrows
-                        "rgba(255, 206, 86, 0.2)"    // Background color for Returns
-                    },
-                    borderColor = new[]
-                    {
-                        "rgba(255, 99, 132, 1)",    // Border color for Books
-                        "rgba(54, 162, 235, 1)",    // Border color for Borrows
-                        "rgba(255, 206, 86, 1)"     // Border color for Returns
-                    },
-                    borderWidth = 1
-                }
+                    "rgba(255, 99, 132, 0.2)",   // Background color for Books
+                    "rgba(54, 162, 235, 0.2)",   // Background color for Borrows
+                    "rgba(255, 206, 86, 0.2)"    // Background color for Returns
+                },
+                borderColor = new[]
+                {
+                    "rgba(255, 99, 132, 1)",    // Border color for Books
+                    "rgba(54, 162, 235, 1)",    // Border color for Borrows
+                    "rgba(255, 206, 86, 1)"     // Border color for Returns
+                },
+                borderWidth = 1
             }
+        }
             };
 
             return Json(data);
         }
+
 
     }
 }

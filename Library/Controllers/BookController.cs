@@ -38,8 +38,6 @@ namespace Library.Controllers
             // Use SelectMany to flatten the list of BookIds
             var selectedBookCodes = borrowDetails.SelectMany(bd => new[] { bd.BookId }).ToList();
 
-
-
             // Pass the paginated list of books and total count to the view
 
             ViewBag.TotalCount = totalCount;
@@ -55,23 +53,29 @@ namespace Library.Controllers
         public IActionResult Create ()
         {
             var catalog = _catalogService.GetAll();
-
             ViewBag.catalogs = new SelectList(catalog, "CatalogId", "CatalogName");
-            return View();
+            return View("Create");
         }
+      
+
         [HttpPost]
         public IActionResult Store(Book book)
         {
-            if(!ModelState.IsValid)
-            {
-                return View(book);
+            if (ModelState.IsValid) {
+              bool bookcodeexist =  _serive.BookCodeExists(book.BookCode);
+                if (bookcodeexist) {
+                    ModelState.AddModelError(string.Empty, "The BookCode already exists.");
+                    return View("Create");
+                }
+                bool success = _serive.Create(book);
+                if (success) 
+                { 
+                        return RedirectToAction("Index");
+                    
+                }
             }
-            var result = _serive.Create(book);
-            if (result)
-            {
-                return RedirectToAction("Index");
-            }
-            return View("Create", book);
+            return View("Create",book);
+
         }
         [HttpGet]
         public IActionResult Edit (int BookId) 

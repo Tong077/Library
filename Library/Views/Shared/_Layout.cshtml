@@ -18,13 +18,14 @@
             <div class="brand-logo">
                 <a href="#">
                     <b class="logo-abbr">
-                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                        
+                        <img src="~/images/images (1).jpg" />
                     </b>
                     <span class="logo-compact">
-                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                        <img src="~/images/images (1).jpg" />
                     </span>
                     <span class="brand-title">
-                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/logo-text.png" />
+                        <img src="~/images/images (1).jpg" />
                     </span>
                 </a>
             </div>
@@ -45,3 +46,53 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+    @if (TempData["ToastrMessage"] != null && TempData["ToastrMessageType"] != null)
+    {
+        <text>
+                        var messageType = '@TempData["ToastrMessageType"]';
+            var message = '@TempData["ToastrMessage"]';
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000"
+            };
+            toastr[messageType](message);
+        </text>
+    }
+        });
+</script>
+
+@section Scripts {
+    <script>
+        function confirmDelete() {
+            swal({
+                title: "Are you sure?",
+                text: "Do you really want to delete this user?",
+                icon: "warning",
+                buttons: {
+                    cancel: "No, keep it",
+                    confirm: {
+                        text: "Yes, delete it",
+                        value: true,
+                        visible: true,
+                        className: "btn-danger",
+                        closeModal: true
+                    }
+                },
+                dangerMode: true,
+            }).then((willDelete) => {
+                if (willDelete) {
+                    $('#deleteForm').submit();
+                } else {
+                    swal("Your user is safe!", {
+                        icon: "info",
+                    });
+                }
+            });
+        }
+    </script>
+}

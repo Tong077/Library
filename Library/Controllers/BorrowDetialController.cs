@@ -26,42 +26,10 @@ namespace Library.Controllers
         }
 
 
-        //public IActionResult Index(int? i)
-        //{
-        //    var borrowdetail = _service.GetAll();
-        //    var model = borrowdetail.Select(bd => new BorrowDetailView
-        //    {
-        //        BorrowDetailId = bd.BorrowDetailId,
-        //        BorrowId = (int)bd.BorrowId,
-        //        BookId = bd.BookId,
-        //        Note = bd.Note,
-        //        IsReturn = bd.IsReturn,
-        //        ReturnDate = bd.ReturnDate,
-        //        BookCode = bd.Book.BookCode,
-
-        //        IsHidden = bd.Borrow.IsHidden,
-        //        BorrowDate = bd.Borrow.BorrowDate,
-        //        BorrowCode = bd.Borrow.BorrowCode,
-        //        Depositamount = bd.Borrow.Depositamount,
-        //        Duedate = bd.Borrow.Duedate,
-        //        FineAmount = bd.Borrow.FineAmount,
-        //        Memo = bd.Borrow.Memo,
-
-        //        CustomerName = bd.Borrow.Customer.CustomerName,
-        //        LibrarianName = bd.Borrow.Librarian.LibrarianName,
-        //        BookDescription = bd.Book.BookDescription,
-               
-        //    }).ToList();
-
-
-        //    var paginatedList = model.ToPagedList(i ?? 1, 10);
-
-        //    return View("Index", paginatedList);
-        //}
-        //using X.PagedList;
+        
 
         public IActionResult Index(int? page)
-    {
+        {
             var borrowdetails = _service.GetAll();
 
             var model = borrowdetails.Select(bd => new BorrowDetailView
@@ -87,18 +55,16 @@ namespace Library.Controllers
                 BookDescription = bd.Book.BookDescription,
             }).ToList();
 
-        // Paginate the list
-        int pageNumber = page ?? 1; // If no page number is specified, default to page 1
-        int pageSize = 10; // Number of items per page
+            // Paginate the list
+            int pageNumber = page ?? 1; // If no page number is specified, default to page 1
+            int pageSize = 10; // Number of items per page
 
-        var paginatedList = model.ToPagedList(pageNumber, pageSize);
+            var paginatedList = model.ToPagedList(pageNumber, pageSize);
 
-        return View(paginatedList);
-    }
+            return View(paginatedList);
+        }
 
-
-
-    [HttpGet]
+        [HttpGet]
         public IActionResult Create()
         {
             var customer = _cus.GetAll();
@@ -116,18 +82,20 @@ namespace Library.Controllers
             {
                 Value = b.BookId.ToString(),
                 Text = b.BookCode,
-                Selected = false
+                Selected = true
             });
             var availableBooks = bookItems.Where(b => !_service.IsBorrowedAndNotReturned(int.Parse(b.Value)));
 
             ViewBag.Book = availableBooks.ToList();
 
             //-------------------------------------------------------------------------//
-           
-
 
             return View("Create");
         }
+
+
+      
+
 
         [HttpPost]
         public IActionResult Store(Borrow borrow, BorrowDetail borrowDetail)
@@ -145,6 +113,7 @@ namespace Library.Controllers
             }
             return View("Create");
         }
+
 
         [HttpGet]
         public IActionResult Edit(int BorrowId, int BorrowDetailId)
@@ -188,7 +157,7 @@ namespace Library.Controllers
 
             return View("Edit");
         }
-        
+
 
         [HttpGet]
         public IActionResult Delete(int BorrowId, int BorrowDetailId)

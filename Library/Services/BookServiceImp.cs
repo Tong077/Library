@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Library.Data;
 using Library.Models;
+using Microsoft.Data.SqlClient;
 using System.Net;
 
 namespace Library.Services
@@ -12,6 +13,17 @@ namespace Library.Services
         {
             _service = service;
         }
+
+        public bool BookCodeExists(string bookCode)
+        {
+            using (var connection = _service.Connection)
+            {
+                var sql = "SELECT BookCode FROM Book WHERE BookCode = @BookCode";
+                var book = connection.QueryFirstOrDefault<string>(sql, new { BookCode = bookCode });
+                return book != null;
+            }
+        }
+        
 
         public bool Create(Book book)
         {
@@ -25,7 +37,12 @@ namespace Library.Services
 
             });
             return roweEffect > 0;
+
+           
+            
         }
+       
+
 
         public bool Delete(int bookId)
         {

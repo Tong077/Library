@@ -14,7 +14,7 @@ namespace Library.Services
             this._service = service;
         }
 
-       
+
 
         public bool Create(Borrow borrow, BorrowDetail borrowDetail)
         {
@@ -50,6 +50,53 @@ namespace Library.Services
             }
             return true;
         }
+        //public bool Create(Borrow borrow, BorrowDetail borrowDetail)
+        //{
+        //    using (var connection = _service.Connection)
+        //    {
+        //        connection.Open();
+        //        using (var transaction = connection.BeginTransaction())
+        //        {
+        //            try
+        //            {
+        //                // Step 1: Insert Borrow record and retrieve its ID
+        //                string insertBorrowQuery = @"
+        //                INSERT INTO Borrow (IsHidden, CustomerId, LibrarianId, BorrowDate, BorrowCode, Depositamount, Duedate, FineAmount, Memo) 
+        //                VALUES (@IsHidden, @CustomerId, @LibrarianId, @BorrowDate, @BorrowCode, @Depositamount, @Duedate, @FineAmount, @Memo);
+        //                SELECT CAST(SCOPE_IDENTITY() AS INT);"; // Use CAST to ensure SCOPE_IDENTITY() returns an INT
+
+        //                int borrowId = connection.ExecuteScalar<int>(insertBorrowQuery, borrow, transaction: transaction);
+
+        //                // Step 2: Format BookId and insert BorrowDetail
+        //                string formattedBookId = $"{borrowDetail.BookId}|{borrowId}"; // Format BookId as "1|1006"
+        //                borrowDetail.BookId = formattedBookId;
+
+        //                string insertDetailsQuery = @"
+        //                INSERT INTO BorrowDetail (BorrowId, BookId, Note, IsReturn, ReturnDate) 
+        //                VALUES (@BorrowId, @BookId, @Note, @IsReturn, @ReturnDate);";
+
+        //                connection.Execute(insertDetailsQuery, borrowDetail, transaction: transaction);
+
+        //                // Step 3: Commit transaction if all operations succeed
+        //                transaction.Commit();
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                // Step 4: Rollback transaction on failure and propagate the exception
+        //                transaction.Rollback();
+        //                throw new Exception("Failed to create borrow transaction.", ex);
+        //            }
+        //        }
+        //    }
+        //    return true; // Return true indicating success (can be adjusted based on actual success criteria)
+        //}
+
+
+
+        // Overload method to handle single BorrowDetail
+
+
+
 
 
         public bool Delete(int BorrowId, int BorrowDetailId)
