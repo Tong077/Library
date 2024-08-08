@@ -18,8 +18,8 @@ namespace Library.Controllers
             _detail = detail;
         }
 
-        
-        public IActionResult Index(int? page)
+
+        public IActionResult Index(int? page, string searchTerm)
         {
             int pageNumber = page ?? 1; // If no page number is provided, default to page 1
             int pageSize = 10; // Number of books per page
@@ -33,7 +33,7 @@ namespace Library.Controllers
             // Get the paginated list of books
             var books = _serive.GetAll().Skip(skip).Take(pageSize).ToList();
 
-            var borrowDetails = _detail.GetAll();
+            var borrowDetails = _detail.GetAll(searchTerm);
 
             // Use SelectMany to flatten the list of BookIds
             var selectedBookCodes = borrowDetails.SelectMany(bd => new[] { bd.BookId }).ToList();
@@ -50,41 +50,44 @@ namespace Library.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create ()
+        public IActionResult Create()
         {
             var catalog = _catalogService.GetAll();
             ViewBag.catalogs = new SelectList(catalog, "CatalogId", "CatalogName");
             return View("Create");
         }
-      
+
 
         [HttpPost]
         public IActionResult Store(Book book)
         {
-            if (ModelState.IsValid) {
-              bool bookcodeexist =  _serive.BookCodeExists(book.BookCode);
-                if (bookcodeexist) {
-                    ModelState.AddModelError(string.Empty, "The BookCode already exists.");
-                    return View("Create");
+            if (ModelState.IsValid)
+            {
+                bool bookCodeExists = _serive.BookCodeExists(book.BookCode);
+                if (bookCodeExists)
+                {
+                    ModelState.AddModelError(nameof(book.BookCode), "The BookCode already exists...!");
+                    return View("Create", book);
                 }
+
                 bool success = _serive.Create(book);
-                if (success) 
-                { 
-                        return RedirectToAction("Index");
-                    
+                if (success)
+                {
+                    TempData["ToastrMessage"] = "Create SuccessFully";
+                    TempData["ToastrMessageType"] = "success";
+                    return RedirectToAction("Index");
                 }
             }
-            return View("Create",book);
-
+            return View("Create", book);
         }
         [HttpGet]
-        public IActionResult Edit (int BookId) 
+        public IActionResult Edit(int BookId)
         {
             var catalog = _catalogService.GetAll();
             ViewBag.catalogs = new SelectList(catalog, "CatalogId", "CatalogName");
 
             var book = _serive.Get(BookId);
-            return View("Edit",book);
+            return View("Edit", book);
         }
         [HttpPost]
         public IActionResult Update(Book book)
@@ -96,16 +99,18 @@ namespace Library.Controllers
             var result = _serive.Update(book);
             if (result)
             {
+                TempData["ToastrMessage"] = "Update SuccessFully";
+                TempData["ToastrMessageType"] = "success";
                 return RedirectToAction("Index");
             }
             return View(book);
         }
 
         [HttpGet]
-        public IActionResult Delete (int BookId)
+        public IActionResult Delete(int BookId)
         {
             var book = _serive.Get(BookId);
-            return View("Delete",book);
+            return View("Delete", book);
         }
         [HttpPost]
         public IActionResult Destroy(int bookId)

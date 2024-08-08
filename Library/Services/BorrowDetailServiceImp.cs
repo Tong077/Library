@@ -152,47 +152,55 @@ namespace Library.Services
         }
 
 
-        public IEnumerable<BorrowDetail> GetAll()
+        public IEnumerable<BorrowDetail> GetAll(string searchTerm)
         {
             var sql = @"
                 SELECT 
-                        bd.BorrowDetailId, 
-                        bd.BorrowId, 
-                        bd.BookId, 
-                        bd.Note, 
-                        bd.IsReturn, 
-                        bd.ReturnDate,
-                        b.BookId, 
-                        b.BookCode, 
-                        b.BookDescription, 
-                        b.CatalogId,
-                        br.BorrowId, 
-                        br.BorrowCode, 
-                        br.BorrowDate, 
-                        br.Duedate, 
-                        br.Depositamount, 
-                        br.FineAmount, 
-                        br.IsHidden, 
-                        br.Memo, 
-                        cu.CustomerId, 
-                        cu.CustomerName,
-                        li.LibrarianId, 
-                        li.LibrarianName,
-                        c.CatalogId, 
-                        c.CatalogName
-                    FROM 
-                        BorrowDetail bd
-                    INNER JOIN 
-                        Book b ON bd.BookId = b.BookId
-                    INNER JOIN 
-                        Borrow br ON bd.BorrowId = br.BorrowId
-                    INNER JOIN 
-                        Customer cu ON br.CustomerId = cu.CustomerId
-                    INNER JOIN 
-                        Librarian li ON br.LibrarianId = li.LibrarianId
-                    INNER JOIN 
-                        Catalog c ON b.CatalogId = c.CatalogId;
-                    ";
+                    bd.BorrowDetailId, 
+                    bd.BorrowId, 
+                    bd.BookId, 
+                    bd.Note, 
+                    bd.IsReturn, 
+                    bd.ReturnDate,
+                    b.BookId, 
+                    b.BookCode, 
+                    b.BookDescription, 
+                    b.CatalogId,
+                    br.BorrowId, 
+                    br.BorrowCode, 
+                    br.BorrowDate, 
+                    br.Duedate, 
+                    br.Depositamount, 
+                    br.FineAmount, 
+                    br.IsHidden, 
+                    br.Memo, 
+                    cu.CustomerId, 
+                    cu.CustomerName,
+                    li.LibrarianId, 
+                    li.LibrarianName,
+                    c.CatalogId, 
+                    c.CatalogName
+                FROM 
+                    BorrowDetail bd
+                INNER JOIN 
+                    Book b ON bd.BookId = b.BookId
+                INNER JOIN 
+                    Borrow br ON bd.BorrowId = br.BorrowId
+                INNER JOIN 
+                    Customer cu ON br.CustomerId = cu.CustomerId
+                INNER JOIN 
+                    Librarian li ON br.LibrarianId = li.LibrarianId
+                INNER JOIN 
+                    Catalog c ON b.CatalogId = c.CatalogId
+                WHERE
+                    (@SearchTerm IS NULL OR 
+                    b.BookCode LIKE '%' + @SearchTerm + '%' OR 
+                    b.BookDescription LIKE '%' + @SearchTerm + '%' OR 
+                    br.BorrowCode LIKE '%' + @SearchTerm + '%' OR 
+                    cu.CustomerName LIKE '%' + @SearchTerm + '%' OR 
+                    li.LibrarianName LIKE '%' + @SearchTerm + '%' OR 
+                    c.CatalogName LIKE '%' + @SearchTerm + '%');
+                ";
 
             using (var db = _service.Connection)
             {
@@ -207,14 +215,16 @@ namespace Library.Services
                         borrowDetail.Borrow = borrow;
                         return borrowDetail;
                     },
+                    new { SearchTerm = searchTerm },
                     splitOn: "BookId,BorrowId,CustomerId,LibrarianId,CatalogId");
 
                 return borrowDetails.ToList();
             }
         }
 
-       
-       
+
+
+
 
         public BorrowDetail GetById(int BorrowDetailId, bool IsReturn)
         {

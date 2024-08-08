@@ -10,7 +10,7 @@ namespace Library.Services
         bool Updade(Borrow borrow, BorrowDetail borrowDetail);
         bool Delete(int BorrowId, int BorrowDetailId);
 
-        IEnumerable<BorrowDetail> GetAll();
+        IEnumerable<BorrowDetail> GetAll(string searchTerm);
 
         BorrowandBorrowDetail Get(int BorrowId, int BorrowDetailId);
         BorrowDetail GetById(int BorrowDetailId, bool IsReturn);

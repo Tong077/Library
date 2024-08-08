@@ -1981,6 +1981,14 @@
       "PackagePath": "staticwebassets\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\icons\\weather-icons\\fonts\\weathericons-regular-webfont.woff2"
     },
     {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\L.png",
+      "PackagePath": "staticwebassets\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\L.png"
+    },
+    {
+      "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\Libary.png",
+      "PackagePath": "staticwebassets\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\Libary.png"
+    },
+    {
       "Id": "D:\\Asp_net\\Library\\Library\\wwwroot\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\avatar\\1.jpg",
       "PackagePath": "staticwebassets\\quixlab-bootstrap-main\\quixlab-bootstrap-main\\theme\\images\\avatar\\1.jpg"
     },

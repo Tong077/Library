@@ -17,6 +17,15 @@
                     <span class="nav-text ml-1">Home</span>
                 </a>
             </li>
+            @if (IsAdmin || IsStaff)
+            {
+                <li>
+                    <a asp-controller="Librarian" asp-action="Index" aria-expanded="false">
+                        <ion-icon name="person"></ion-icon>
+                        <span class="nav-text ml-1">Librian</span>
+                    </a>
+                </li>
+            }
             @if (IsAdmin || IsStaff || IsUser)
             {
                 <li class="mega-menu mega-menu-sm">
@@ -60,15 +69,7 @@
                 </li>
             }
 
-            @if (IsAdmin || IsStaff)
-            {
-                <li>
-                    <a asp-controller="Librarian" asp-action="Index" aria-expanded="false">
-                        <ion-icon name="person"></ion-icon>
-                        <span class="nav-text ml-1">Librian</span>
-                    </a>
-                </li>
-            }
+           
 
             @if (IsAdmin)
             {

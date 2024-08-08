@@ -21,6 +21,7 @@ namespace Library.Models
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? ReturnDate { get; set; }
 
+
         public Book? Book {  get; set; }
 
         public Borrow? Borrow { get; set; } 

@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\Asp_net\\Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\book\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\data\\dapperdbconnext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\data\\dapperdbconnext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\home\\getchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\home\\getchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\services\\bookserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\shared\\_scip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\shared\\_scip.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|d:\\asp_net\\library\\library\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5E7ADC67-10D8-434F-BCB0-414E3D29C383}|Library\\Library.csproj|solutionrelative:library\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DapperDbConnext.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Data\\DapperDbConnext.cs",
+              "RelativeDocumentMoniker": "Library\\Data\\DapperDbConnext.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Data\\DapperDbConnext.cs*",
+              "RelativeToolTip": "Library\\Data\\DapperDbConnext.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T08:12:54.507Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -57,73 +66,41 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_scip.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_scip.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Shared\\_scip.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Shared\\_scip.cshtml",
-              "RelativeToolTip": "Library\\Views\\Shared\\_scip.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEAAAABDAAAA",
+              "DocumentIndex": 1,
+              "Title": "GetChart.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Home\\GetChart.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Home\\GetChart.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Home\\GetChart.cshtml",
+              "RelativeToolTip": "Library\\Views\\Home\\GetChart.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAACkAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T09:54:21.887Z",
+              "WhenOpened": "2024-07-30T06:14:08.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BookServiceImp.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\BookServiceImp.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\BookServiceImp.cs*",
-              "RelativeToolTip": "Library\\Services\\BookServiceImp.cs*",
-              "ViewState": "AQIAACIAAAAAAAAAAAAUwCsAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:45:54.751Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Library\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T06:07:21.28Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IBookService.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Services\\IBookService.cs*",
-              "RelativeToolTip": "Library\\Services\\IBookService.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Library\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwC0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:45:30.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Create.cshtml",
-              "RelativeDocumentMoniker": "Library\\Views\\Book\\Create.cshtml",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Views\\Book\\Create.cshtml*",
-              "RelativeToolTip": "Library\\Views\\Book\\Create.cshtml*",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAABQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T09:08:59.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "D:\\Asp_net\\Library\\Library\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "Library\\Controllers\\BookController.cs",
-              "ToolTip": "D:\\Asp_net\\Library\\Library\\Controllers\\BookController.cs*",
-              "RelativeToolTip": "Library\\Controllers\\BookController.cs*",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwDsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T09:00:48.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T06:04:56.32Z"
             }
           ]
         }

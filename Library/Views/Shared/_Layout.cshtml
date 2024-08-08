@@ -6,7 +6,7 @@
     <title>@ViewBag.Title</title>
     <partial name="_csslink" />
 
-   
+
 </head>
 <body>
 
@@ -18,19 +18,19 @@
             <div class="brand-logo">
                 <a href="#">
                     <b class="logo-abbr">
-                        
-                        <img src="~/images/images (1).jpg" />
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/l.png" />
                     </b>
                     <span class="logo-compact">
-                        <img src="~/images/images (1).jpg" />
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/l.png" />
                     </span>
                     <span class="brand-title">
-                        <img src="~/images/images (1).jpg" />
+                       
+                        <img src="~/quixlab-bootstrap-main/quixlab-bootstrap-main/theme/images/libary.png" />
                     </span>
                 </a>
             </div>
         </div>
-       
+
         <partial name="_navigationbar" />
         <partial name="_sidebar" />
 
@@ -38,11 +38,11 @@
             <div class="container-fluid mt-3">
                 @RenderBody()
             </div>
-       </div>
+        </div>
     </div>
 
     <partial name="_scip" />
-    
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
@@ -52,7 +52,7 @@
     @if (TempData["ToastrMessage"] != null && TempData["ToastrMessageType"] != null)
     {
         <text>
-                        var messageType = '@TempData["ToastrMessageType"]';
+                                var messageType = '@TempData["ToastrMessageType"]';
             var message = '@TempData["ToastrMessage"]';
             toastr.options = {
                 "closeButton": true,
@@ -63,7 +63,7 @@
             toastr[messageType](message);
         </text>
     }
-        });
+            });
 </script>
 
 @section Scripts {

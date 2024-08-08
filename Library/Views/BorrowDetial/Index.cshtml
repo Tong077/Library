@@ -1,14 +1,50 @@
 ﻿@model IPagedList<Library.Models.BorrowDetailView>
 @using X.PagedList.Mvc.Core
 @using X.PagedList
+@inject IHttpContextAccessor _context
+@{
+    var permissions = _context.HttpContext.Session.GetString("UserPermission")?.Split(',') ?? new string[0];
+    var add = permissions.Contains("Create");
+    var edit = permissions.Contains("Edit");
+    var delete = permissions.Contains("Delete");
+}
+
+
+
+<style>
+    .separator {
+        border-bottom: 1px solid #ddd; /* Light gray border */
+        margin: 20px 0; /* Margin to give space above and below the line */
+    }
+</style>
 <div class="card">
     <div class="card-header">
         <h2 class="card-title"> Borrow Detail</h2>
     </div>
+    <form asp-action="Index" asp-controller="BorrowDetial" style="justify-content:center">
+        <div class="row">
+            <div class="col-md-8 ml-5">
+                <input class="form-control" type="text" name="searchTerm" value="@ViewBag.SearchTerm" placeholder="Search..." />
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-success" type="submit">Search</button>
+                <a asp-action="Index" class="btn btn-danger">Cancel</a>
+            </div>
+        </div>
+
+    </form>
+    <!-- Separator Line -->
+    <div class="separator"></div>
+
     <div class="card-body">
-        <p>
-            <a asp-action="Create" class="btn btn-success btn-sm float-right"> Add New Borrow</a>
-        </p>
+        <div class="card-title gap-2">
+            @if (add)
+            {
+                <p>
+                    <a asp-action="Create" class="btn btn-success btn-sm float-right"> Add New Borrow</a>
+                </p>
+            }
+        </div>
         <table class="table table-responsive table-condensed">
             <thead>
                 <tr>
@@ -69,21 +105,32 @@
                         <td>
                             @Html.DisplayFor(model => item.ReturnDate)
                         </td>
-                        <td>
+                        <td style="text-align: right; color: green; font-weight: bold;">
                             @Html.DisplayFor(model => item.Depositamount)
                         </td>
-                        <td>
+
+                        <td style="text-align: right; color: green; font-weight: bold;">
+
                             @Html.DisplayFor(model => item.FineAmount)
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.Note)
                         </td>
-                       <td>
-                           @Html.DisplayFor(Model => item.ReturnDate)
-                       </td>
                         <td>
-                            <a asp-action="Edit" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
-                            <a asp-action="Delete" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                            <form asp-action="UpdateIsReturn" asp-controller="BorrowDetial" method="post">
+                                <input type="hidden" name="BorrowDetailId" value="@item.BorrowDetailId" />
+                                <input type="checkbox" name="IsReturn" onchange="this.form.submit()" @(item.IsReturn ? "checked" : "") />
+                            </form>
+                        </td>
+                        <td>
+                            @if (edit)
+                            {
+                                <a asp-action="Edit" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-success">Edit</a>
+                            }
+                            @if (delete)
+                            {
+                                <a asp-action="Delete" asp-controller="BorrowDetial" asp-route-BorrowDetailId="@item.BorrowDetailId" asp-route-BorrowId="@item.BorrowId" class="btn btn-sm btn-danger">Delete</a>
+                            }
                         </td>
                     </tr>
                 }

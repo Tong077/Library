@@ -1,4 +1,6 @@
 ﻿
+
+
 <section>
     <div class="row">
         <div class="col-lg-12">
@@ -24,23 +26,20 @@
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <div class="w-100 mr-2">
-                                    <h6>Book 2</h6>
-                                    <div class="progress" style="height: 6px">
-                                        <div class="progress-bar bg-danger" style="width: 40%"></div>
-                                    </div>
+                                <div class="ml-2 w-100 mr-2 ">
+                                    <h6>Book @ViewData["BookCount"]</h6>
+
                                 </div>
-                                <div class="ml-2 w-100">
-                                    <h6>Customer </h6>
-                                    <div class="progress" style="height: 6px">
-                                        <div class="progress-bar bg-primary" style="width: 80%"></div>
-                                    </div>
+                                <div class="ml-2 w-100 mr-2">
+                                    <h6>Customer @ViewData["CustomerCount"] </h6>
+
                                 </div>
-                                <div class="ml-3 w-100">
-                                    <h6>Borrow</h6>
-                                    <div class="progress" style="height: 6px">
-                                        <div class="progress-bar bg-success" style="width: 80%"></div>
-                                    </div>
+                                <div class="ml-2 w-100 mr-2">
+                                    <h6>Borrow @ViewData["Borrow"]</h6>
+
+                                </div>
+                                <div class="ml-2 w-100 mr-2">
+                                    <h6>IsReturn @ViewData["bookreturn"]</h6>
                                 </div>
                             </div>
                         </div>

@@ -24,10 +24,14 @@ namespace Library.Models
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? BorrowDate { get; set; }
         public string? BorrowCode { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal? Depositamount { get; set; }
 
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? Duedate { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal? FineAmount { get; set; }
         public string? Memo { get; set; }
     }

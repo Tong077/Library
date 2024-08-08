@@ -71,19 +71,20 @@ namespace Library.Services
             return roweEffect > 0;
         }
 
-        public async Task<IEnumerable<string>> userpermission(string UserName)
+        public  IEnumerable<string> userpermission(string UserName)
         {
-            var sql = "SELECT " +
-                "AppUser.AppUserId," +
-                "AppUser.UserName " +
-               "AppUserpermission.UserPermission " +
-               "FROM  AppUserpermission " +
-               "INNER JOIN " +
-               "AppUser ON" +
-               " AppUserpermission.AppUserId = AppUser.AppUserId " +
-               "WHERE AppUserpermission.AppUserpermissionId = @AppUserpermissionId;";
+            var sql = @"
+                        SELECT 
+                            p.UserPermission
+                        FROM  
+                            AppUserPermission p
+                        INNER JOIN 
+                            AppUser u ON p.AppUserId = u.AppUserId
+                        WHERE 
+                            u.UserName = @UserName;";
 
-            var permission = await _service.Connection.QueryAsync<string>(sql, new { UserName = UserName });
+
+            var permission =  _service.Connection.Query<string>(sql, new { UserName = UserName });
             return  permission;
         }
 

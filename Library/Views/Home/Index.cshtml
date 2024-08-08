@@ -4,7 +4,7 @@
 }
 <section>
     <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-8">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-black">Book</h3>
@@ -16,12 +16,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-8">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-black">Borrow</h3>
                     <div class="d-inline-block">
-                        <h2 class="text-black"> @ViewData["BorrowCount"]</h2>
+                        <h2 class="text-black"> @ViewData["Borrow"]</h2>
 
                         <a asp-controller="BorrowDetail" asp-action="Index" class="small-box-footer text-black ml-4">Add New Borrow <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
@@ -29,7 +29,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-black">Book Return</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-black"> @ViewData["bookreturn"]</h2>
+
+                        <a asp-controller="BorrowDetail" asp-action="Index" class="small-box-footer text-black ml-4">View Return Book<i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                    <span class="float-right display-5 opacity-5"><i class="fa fa-bank"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-8">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title text-black"> Customers</h3>

@@ -19,6 +19,8 @@ namespace Library.Models
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]
         public DateTime? BorrowDate { get; set; }
         public string? BorrowCode { get; set; }
+
+        
         public decimal? Depositamount { get; set; }
 
         [BindProperty(SupportsGet = true), DataType(DataType.Date)]

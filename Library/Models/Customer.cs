@@ -14,6 +14,7 @@ namespace Library.Models
        
         public int CustomerTypeId { get; set; }
 
+        [Required(ErrorMessage ="Please Enter Your Name")]
         public string? CustomerName { get; set; }
 
         public string? Sex { get; set; }

@@ -20,7 +20,7 @@ namespace Library.Controllers
             _customer = customer;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string searchTerm)
         {
 
             var book = _service.GetAll();
@@ -30,10 +30,14 @@ namespace Library.Controllers
             //------------------------------------------------------------//
 
            
+            var borrow = _borrow.GetAll();
+            int borrowcount = borrow.Count();
+            ViewData["Borrow"] = borrowcount;
 
-            var borrowdetail = _borrowdetal.GetAll();
-            int borrowcount = borrowdetail.Count();
-            ViewData["BorrowCount"] = borrowcount;
+            //---------------------------------------------------//
+            int isReturnCount = _bodetail.GetAll(searchTerm).Count();
+            ViewData["bookreturn"] = isReturnCount;
+
 
             //--------------------------------------------------------//
 
@@ -45,23 +49,24 @@ namespace Library.Controllers
         }
 
         [HttpGet]
-        public JsonResult GetChartData()
+        public JsonResult GetChartData(string searchTerm)
         {
             // Get counts from services
             int bookCount = _service.GetAll().Count();
             int borrowCount = _borrow.GetAll().Count();
-            int isReturnCount = _bodetail.GetAll().Count();
+            int customercount = _customer.GetAll().Count();
+            int isReturnCount = _bodetail.GetAll(searchTerm).Count();
 
             // Prepare data object to return as JSON
             var data = new
             {
-                labels = new[] { "Books", "Borrows", "Returns" },
+                labels = new[] { "Books", "Borrows", "Customer" ,"Returns" },
                 datasets = new[]
                 {
             new
             {
                 label = "Count",
-                data = new[] { bookCount, borrowCount, isReturnCount },
+                data = new[] { bookCount, borrowCount, customercount ,isReturnCount },
                 backgroundColor = new[]
                 {
                     "rgba(255, 99, 132, 0.2)",   // Background color for Books

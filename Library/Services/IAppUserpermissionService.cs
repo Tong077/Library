@@ -11,6 +11,6 @@ namespace Library.Services
         AppuserPermission GetById(int AppUserPermissionId);
 
 
-       Task<IEnumerable<string>> userpermission(string UserName);
+       IEnumerable<string> userpermission(string UserName);
     }
 }

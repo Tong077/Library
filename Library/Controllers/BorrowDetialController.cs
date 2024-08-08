@@ -1,4 +1,6 @@
-﻿using Library.Models;
+﻿using Dapper;
+using Library.Data;
+using Library.Models;
 using Library.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -15,7 +17,8 @@ namespace Library.Controllers
         private readonly IBookService _book;
         private readonly ILibrarianService _lia;
         private readonly IBorrowDetailService _service;
-        public BorrowDetialController(IBorrowDetailService service, IBorrowService borrow, IBookService book, ICatalogService ca, ICustomerService cus, ILibrarianService lia)
+        private readonly DapperDbConnext _dapper;
+        public BorrowDetialController(IBorrowDetailService service, IBorrowService borrow, IBookService book, ICatalogService ca, ICustomerService cus, ILibrarianService lia, DapperDbConnext dapper)
         {
             _service = service;
             _borrow = borrow;
@@ -23,14 +26,15 @@ namespace Library.Controllers
             _ca = ca;
             _cus = cus;
             _lia = lia;
+            _dapper = dapper;
         }
 
 
-        
 
-        public IActionResult Index(int? page)
+
+        public IActionResult Index(int? page, string searchTerm)
         {
-            var borrowdetails = _service.GetAll();
+            var borrowdetails = _service.GetAll(searchTerm);
 
             var model = borrowdetails.Select(bd => new BorrowDetailView
             {
@@ -61,6 +65,7 @@ namespace Library.Controllers
 
             var paginatedList = model.ToPagedList(pageNumber, pageSize);
 
+            ViewBag.SearchTerm = searchTerm; // Pass the search term to the view for persistence in the search box
             return View(paginatedList);
         }
 
@@ -157,6 +162,30 @@ namespace Library.Controllers
 
             return View("Edit");
         }
+
+
+        //make when check on the and book has return 
+        [HttpPost]
+        public IActionResult UpdateIsReturn(int BorrowDetailId)
+        {
+            // Fetch the current IsReturn value
+            string query = "SELECT IsReturn FROM BorrowDetail WHERE BorrowDetailId = @BorrowDetailId";
+            bool currentIsReturn = _dapper.Connection.QuerySingleOrDefault<bool>(query, new { BorrowDetailId });
+
+            // Toggle the IsReturn value
+            bool newIsReturn = !currentIsReturn;
+
+            // Update the database with the new IsReturn value
+            string updateQuery = "UPDATE BorrowDetail SET IsReturn = @IsReturn WHERE BorrowDetailId = @BorrowDetailId";
+            _dapper.Connection.Execute(updateQuery, new { IsReturn = newIsReturn ? 1 : 0, BorrowDetailId });
+
+            // Provide feedback to the user
+            TempData["ToastrMessage"] = "Update Successful";
+            TempData["ToastrMessageType"] = "success";
+
+            return RedirectToAction("Index");
+        }
+
 
 
         [HttpGet]
