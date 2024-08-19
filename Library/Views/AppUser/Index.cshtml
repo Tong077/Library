@@ -11,52 +11,50 @@
     <div class="card-body">
 
         <p>
-            <a asp-action="Create" class="btn btn btn-success btn-sm float-lg-right"> Add New</a>
+            <a asp-action="Create" class="btn btn-success btn-sm float-lg-right"> Add New</a>
         </p>
-        <div class="table-responsive">
-            <table class="table table-striped table-bordered zero-configuration">
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().AppUserId)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().IsHiDden)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().UserName)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Password)
-                    </th>
-                    <th>
-                        Action
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                    @foreach (var appuser in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(model => appuser.AppUserId)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(model => appuser.IsHiDden)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(model => appuser.UserName)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(model => appuser.Password)
-                            </td>
-                            <td>
-                                <a asp-controller="AppUser" asp-action="Edit" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-success"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                                <a asp-controller="AppUser" asp-action="Delete" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-danger"><i class="fa-solid fa-pen-to-square"></i> Delete</a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().AppUserId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().IsHiDden)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().Password)
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach (var appuser in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => appuser.AppUserId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => appuser.IsHiDden)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => appuser.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => appuser.Password)
+                        </td>
+                        <td>
+                            <a asp-controller="AppUser" asp-action="Edit" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-success"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            <a asp-controller="AppUser" asp-action="Delete" asp-route-AppUserId="@appuser.AppUserId" class="btn btn btn-sm btn-danger"><i class="fa-solid fa-pen-to-square"></i> Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

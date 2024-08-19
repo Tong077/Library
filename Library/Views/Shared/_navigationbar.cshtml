@@ -11,53 +11,6 @@
         <div class="header-right">
             <ul class="clearfix">
 
-                <li class="icons dropdown">
-
-                    <div class="drop-down animated fadeIn dropdown-menu dropdown-notfication">
-
-                        <div class="dropdown-content-body">
-                            <ul>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Events near you</h6>
-                                            <span class="notification-text">Within next 5 days</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Event Started</h6>
-                                            <span class="notification-text">One hour ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-success-lighten-2"><i class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Event Ended Successfully</h6>
-                                            <span class="notification-text">One hour ago</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void()">
-                                        <span class="mr-3 avatar-icon bg-danger-lighten-2"><i class="icon-present"></i></span>
-                                        <div class="notification-content">
-                                            <h6 class="notification-heading">Events to Join</h6>
-                                            <span class="notification-text">After two days</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </li>
                 <li class="icons dropdown d-none d-md-flex">
                     <a href="javascript:void(0)" class="log-user" data-toggle="dropdown">
                         <span>English</span>  <i class="fa fa-angle-down f-s-14" aria-hidden="true"></i>
@@ -84,7 +37,7 @@
                                 {
                                     <li>
                                         <p class="ml-4">
-                                            Hello @_context.HttpContext.Session.GetString("UserName")
+                                              Hello  @_context.HttpContext.Session.GetString("UserName")
                                         </p>
 
                                     </li>
@@ -93,7 +46,7 @@
                                 <li>
                                     <form asp-controller="Account" asp-action="LogOut" method="post" style="display: inline-block;">
                                         @Html.AntiForgeryToken()
-                                        <button type="submit" class="btn btn-outline-light ml-4" style="border: none;">
+                                        <button type="submit" class="btn btn-outline-light ml-4" style="border: none; width:100%;">
                                             Sign Out
                                         </button>
                                     </form>

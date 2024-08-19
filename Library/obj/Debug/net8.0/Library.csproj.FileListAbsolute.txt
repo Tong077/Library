@@ -259,7 +259,6 @@ D:\Asp_net\Library\Library\bin\Debug\net8.0\Library.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Library.pdb
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Azure.Core.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Azure.Identity.dll
-D:\Asp_net\Library\Library\bin\Debug\net8.0\CurrieTechnologies.Razor.SweetAlert2.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Dapper.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Humanizer.dll
 D:\Asp_net\Library\Library\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
