@@ -540,3 +540,7 @@ D:\Asp_net\Library\Library\obj\Debug\net8.0\refint\Library.dll
 D:\Asp_net\Library\Library\obj\Debug\net8.0\Library.pdb
 D:\Asp_net\Library\Library\obj\Debug\net8.0\Library.genruntimeconfig.cache
 D:\Asp_net\Library\Library\obj\Debug\net8.0\ref\Library.dll
+D:\Asp_net\Library\Library\bin\Debug\net8.0\Library.staticwebassets.endpoints.json
+D:\Asp_net\Library\Library\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Asp_net\Library\Library\obj\Debug\net8.0\staticwebassets\msbuild.Library.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Asp_net\Library\Library\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

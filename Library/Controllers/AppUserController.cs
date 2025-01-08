@@ -92,8 +92,7 @@ namespace Library.Controllers
 			var result = _service.Delete(appUserId);
 			if (result)
 			{
-                TempData["SweetAlertMessage"] = "User deleted successfully.";
-                TempData["SweetAlertType"] = "success";
+               
                 return RedirectToAction("Index");
 			}
 			return View(appUserId);

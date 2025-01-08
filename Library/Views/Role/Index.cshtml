@@ -18,7 +18,7 @@
                         @Html.DisplayNameFor(model => model.RoleId)
                     </th>
                     <th class="fst-italic">
-                        @Html.DisplayNameFor(model => model.AppUser.UserName)
+                        @Html.DisplayNameFor(model => model.AppUser!.UserName)
                     </th>
                     <th class="fst-italic">
                         @Html.DisplayNameFor(model => model.RoleName)
@@ -33,7 +33,7 @@
                             @Html.DisplayFor(model => item.RoleId)
                         </td>
                         <td>
-                            @Html.DisplayFor(model => item.AppUser.UserName)
+                            @Html.DisplayFor(model => item.AppUser!.UserName)
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.RoleName)
